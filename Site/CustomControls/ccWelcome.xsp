@@ -16,24 +16,18 @@
 			</xp:link>
 			&#160;is probably the world's most popular design framework
 			at the moment. And I love it! This site contains all the
-			information you'll need to start using Bootstrap with&#160;
+			information you'll need to start using Bootstrap with 
 			<xp:link escape="true" text="XPages" id="link1"
 				value="http://www.xpages.info" target="_blank">
 			</xp:link>
-			. We'll show you how to get started, lots of code snippets,
-			the use of external plugins, theming and lots more.
+			. It'll show you how to get started, lots of code snippets, the use of external plugins, theming and more.
 		</p>
 
 		<p>
 			Oh and of course: this whole site was built using XPages.
-			You can download the source from&#160;
-			<a href="https://github.com/markleusink/Bootstrap4XPages"
-				target="_blank">
-				Github
-			</a>
-			. A single file download will be available shortly.
-
-		</p>
+			You can view and download the source from&#160;<a href="https://github.com/markleusink/Bootstrap4XPages"
+				target="_blank">Github</a>. 
+		If you miss anything or want to help making this site better: drop me a <a href="http://linqed.eu/?page_id=93">note</a>.</p>
 	</div>
 
 	<!-- Example row of columns -->
@@ -94,7 +88,7 @@ row.getColumnValue("url") :
 
 		<div class="span3">
 
-			<h4>Built with Bootstrap (&#38; XPages)</h4>
+			<h4>Built with Bootstrap*</h4>
 
 			<ul class="nav nav-pills nav-stacked">
 			<xp:repeat id="repeat1" rows="30" value="#{vwShowcase}" disableOutputTag="true" var="row">
@@ -107,6 +101,8 @@ row.getColumnValue("url") :
 			
 			</xp:repeat>
 			</ul>
+			
+			<p>* and XPages!</p>
 
 		</div>
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257B7400241DBD" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="16a" sequence="74" unid="F82EB2DE0B86A2C2C1257B5900555A31">
+<noteinfo noteid="16a" sequence="80" unid="F82EB2DE0B86A2C2C1257B5900555A31">
 <created><datetime dst="true">20130426T173216,49+02</datetime></created>
-<modified><datetime dst="true">20130523T102201,17+02</datetime></modified>
-<revised><datetime dst="true">20130523T102201,16+02</datetime></revised>
-<lastaccessed><datetime dst="true">20130523T102201,17+02</datetime></lastaccessed>
+<modified><datetime dst="true">20130523T150337,60+02</datetime></modified>
+<revised><datetime dst="true">20130523T150337,59+02</datetime></revised>
+<lastaccessed><datetime dst="true">20130523T150337,60+02</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130523T083429,53+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name><name>CN=Mark Leusink/O=SAXDEV</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>bootstrap.theme</text></item>
-<item name="$CSSFiles"><textlist><text>bootstrap/css/bootstrap.min.css</text><text>bootstrap-extended.css</text><text>bootstrap/css/bootstrap-responsive.min.css</text><text>/.ibmxspres/domino/bs4xp/site.nsf/themes/bootswatch-cosmo/cosmo.min.css</text><text>/.ibmxspres/domino/bs4xp/site.nsf/themes/bootswatch-amelia/amelia.min.css</text><text>override.css</text></textlist></item></note>
+<item name="$CSSFiles"><textlist><text>bootstrap/css/bootstrap.min.css</text><text>bootstrap-extended.css</text><text>bootstrap/css/bootstrap-responsive.min.css</text><text>bootstrap/css/cosmo.min.css</text><text>bootstrap/css/amelia.min.css</text><text>override.css</text></textlist></item></note>

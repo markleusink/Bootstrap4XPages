@@ -57,10 +57,15 @@
 							<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").hide()}]]></xp:this.action>
 						</xp:eventHandler>
 					</xp:button>
-
-					<xp:button value="Ok" styleClass="btn btn-primary"
-						id="button1">
+					
+					<xp:button value="Ok" id="button3"
+						styleClass="btn btn-primary">
+						<xp:eventHandler event="onclick" submit="true"
+							refreshMode="partial" refreshId="dialog1">
+							<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").hide()}]]></xp:this.action>
+						</xp:eventHandler>
 					</xp:button>
+
 				</xe:dialogButtonBar>
 
 			</xe:dialog>

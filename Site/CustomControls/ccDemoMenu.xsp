@@ -16,15 +16,17 @@
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
-		<li>
-			<xp:link escape="true" text="Forms"
-				id="link3" value="/.ibmxspres/domino/bs4xp/demos.nsf/form.xsp">
-					<i class="icon-chevron-right"></i>
-			</xp:link>
-		</li>
+		
 		<li>
 			<xp:link escape="true" text="Dialog"
 				id="link5" value="/.ibmxspres/domino/bs4xp/demos.nsf/dialog.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Forms"
+				id="link3" value="/.ibmxspres/domino/bs4xp/demos.nsf/form.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
@@ -45,6 +47,19 @@
 		<li>
 			<xp:link escape="true" text="Form controls: Time picker"
 				id="link4" value="/.ibmxspres/domino/bs4xp/demos.nsf/timePicker.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Login form" id="link6">
+				<xp:this.value><![CDATA[#{javascript:"/.ibmxspres/domino/bs4xp/demos.nsf?open&login"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Want more icons?"
+				id="link7" value="/.ibmxspres/domino/bs4xp/demos.nsf/moreIcons.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>

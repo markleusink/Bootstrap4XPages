@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	
+	<xp:this.resources>
+		<xp:styleSheet href="/font-awesome/css/font-awesome.min.css"></xp:styleSheet>
+	</xp:this.resources>
+	
+	<!-- these styles are only needed to make this page look good -->
+	<style type="text/css">
+	.the-icons {
+list-style-type: none;
+margin: 0;
+}
+.the-icons li a, .the-icons li a:hover {
+color: #222;
+}
+.the-icons li a {
+display: block;
+cursor: pointer;
+line-height: 32px;
+height: 32px;
+padding-left: 12px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+.the-icons li a [class^="icon-"], .the-icons li a [class*=" icon-"] {
+width: 32px;
+font-size: 14px;
+}
+.the-icons li [class^="icon-"], .the-icons li [class*=" icon-"] {
+display: inline-block;
+width: 1.2857142857142858em;
+text-align: center;
+}
+</style>
+	
+	<xc:ccLayout>
+	
+		<legend>So you want more icons?</legend>
+		
+		<p>Check out&#160;<a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">Font Awesome</a>! An MIT licensed
+		collection with over 300 scalable icons.</p>
+		<p>To use the collection:
+			<ul>
+				<li>Download the latest version from the site.</li>
+				<li>Add the &#160;<b>font-awesome</b>&#160; folder from the ZIP file to the WebContent folder your application.</li>
+				<li>Add the &#160;<b>font-awesome.min.css</b>&#160; CSS file to your XPage/ theme/ layout custom control.</li>
+				<li>The latest Font Awesome collection tries to load a font file from the font-awesome folder using a parameter (fontawesome-webfont.eot?v=3.1.0).</li>
+				<li>Domino doesn't like that. To fix that issue: remove all occurences of &#160;<b>?v3.1.0</b>&#160; from the font-awesome.min.css file.</li>  
+			</ul>
+		</p>
+		
+		<p>Here's the full list:</p>		
+
+		<xc:ccFontAwesomeIconList></xc:ccFontAwesomeIconList>
+	
+	</xc:ccLayout>
+
+
+</xp:view>

@@ -45,22 +45,18 @@
 	
 	<resource rendered="#{javascript:sessionScope.theme=='cosmo'}">
 		<content-type>text/css</content-type>
-		<href>/.ibmxspres/domino/bs4xp/site.nsf/themes/bootswatch-cosmo/cosmo.min.css</href>
+		<href>bootstrap/css/cosmo.min.css</href>
 	</resource>
 		<resource rendered="#{javascript:sessionScope.theme=='amelia'}">
 		<content-type>text/css</content-type>
-		<href>/.ibmxspres/domino/bs4xp/site.nsf/themes/bootswatch-amelia/amelia.min.css</href>
+		<href>bootstrap/css/amelia.min.css</href>
 	</resource>
-	
-	
 	
 	<!-- overrides for resource aggregation -->
 	<resource rendered="#{javascript:context.getProperty('xsp.resources.aggregate').equals('true')}">
 		<content-type>text/css</content-type>
 		<href>override.css</href>
 	</resource>
-	
-
 	
 		
 	<!-- bootstrap date picker -->

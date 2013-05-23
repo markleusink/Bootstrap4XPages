@@ -5,9 +5,9 @@
     <default-prefix>xc</default-prefix>
   </faces-config-extension>
   <composite-component>
-    <component-type>ccDemoForm</component-type>
-    <composite-name>ccDemoForm</composite-name>
-    <composite-file>/ccDemoForm.xsp</composite-file>
+    <component-type>ccFontAwesomeIconList</component-type>
+    <composite-name>ccFontAwesomeIconList</composite-name>
+    <composite-file>/ccFontAwesomeIconList.xsp</composite-file>
     <composite-extension>
       <designer-extension>
         <in-palette>true</in-palette>

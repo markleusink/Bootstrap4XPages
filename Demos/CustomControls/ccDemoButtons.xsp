@@ -27,15 +27,15 @@
 		
 		<p>
 		
-			<xp:button value="Home" id="button4">
+			<xp:button value="Home" id="button4" styleClass="btn">
 				<i class="icon-home" />
 			</xp:button>
 			
-			<xp:button value="Have a drink" id="button6">
+			<xp:button value="Have a drink" id="button6" styleClass="btn">
 				<i class="icon-glass" />
 			</xp:button>
 			
-			<xp:button value="Where's the fire?" id="button7" styleClass="btn-danger">
+			<xp:button value="Where's the fire?" id="button7" styleClass="btn btn-danger">
 				<i class="icon-fire icon-white" />
 			</xp:button>
 			

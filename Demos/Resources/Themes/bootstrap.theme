@@ -43,13 +43,14 @@
 		<href>bootstrap/css/bootstrap-responsive.min.css</href>
 	</resource>
 	
+	<!-- themes -->
 	<resource rendered="#{javascript:sessionScope.theme=='cosmo'}">
 		<content-type>text/css</content-type>
-		<href>/.ibmxspres/domino/bs4xp/site.nsf/themes/bootswatch-cosmo/cosmo.min.css</href>
+		<href>bootstrap/css/cosmo.min.css</href>
 	</resource>
-	<resource rendered="#{javascript:sessionScope.theme=='amelia'}">
+		<resource rendered="#{javascript:sessionScope.theme=='amelia'}">
 		<content-type>text/css</content-type>
-		<href>/.ibmxspres/domino/bs4xp/site.nsf/themes/bootswatch-amelia/amelia.min.css</href>
+		<href>bootstrap/css/amelia.min.css</href>
 	</resource>
 	
 	

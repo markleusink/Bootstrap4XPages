@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xp:this.data>
+		<xp:dominoDocument var="docTemp" formName="fTemp"></xp:dominoDocument>
+	</xp:this.data>
+	
+	<xc:ccLayout>
+		<xp:div>
+	
+			<div class="form-horizontal">
+			
+				<legend>Bootstrap form controls</legend>
+		
+				<!-- standard text field -->
+				<div class="control-group">
+					<xp:label value="Name" id="label2" for="inputName"
+						styleClass="control-label">
+					</xp:label>
+					<div class="controls">
+						<xp:inputText id="inputName"></xp:inputText>
+					</div>
+				</div>
+		
+				<!-- standard text field with placeholder -->
+				<div class="control-group">
+					<xp:label value="Email" id="label1" for="inputEmail"
+						styleClass="control-label">
+					</xp:label>
+					<div class="controls">
+						<xp:inputText id="inputEmail">
+							<xp:this.attrs>
+								<xp:attr name="placeholder" value="Email"></xp:attr>
+							</xp:this.attrs>
+						</xp:inputText>
+						<span class="help-inline">
+							Text field with help text here
+						</span>
+					</div>
+				</div>
+		
+				<!-- dropdown -->
+				<div class="control-group">
+					<xp:label value="Favorite color" id="label3"
+						for="inputCountry" styleClass="control-label">
+					</xp:label>
+					<div class="controls">
+						<xp:comboBox id="comboBox1">
+							<xp:selectItem itemLabel="Red" itemValue="red"></xp:selectItem>
+							<xp:selectItem itemLabel="Green"
+								itemValue="green">
+							</xp:selectItem>
+							<xp:selectItem itemLabel="Blue" itemValue="blue"></xp:selectItem>
+						</xp:comboBox>
+					</div>
+				</div>
+		
+				<!-- textarea -->
+				<div class="control-group">
+					<xp:label value="About me" id="label4" for="inputAboutMe"
+						styleClass="control-label">
+					</xp:label>
+					<div class="controls">
+						<xp:inputTextarea id="inputAboutMe"></xp:inputTextarea>
+					</div>
+				</div>
+		
+				<div class="form-actions">
+		
+					<xp:button value="Save" id="button1"
+						styleClass="btn btn-primary">
+						<i class="icon-ok icon-white" />
+					</xp:button>
+		
+					<xp:button styleClass="btn" value="Cancel" id="button2"></xp:button>
+				</div>
+		
+			</div>
+		
+			<xc:ccDemoViewSource
+				componentName="CustomControls/ccDemoForm.xsp">
+			</xc:ccDemoViewSource>
+		</xp:div>
+	</xc:ccLayout>
+
+</xp:view>

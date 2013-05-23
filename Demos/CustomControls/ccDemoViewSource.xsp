@@ -2,7 +2,7 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 	
-	<xp:panel id="viewSource">
+	<!--<xp:panel id="viewSource">
 	
 		<xp:link escape="true" text="View the source of this demo" id="link1" styleClass="btn btn-mini">
 			<xp:this.rendered><![CDATA[#{javascript:!getComponent("source").isRendered()}]]></xp:this.rendered>
@@ -21,7 +21,10 @@
 			</xp:eventHandler></xp:link>
 		
 		
-			<h3>XPage source</h3><!--
+			<h3>XPage source</h3>
+			
+			
+			--><!--
 			
 			var is = facesContext.getCurrentInstance().getExternalContext().getResourceAsStream();
 			
@@ -55,7 +58,11 @@
 			</xp:text>
 			</pre>
 	
-			--><pre>
+			--><!--
+			
+			
+			
+			<pre>
 			<xp:text escape="true" id="computedField1">
 				<xp:this.value><![CDATA[#{javascript:var result = null;
 	var is = null;
@@ -93,4 +100,4 @@
 		</xp:panel>
 	</xp:panel>
 
-</xp:view>
+--></xp:view>

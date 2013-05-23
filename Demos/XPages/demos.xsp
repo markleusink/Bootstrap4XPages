@@ -11,7 +11,6 @@
 			<xp:this.facets>
 
 				<xc:ccBootstrapControls xp:key="allControls" />
-				<xc:ccDemoForm xp:key="form" />
 				<xc:ccDemoButtons xp:key="buttons" />
 				<xc:ccDemoTabs xp:key="tabs" />
 				

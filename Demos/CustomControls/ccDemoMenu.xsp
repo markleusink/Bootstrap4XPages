@@ -17,8 +17,8 @@
 			</xp:link>
 		</li>
 		<li>
-			<xp:link escape="true" text="Form design"
-				id="link3" value="/demos.xsp#content=form">
+			<xp:link escape="true" text="Forms"
+				id="link3" value="/form.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>

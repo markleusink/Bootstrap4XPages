@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400241DBD'>
+<noteinfo noteid='1f2' unid='95F1BBD7A42AA062C1257B6E002AB3C3' sequence='3'>
+<created><datetime dst='true'>20130517T094625,31+02</datetime></created>
+<modified><datetime dst='true'>20130523T083430,21+02</datetime></modified>
+<revised><datetime dst='true'>20130517T101649,62+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20130523T083430,21+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083430,21+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$TITLE'><text>fShowcaseSite</text></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Info' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
+</rawitemdata></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$$ScriptName' summary='false' sign='true'><text>fShowcaseSite</text></item>
+<item name='url' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='title' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='description' placeholder='true'>
+<rawitemdata type='0'>
+</rawitemdata></item>
+<item name='$Fields'><textlist><text>description</text><text>title</text><text
+>url</text></textlist></item>
+<item name='$Body' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAAqBAoMEAQCF/w0A
+AQAACnVybDogAN0GAACK//7/UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgA
+eAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiv8oAIoAAAUAMAIAAAAAAAAC
+AQAACgAAAAAAAAAAAwAAAAAAdXJsAGIOAQCEAAAAAAAAAAAA3gYAAIr/hf8IAAEAAAqBAoMEAQCF
+/w8AAQAACnRpdGxlOiAA3QYAAIr//v9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAeAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACK/yoAigAABQAwAgAA
+AAAAAAIBAAAKAAAAAAAAAAAFAAAAAAB0aXRsZQBiDgEAhAAAAAAAAAAAAN4GAACK/4X/CAABAAAK
+gQKDBAEAhf8VAAEAAApkZXNjcmlwdGlvbjogAN0GAACK//7/UAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAHgAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+iv8wAIoAAAUAMAIAAAAAAAACAQAACgAAAAAAAAAACwAAAAAAZGVzY3JpcHRpb24AYg4BAIQAAAAA
+AAAAAADeBgAAiv+F/wgAAQAACg==
+</rawitemdata></item>
+<item name='$Flags'><text>w</text></item></note>
+

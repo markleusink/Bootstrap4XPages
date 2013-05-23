@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400241DBD'>
+<noteinfo noteid='1f6' unid='34E483BA5B124972C1257B6E002AB6D9' sequence='7'>
+<created><datetime dst='true'>20130517T094633,21+02</datetime></created>
+<modified><datetime dst='true'>20130523T083430,23+02</datetime></modified>
+<revised><datetime dst='true'>20130517T101645,36+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20130523T083430,23+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083430,23+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>vwShowcase</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+ZAAFADIALgAFAAUAAwALAAkABAB0aXRsZXVybGRlc2NyaXB0aW9uJENvbmZsaWN0JFJFRgQABAAA
+ACIABQAEAEZvcm0BAA0AZlNob3djYXNlU2l0ZQAKAgMABwAKAAQACUwxUw==
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+EgABAABEAGYAAAAFAHRpdGxl
+</rawitemdata></item>
+<item name='$ViewFormat' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQADAAMACAAAAFZDAQAFAAUAAAAAAFAAAQAACgAAAAAAAAAAAAICAAAAVkMAAAMAAwAAAAAAUAAB
+AAAKAAAAAAAAAAAAAgIAAABWQwAACwALAAAAAABQAAEAAAoAAAAAAAAAAAACAgAAAHRpdGxldGl0
+bGV1cmx1cmxkZXNjcmlwdGlvbmRlc2NyaXB0aW9uJgABAAAAAQEACQEAAAoBAQ4KAAABAK0rAQAB
+AAEAAAAAAAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAA
+V0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAA
+AAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABCAAAAAAABAP///wAFAP///wABAAAA
+AAAAAAAAAAAAAAEA////AAEA////AAAAAQAAAAAAAQAAAAAAAQAAAAAAAAAIAAAAAAABAA==
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$Flags'><text>Yw</text></item></note>
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	pageTitle="Bootstrap4XPages | Article">
+
+	<xp:this.data>
+		<xp:dominoDocument var="docArticle" formName="fArticle"
+			action="openDocument">
+		</xp:dominoDocument>
+	</xp:this.data>
+
+	<xc:ccLayout>
+	
+		<xp:panel rendered="#{javascript:!docArticle.isEditable();}">
+
+			<article>
+
+				<xp:text tagName="h3" escape="true" id="computedField1"
+					value="#{docArticle.title}">
+				</xp:text>
+
+				<p>
+					<xp:text disableTheme="true" escape="false">
+						<xp:this.value><![CDATA[#{javascript:var b = docArticle.getItemValueString("body");
+			var unid = docArticle.getDocument().getUniversalID();
+			
+			//replace image path
+			b.replace(/src="(?:[^'\/]*\/)*([^']+)"/g, "src='0/" + unid + "/\\$file/$1'");
+			}]]></xp:this.value>
+					</xp:text>
+				</p>
+			</article>
+
+		</xp:panel>
+		
+		<xp:panel rendered="#{javascript:docArticle.isEditable();}" styleClass="form-horizontal">
+		
+					
+			<div class="control-group">
+				<xp:label value="Title" id="label2" for="inputName" styleClass="control-label"></xp:label>
+				<div class="controls">
+					<xp:inputText id="inputName" value="#{docArticle.title}">
+					</xp:inputText>
+	    		</div>
+			</div>
+			
+				<div class="control-group">
+				<xp:label value="Contents" id="label1" for="inputTextarea1" styleClass="control-label"></xp:label>
+				<div class="controls">
+					<xp:inputTextarea id="inputTextarea1" value="#{docArticle.body}"></xp:inputTextarea>
+	    		</div>
+			</div>
+				
+			<div class="form-actions">
+		
+				<xp:button value="Save" id="button1" styleClass="btn-primary">
+					<i class="icon-ok icon-white" />
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="complete">
+						<xp:this.action><![CDATA[#{javascript:docArticle.save();}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+				
+			</div>
+		
+		</xp:panel>
+						
+	</xc:ccLayout>
+
+</xp:view>

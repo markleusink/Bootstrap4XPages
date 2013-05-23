@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config>
+  <faces-config-extension>
+    <namespace-uri>http://www.ibm.com/xsp/custom</namespace-uri>
+    <default-prefix>xc</default-prefix>
+  </faces-config-extension>
+  <composite-component>
+    <component-type>ccBS_DatePicker</component-type>
+    <composite-name>ccBS_DatePicker</composite-name>
+    <composite-file>/ccBS_DatePicker.xsp</composite-file>
+    <composite-extension>
+      <designer-extension>
+        <in-palette>true</in-palette>
+      </designer-extension>
+    </composite-extension>
+    <property>
+      <property-name>fieldDataSource</property-name>
+      <property-class>com.ibm.xsp.model.DataSource</property-class>
+      <property-extension>
+        <required>true</required>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>fieldName</property-name>
+      <property-class>string</property-class>
+    </property>
+    <property>
+      <property-name>dateFormat</property-name>
+      <property-class>string</property-class>
+      <description>date format, e.g. dd-MM-yyyy (use uppercase M for months!)</description>
+      <property-extension>
+        <required>true</required>
+      </property-extension>
+    </property>
+  </composite-component>
+</faces-config>

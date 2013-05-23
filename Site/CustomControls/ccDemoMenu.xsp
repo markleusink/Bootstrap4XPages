@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<ul class="nav nav-pills nav-stacked">
+	
+		<li>
+			<xp:link escape="true" text="All Bootstrap controls" id="link8"
+				value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=allControls">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+	
+		<li>
+			<xp:link escape="true" text="Buttons" id="link2"
+				value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=buttons">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		<li>
+			<xp:link escape="true" text="Form design"
+				id="link3" value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=form">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		<li>
+			<xp:link escape="true" text="Dialog"
+				id="link5" value="/.ibmxspres/domino/bs4xp/demos.nsf/dialog.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		<!--<li>
+			<xp:link escape="true" text="Tabs"
+				id="link6" value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=tabs">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		--><li>
+			<xp:link escape="true" text="Form controls: Date picker"
+				id="link1" value="/.ibmxspres/domino/bs4xp/demos.nsf/datePicker.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Form controls: Time picker"
+				id="link4" value="/.ibmxspres/domino/bs4xp/demos.nsf/timePicker.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<!--<li>
+			<xp:link escape="true" text="Select2 (supercharged combobox)"
+				id="link7" value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=tabs">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+	--></ul>
+
+</xp:view>

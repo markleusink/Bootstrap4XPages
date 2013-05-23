@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xp:this.data>
+		<xp:dominoView var="view2" viewName="vwArticles"></xp:dominoView>
+		<xp:dominoView var="vwShowcase" viewName="vwShowcase"></xp:dominoView>
+	</xp:this.data>
+
+	<!-- Main hero unit for a primary marketing message or call to action -->
+	<div class="hero-unit">
+		<h3>Welcome to Bootstrap4XPages</h3>
+		<p>
+			<xp:link escape="true" text="Bootstrap" id="link2"
+				value="http://twitter.github.io/bootstrap/" target="_blank">
+			</xp:link>
+			&#160;is probably the world's most popular design framework
+			at the moment. And I love it! This site contains all the
+			information you'll need to start using Bootstrap with&#160;
+			<xp:link escape="true" text="XPages" id="link1"
+				value="http://www.xpages.info" target="_blank">
+			</xp:link>
+			. We'll show you how to get started, lots of code snippets,
+			the use of external plugins, theming and lots more.
+		</p>
+
+		<p>
+			Oh and of course: this whole site was built using XPages.
+			You can download the source from&#160;
+			<a href="https://github.com/markleusink/Bootstrap4XPages"
+				target="_blank">
+				Github
+			</a>
+			. A single file download will be available shortly.
+
+		</p>
+	</div>
+
+	<!-- Example row of columns -->
+	<div class="row">
+		<div class="span6">
+			<h4>Articles</h4>
+			<p>
+
+				<xp:dataTable id="dataTable1" rows="30" value="#{view2}"
+					var="row" styleClass="table table-striped table-condensed">
+
+					<xp:column>
+
+						<xp:text escape="true" tagName="i"
+							styleClass="icon-share-alt" title="External link"
+							id="computedField2">
+							<xp:this.rendered><![CDATA[#{javascript:row.getColumnValue("isLink").equals("yes")}]]></xp:this.rendered>
+						</xp:text>
+
+					</xp:column>
+
+					<!--  link to article -->
+					<xp:column id="column2">
+
+						<xp:link escape="true" text="#{row.title}"
+							id="link4">
+
+							<xp:this.value><![CDATA[#{javascript:( row.getColumnValue("isLink").equals("yes") ?
+row.getColumnValue("url") : 
+"/" + database.getFilePath().replace("\\", "/") + "/" + row.getOpenPageURL("article.xsp", true) )}]]></xp:this.value>
+							<xp:this.target><![CDATA[#{javascript:(row.getColumnValue("isLink").equals("yes") ? "_blank" : "")}]]></xp:this.target>
+						</xp:link>
+
+					</xp:column>
+
+					<xp:column id="column1">
+						<xp:text escape="true" id="computedField1"
+							value="#{row.authorName}">
+						</xp:text>
+					</xp:column>
+
+				</xp:dataTable>
+
+			</p>
+
+		</div>
+
+		<div class="span3">
+
+			<h4>Demos</h4>
+			<p>
+
+				<xc:ccDemoMenu />
+
+			</p>
+
+		</div>
+
+		<div class="span3">
+
+			<h4>Built with Bootstrap (&#38; XPages)</h4>
+
+			<ul class="nav nav-pills nav-stacked">
+			<xp:repeat id="repeat1" rows="30" value="#{vwShowcase}" disableOutputTag="true" var="row">
+			
+				<li>
+					<xp:link escape="true" text="#{row.title}" value="#{row.url}" target="_blank" id="link3">
+						<i class="icon-chevron-right"></i>
+					</xp:link>
+				</li>
+			
+			</xp:repeat>
+			</ul>
+
+		</div>
+
+
+	</div>
+
+	<hr />
+
+	<footer>
+		<p>
+
+			<div style="margin-top:3px">
+				All contents on this site (Bootstrap4XPages), as well as
+				the design of this site, is licensed under a&#160;<a target="_blank" href="http://en.wikipedia.org/wiki/WTFPL">WTFPL</a>&#160;license. 
+				That basically allows you to do whatever you want with it, without any requirements at all. Some of the plugins used in the samples might have a separate license: read them before you use them!
+			</div>
+
+		</p>
+		
+				<p>
+			This site is created and maintained by Mark Leusink (<a href="http://linqed.eu/?page_id=93" target="_blank">contact</a>&#160;|&#160;
+			<a href="http://linqed.eu" target="_blank">blog</a>&#160;|&#160;
+			<a href="http://www.twitter.com/markleusink" target="_blank">twitter</a>).
+		</p>
+		
+	</footer>
+
+</xp:view>

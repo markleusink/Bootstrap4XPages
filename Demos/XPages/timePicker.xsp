@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Bootstrap4XPages | Time picker demo">
 
 	<xp:this.data>
 		<xp:dominoDocument var="docTemp" formName="fTemp"></xp:dominoDocument>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+<p>
+	Standard combo box:
+	<xp:comboBox id="comboBox1"></xp:comboBox>
+</p>
+
+<p>
+	The Select2 plugin instantly turns it into:
+	<xp:comboBox id="comboBox2"></xp:comboBox>
+</p>
+
+
+	
+	
+	
+</xp:view>

@@ -79,7 +79,7 @@
 			</div>
 		
 			<xc:ccDemoViewSource
-				componentName="CustomControls/ccDemoForm.xsp">
+				componentName="XPages/form.xsp">
 			</xc:ccDemoViewSource>
 		</xp:div>
 	</xc:ccLayout>

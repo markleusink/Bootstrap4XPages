@@ -2,7 +2,7 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 	
-	<!--<xp:panel id="viewSource">
+	<xp:panel id="viewSource">
 	
 		<xp:link escape="true" text="View the source of this demo" id="link1" styleClass="btn btn-mini">
 			<xp:this.rendered><![CDATA[#{javascript:!getComponent("source").isRendered()}]]></xp:this.rendered>
@@ -24,7 +24,7 @@
 			<h3>XPage source</h3>
 			
 			
-			--><!--
+			<!--
 			
 			var is = facesContext.getCurrentInstance().getExternalContext().getResourceAsStream();
 			
@@ -58,7 +58,7 @@
 			</xp:text>
 			</pre>
 	
-			--><!--
+			-->
 			
 			
 			
@@ -100,4 +100,4 @@
 		</xp:panel>
 	</xp:panel>
 
---></xp:view>
+</xp:view>

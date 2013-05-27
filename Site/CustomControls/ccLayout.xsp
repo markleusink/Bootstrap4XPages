@@ -59,8 +59,7 @@
 							
 							<li class="dropdown">
 								<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-									Links <b class="caret"></b></a>
-								
+									Bootstrap Links <b class="caret"></b></a>
 									
 								<ul class="dropdown-menu">
 									<li>
@@ -80,6 +79,14 @@
 											Bootsnipp
 										</a>
 									</li>
+									
+									<li>
+										<a href="http://bootstraphero.com/the-big-badass-list-of-twitter-bootstrap-resources/" data-toggle="tooltip" title="" data-original-title="HTML snippets for Bootstrap" target="_blank">
+											The Big Badass List of Bootstrap Resources
+										</a>
+									</li>
+									
+									
 								</ul>
 							</li>
 								

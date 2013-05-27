@@ -5,7 +5,7 @@
 	
 		<li>
 			<xp:link escape="true" text="All Bootstrap controls" id="link8"
-				value="/demos.xsp#content=allControls">
+				value="/allControls.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>

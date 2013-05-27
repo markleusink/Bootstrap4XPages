@@ -6,11 +6,10 @@
 
 	<xc:ccLayout>
 	
-		<xe:dynamicContent id="dynContent" defaultFacet="allControls"
+		<xe:dynamicContent id="dynContent" defaultFacet="buttons"
 			useHash="true">
 			<xp:this.facets>
 
-				<xc:ccBootstrapControls xp:key="allControls" />
 				<xc:ccDemoButtons xp:key="buttons" />
 				<xc:ccDemoTabs xp:key="tabs" />
 				

@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-
-<p>
-	Standard combo box:
-	<xp:comboBox id="comboBox1"></xp:comboBox>
-</p>
-
-<p>
-	The Select2 plugin instantly turns it into:
-	<xp:comboBox id="comboBox2"></xp:comboBox>
-</p>
-
-
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
 	
+	<xc:ccLayout>
+		<xp:div>
+		
+			<legend>Select2 plugin</legend>
+			
+			<p>
+				The <a href="http://ivaynberg.github.io/select2/" target="_blank">Select2</a> plugin is created by Igor Vaynberg and can
+				transform a boring combobox into something that's visual more appealing and also a lot more user friendly. If you enable it,
+				 it automatically converts a combobox. ....
+			</p>
+			
+			<p>
+			Standard combo box:
+			<xp:comboBox id="comboBox1"></xp:comboBox>
+			</p>
+		
+			<p>
+				The Select2 plugin instantly turns it into:
+				<xp:comboBox id="comboBox2"></xp:comboBox>
+			</p>
 	
-	
+		</xp:div>
+	</xc:ccLayout>
+
 </xp:view>

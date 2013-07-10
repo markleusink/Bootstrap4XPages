@@ -1,28 +1,489 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xc="http://www.ibm.com/xsp/custom">
-	
+	xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Select2">
+
+	<xp:this.resources>
+		<xp:script src="/select2-3.4.0/select2.min.js"
+			clientSide="true">
+		</xp:script>
+		<xp:styleSheet href="/select2-3.4.0/select2.css"></xp:styleSheet>
+	</xp:this.resources>
+
 	<xc:ccLayout>
 		<xp:div>
-		
-			<legend>Select2 plugin</legend>
-			
+
+			<legend>Select2</legend>
+
 			<p>
-				The <a href="http://ivaynberg.github.io/select2/" target="_blank">Select2</a> plugin is created by Igor Vaynberg and can
-				transform a boring combobox into something that's visual more appealing and also a lot more user friendly. If you enable it,
-				 it automatically converts a combobox. ....
+				<xp:link escape="true" target="_blank"
+					value="http://ivaynberg.github.io/select2/index.html"
+					text="Select2" id="link1">
+				</xp:link>
+				&#160;is one of my favorite Bootstrap plugins. It can
+				turn this (boring) combobox:
 			</p>
-			
+
 			<p>
-			Standard combo box:
-			<xp:comboBox id="comboBox1"></xp:comboBox>
+				<xp:comboBox id="comboBox4">
+					<xp:selectItem itemLabel="Alaska"></xp:selectItem>
+					<xp:selectItem itemLabel="Hawaii"></xp:selectItem>
+					<xp:selectItem itemLabel="California"></xp:selectItem>
+					<xp:selectItem itemLabel="Nevada"></xp:selectItem>
+					<xp:selectItem itemLabel="Oregon"></xp:selectItem>
+					<xp:selectItem itemLabel="Washington"></xp:selectItem>
+					<xp:selectItem itemLabel="Arizona"></xp:selectItem>
+					<xp:selectItem itemLabel="Colorado"></xp:selectItem>
+					<xp:selectItem itemLabel="Idaho"></xp:selectItem>
+					<xp:selectItem itemLabel="Montana"></xp:selectItem>
+					<xp:selectItem itemLabel="New Mexico"></xp:selectItem>
+					<xp:selectItem itemLabel="North Dakota"></xp:selectItem>
+					<xp:selectItem itemLabel="Utah"></xp:selectItem>
+					<xp:selectItem itemLabel="Wyoming"></xp:selectItem>
+				</xp:comboBox>
 			</p>
-		
+
+			<p>into this:</p>
+
 			<p>
-				The Select2 plugin instantly turns it into:
-				<xp:comboBox id="comboBox2"></xp:comboBox>
+				<xp:comboBox id="comboBox5">
+					<xp:selectItem itemLabel="Alaska"></xp:selectItem>
+					<xp:selectItem itemLabel="Hawaii"></xp:selectItem>
+					<xp:selectItem itemLabel="California"></xp:selectItem>
+					<xp:selectItem itemLabel="Nevada"></xp:selectItem>
+					<xp:selectItem itemLabel="Oregon"></xp:selectItem>
+					<xp:selectItem itemLabel="Washington"></xp:selectItem>
+					<xp:selectItem itemLabel="Arizona"></xp:selectItem>
+					<xp:selectItem itemLabel="Colorado"></xp:selectItem>
+					<xp:selectItem itemLabel="Idaho"></xp:selectItem>
+					<xp:selectItem itemLabel="Montana"></xp:selectItem>
+					<xp:selectItem itemLabel="New Mexico"></xp:selectItem>
+					<xp:selectItem itemLabel="North Dakota"></xp:selectItem>
+					<xp:selectItem itemLabel="Utah"></xp:selectItem>
+					<xp:selectItem itemLabel="Wyoming"></xp:selectItem>
+				</xp:comboBox>
+
+				<xp:scriptBlock id="scriptBlock1">
+					<xp:this.value><![CDATA[$(document).ready( 
+	function() {
+		x$( "#{id:comboBox5}" ).select2();
+	}
+);]]></xp:this.value>
+				</xp:scriptBlock>
+
 			</p>
-	
+
+			<p>
+				with only a couple of lines of JavaScript. This
+				instantly gives you a Bootstrap look and new features:
+				it allows you to search on any string contained in any
+				option.
+			</p>
+
+			<p>
+				Here's how you can do this:
+				<ul>
+					<li>
+						Add the Select2 library to your application. I
+						would recommend to add it to the WEB-INF so you
+						can keep the same folder structure.
+					</li>
+					<li>
+						Include select2.min.js and select2.css on your
+						pages
+					</li>
+					<li>
+						Convert a regular (XPage) combobox control into
+						a Select2 one by adding a few lines of
+						JavaScript:
+					</li>
+				</ul>
+			</p>
+			<p>
+				<pre>
+&lt;xp:scriptBlock id="scriptBlock2"&gt;
+  &lt;xp:this.value&gt;&lt;![CDATA[
+  $(document).ready(
+    function() { 
+      x$( "#{id:comboBox5}" ).select2(); 
+    } 
+  );
+  ]]&gt;&lt;/xp:this.value&gt; 
+&lt;/xp:scriptBlock&gt;
+				</pre>
+				(note that I'm using Mark Roden's excellent&#160;
+				<xp:link target="_blank"
+					value="http://openntf.org/XSnippets.nsf/snippet.xsp?id=x-jquery-selector-for-xpages"
+					escape="true" text="x$()" id="link2">
+				</xp:link>
+				&#160; snippet for this.
+			</p>
+
+			<h3>Multi-selects</h3>
+
+			<p>
+				But that's not all. Select2 can do a lot more. How about
+				a multiple select? Easy: we do this using the
+				&lt;xp:listBox&gt; control. Set the "multiple" attribute
+				to "true" and use the same JavaScript as above.
+			</p>
+
+			<p>
+				<xp:listBox id="listBox1" multiple="true"
+					style="width: 350px">
+					<xp:selectItem itemLabel="Alaska"></xp:selectItem>
+					<xp:selectItem itemLabel="Hawaii"></xp:selectItem>
+					<xp:selectItem itemLabel="California"></xp:selectItem>
+					<xp:selectItem itemLabel="Nevada"></xp:selectItem>
+					<xp:selectItem itemLabel="Oregon"></xp:selectItem>
+					<xp:selectItem itemLabel="Washington"></xp:selectItem>
+					<xp:selectItem itemLabel="Arizona"></xp:selectItem>
+					<xp:selectItem itemLabel="Colorado"></xp:selectItem>
+					<xp:selectItem itemLabel="Idaho"></xp:selectItem>
+					<xp:selectItem itemLabel="Montana"></xp:selectItem>
+					<xp:selectItem itemLabel="New Mexico"></xp:selectItem>
+					<xp:selectItem itemLabel="North Dakota"></xp:selectItem>
+					<xp:selectItem itemLabel="Utah"></xp:selectItem>
+					<xp:selectItem itemLabel="Wyoming"></xp:selectItem>
+				</xp:listBox>
+
+				<xp:scriptBlock id="scriptBlock2">
+					<xp:this.value><![CDATA[$(document).ready( 
+	function() {
+		x$( "#{id:listBox1}" ).select2({
+                placeholder: "Click here to select one or more states"
+            });
+	}
+);]]></xp:this.value>
+				</xp:scriptBlock>
+			</p>
+
+			<p>
+				Note that I also added a placeholder. That can be done
+				by specifing the "placeholder" string in a configuration
+				object:
+
+				<pre>
+&lt;xp:scriptBlock id="scriptBlock2"&gt;
+&lt;xp:this.value&gt;
+&lt;![CDATA[
+  $(document).ready(
+    function() { x$( "#{id:listBox1}" ).select2({
+      placeholder : "Click here to select one or more states" });
+    }
+  );
+]]&gt;
+&lt;/xp:this.value&gt;
+&lt;/xp:scriptBlock&gt;
+				</pre>
+			</p>
+
+			<h3>Work with remote data</h3>
+			<p>
+				But what if you have a really long list? Well Mike,
+				Select2 can work with remote (JSON) data too
+				(applause...)
+			</p>
+
+			<p>
+				Let me give you some context: for a project I'm working
+				on I needed a value picker for a (30,000+ users) address
+				book. In the project I'm already using Bootstrap as the
+				UI framework. I wanted a really easy to use solution and
+				decided to use Select2. It took just a couple of hours
+				to create the Address book value picker using Select2,
+				an XAgent-style XPage and basic Java class to perform
+				the (full text) query and return results (as a JSON
+				object).
+			</p>
+
+			<p>
+				The Select2 API specifications say that in order to use
+				remote data, you need to bind Select2 to a (hidden)
+				input field, not a combobox. Using initialization
+				parameters and functions, Select2 is then configured to
+				send queries to my Xagent-XPage ('namesDataStore.xsp').
+				That XPages takes the query and sends it to a Java class
+				for processing. In that Java class I perform a full text
+				search on a database to find users that match the query.
+				I then process the resulting collection and return a
+				JSON object array. As a data store I'm using Jack
+				Howlett's legendary&#160;
+				<xp:link
+					value="http://www.codestore.net/store.nsf/unid/BLOG-20070104?OpenDocument"
+					target="_blank" escape="true" id="link3" text="Fakenames">
+				</xp:link>
+				&#160; database.
+			</p>
+
+			<p>Here's the result:</p>
+
+			<xp:div id="valuePickerSample">
+				<xp:inputHidden id="namePicker" />
+
+				<xp:scriptBlock id="scriptBlock3">
+					<xp:this.value><![CDATA[
+				x$( "#{id:namePicker}" ).select2({
+				            placeholder: "Find someone",
+				            minimumInputLength: 2,
+				            quietMillis: 300,
+				            width: '300px',
+				            allowClear : true,
+				            ajax: {
+				                url: "namesDataStore.xsp",
+				                dataType: 'json',
+				                data: function (term, page) {
+				                    return {
+				                        q: term, // search term
+				                        page_limit: 10
+				                    };
+				                },
+				                results: function (data, page) { // parse the results into the format expected by Select2.
+				                    return data;
+				                }
+				            }
+				           
+				        });
+				]]></xp:this.value>
+				</xp:scriptBlock>
+
+				<p style="margin-top: 5px">
+					<xp:button value="do not click me"
+						styleClass="btn btn-danger" id="button1">
+						<i class="icon-fire icon-white" />
+						<xp:eventHandler event="onclick" submit="true"
+							refreshMode="partial" refreshId="valuePickerSample"
+							execMode="partial" execId="valuePickerSample">
+						</xp:eventHandler>
+					</xp:button>
+				</p>
+			</xp:div>
+
+			<p>Using this Select2 configuration:</p>
+
+			<pre>
+&lt;xp:inputHidden id="inputHidden1" /&gt;
+
+&lt;xp:scriptBlock id="scriptBlock4"&gt;
+&lt;xp:this.value&gt;
+&lt;![CDATA[
+  x$( "#{id:namePicker}").select2( {
+    placeholder: "Find someone",
+    minimumInputLength: 2, 
+    quietMillis: 300, 
+    width: '300px',
+    allowClear : true, 
+    ajax: { url: "namesDataStore.xsp",
+      dataType: 'json', data: function (term, page) { return {
+        q: term, // search term page_limit: 10 }; }, results:
+      function (data, page) { 
+        // parse the results into the format expected by Select2
+        return data; 
+      } 
+    }
+  });
+]]&gt;
+&lt;/xp:this.value&gt;
+ &lt;/xp:scriptBlock&gt;
+			</pre>
+
+			<p>
+				As I was working on the picker, I encountered an
+				interesting problem. I'm guessing you already clicked
+				the button :-) That button performed a partial refresh
+				of the Select2 above it. If you selected a value
+				previously you probably noticed that it was gone.
+			</p>
+			<p>
+				If you look a little close and inspect the hidden input
+				after the refresh (with the Chrome developer tools for
+				example) you'll see that it still holds the correct
+				value. The only problem is that the Select2 component
+				doesn't know what to display.
+			</p>
+			<p>
+				Luckily, Select2 can deal with that to: you can add a
+				function that will get called upon initialization/
+				reloading of the component and in that function perform
+				an AJAX request based on the selected value to retrieve
+				a result. Here's an example:
+			</p>
+			<p>
+				<pre>
+&lt;xp:inputHidden id="inputHidden1" /&gt;
+
+&lt;xp:scriptBlock id="scriptBlock4"&gt;
+&lt;xp:this.value&gt;
+&lt;![CDATA[
+  x$( "#{id:namePicker}" ).select2({ 
+      placeholder: "Find someone", 
+      minimumInputLength: 2, 
+      quietMillis: 300,
+      allowClear : true, 
+      width: '300px', 
+      ajax: { url:
+      "namesDataStore.xsp", 
+            dataType: 'json', 
+            data:  function (term, page) { 
+              return { q: term, 
+				page_limit: 10 }; }, 
+			results: function (data, page) { 
+				// parse the results into the format expected by Select2
+		return data; } },
+
+      initSelection: function(element, callback) {
+        //sets a default value (if a value was selected previously)
+
+        //get the existing value
+        var id = $(element).val();
+ 
+        //if a value was selected: perform an Ajax call to retrieve the text label
+        if (id !== "") { 
+          $.ajax("namesDataStore.xsp", { 
+          	data: { id: id }, 
+          	dataType: "json"
+          })
+		  .done(function(data) { callback(data); });
+        }
+      }
+    });
+]]&gt;
+&lt;/xp:this.value&gt;
+&lt;/xp:scriptBlock&gt;
+				</pre>
+			</p>
+
+			<p>
+				I've used the same XPage, but added some code there to
+				only receive a single result if the 'id' parameter is
+				specified. Here's the updated control:
+			</p>
+
+			<xp:div id="valuePickerSample2">
+
+				<xp:inputHidden id="inputHidden1" />
+
+				<xp:scriptBlock id="scriptBlock4">
+					<xp:this.value><![CDATA[
+				x$( "#{id:inputHidden1}" ).select2({
+				            placeholder: "Find someone",
+				            minimumInputLength: 2,
+				            quietMillis: 300,
+				            width: '300px',
+				            allowClear : true,
+				            ajax: {
+				                url: "namesDataStore.xsp",
+				                dataType: 'json',
+				                data: function (term, page) {
+				                    return {
+				                        q: term, // search term
+				                        page_limit: 10
+				                    };
+				                },
+				                results: function (data, page) { // parse the results into the format expected by Select2.
+				                    return data;
+				                }
+				            },
+             				initSelection: function(element, callback) {
+                				//sets a default value (if a value was selected previously)
+                				
+                				//get the existing value
+                				var id = $(element).val();
+                				
+                				//if a value was selected: perform an Ajax call to retrieve the text label		
+                				if (id !== "") {
+                    				$.ajax( 
+                    					"namesDataStore.xsp", {
+                        				data: {
+                            				id: id
+                        				},
+                        				dataType: "json"
+                    				}).done(function(data) { callback(data); });
+                				}
+            				}
+				           
+				        });
+				]]></xp:this.value>
+				</xp:scriptBlock>
+
+			</xp:div>
+
+			<p style="margin-top: 5px">
+				<xp:button value="refresh the name picker above"
+					id="button2" styleClass="btn btn-success">
+					<i class="icon-ok icon-white" />
+					<xp:eventHandler event="onclick" submit="true"
+						refreshMode="partial" refreshId="valuePickerSample2"
+						execMode="partial" execId="valuePickerSample2">
+					</xp:eventHandler>
+				</xp:button>
+			</p>
+
+			<h3>Listen to changes</h3>
+
+			<p>
+				One more thing: suppose you want to perform a partial
+				refresh if a value is selected. Select2 has events
+				you can listen to and bind to. We do this by using
+				jQuery's 'on' function to listen to the 'change' event
+				of Select2. In that event we could then for example call
+				a XSP.partialRefreshPost() to refresh a certain area of
+				the page:
+			</p>
+
+			<pre>
+&lt;xp:scriptBlock id="scriptBlock2"&gt;
+&lt;xp:this.value&gt;
+&lt;![CDATA[
+  $(document).ready(
+    function() { x$( "#{id:comboBox5}" ).select2()
+      .on("change", function(e) { XSP.partialRefreshPost(
+         "#{id:refreshThis}" );
+       }
+    }
+  );
+]]&gt;
+&lt;/xp:this.value&gt;
+&lt;/xp:scriptBlock&gt;
+			</pre>
+
+			<p>
+				<xp:comboBox id="comboBox1">
+					<xp:selectItem itemLabel="Alaska"></xp:selectItem>
+					<xp:selectItem itemLabel="Hawaii"></xp:selectItem>
+					<xp:selectItem itemLabel="California"></xp:selectItem>
+					<xp:selectItem itemLabel="Nevada"></xp:selectItem>
+					<xp:selectItem itemLabel="Oregon"></xp:selectItem>
+					<xp:selectItem itemLabel="Washington"></xp:selectItem>
+					<xp:selectItem itemLabel="Arizona"></xp:selectItem>
+					<xp:selectItem itemLabel="Colorado"></xp:selectItem>
+					<xp:selectItem itemLabel="Idaho"></xp:selectItem>
+					<xp:selectItem itemLabel="Montana"></xp:selectItem>
+					<xp:selectItem itemLabel="New Mexico"></xp:selectItem>
+					<xp:selectItem itemLabel="North Dakota"></xp:selectItem>
+					<xp:selectItem itemLabel="Utah"></xp:selectItem>
+					<xp:selectItem itemLabel="Wyoming"></xp:selectItem>
+				</xp:comboBox>
+
+				<xp:scriptBlock id="scriptBlock5">
+					<xp:this.value><![CDATA[$(document).ready( 
+	function() {
+		x$( "#{id:comboBox1}" ).select2()
+		  .on("change", function(e) {
+        	XSP.partialRefreshPost( "#{id:refreshThis}" ); 
+          } ) 
+	}
+);]]></xp:this.value>
+				</xp:scriptBlock>
+
+				<div>
+					The value you selected was:&#160;
+					<xp:text escape="true" id="refreshThis">
+						<xp:this.value><![CDATA[#{javascript:getComponent("comboBox1").getValue()}]]></xp:this.value>
+					</xp:text>
+				</div>
+
+			</p>
+
 		</xp:div>
 	</xc:ccLayout>
 

@@ -4,7 +4,8 @@
 	<!-- note: this date picker depends on a number of files:
 	- bootstrap
 	- bootstrap-datepicker (http://www.eyecon.ro/bootstrap-datepicker/)
-	- jquery -->
+	- jquery
+-->
 	
 	<xp:text escape="true" id="computedField1" value="#{compositeData.fieldDataSource[compositeData.fieldName]}"
 		rendered="#{javascript:!compositeData.fieldDataSource.isEditable()}">
@@ -35,16 +36,13 @@ if (itDate != null) {
 		</xp:this.attrs>
 
 		<xp:inputText styleClass="input-small" size="16" id="inputDatum"
-			value="#{compositeData.fieldDataSource[compositeData.fieldName]}"
-			required="true">
+			value="#{compositeData.fieldDataSource[compositeData.fieldName]}">
 			<xp:this.converter>
 				<xp:convertDateTime type="date"
 					pattern="${compositeData.dateFormat}">
 				</xp:convertDateTime>
 			</xp:this.converter>
-			<xp:this.validators>
-				<xp:validateRequired message="Datum is verplicht."></xp:validateRequired>
-			</xp:this.validators></xp:inputText>
+			</xp:inputText>
 		<span class="add-on">
 			<i class="icon-calendar"></i>
 		</span>

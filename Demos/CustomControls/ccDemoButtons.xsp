@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
 
+	<legend>Buttons</legend>
+
 	<xp:panel styleClass="well">
 
 	<p>This is a standard shadowed well with buttons</p>

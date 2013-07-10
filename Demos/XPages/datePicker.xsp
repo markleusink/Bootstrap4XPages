@@ -22,9 +22,12 @@
 
 		<xp:div>
 
-			<div class="form-horizontal">
+		<div class="form-horizontal">
 
 				<legend>Date picker demo</legend>
+				
+				<!-- custom control for the message demo (not needed for the date picker) -->
+				<xc:ccBS_Messages></xc:ccBS_Messages>
 
 				<div class="control-group">
 					<xp:label value="Birth date" id="label5"

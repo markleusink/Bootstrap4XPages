@@ -25,11 +25,19 @@
 		</li>
 		
 		<li>
+			<xp:link escape="true" text="Alerts"
+				id="link9" value="/alerts.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
 			<xp:link escape="true" text="Forms"
 				id="link3" value="/form.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
+		
 		<!--<li>
 			<xp:link escape="true" text="Tabs"
 				id="link6" value="/demos.xsp#content=tabs">
@@ -38,14 +46,14 @@
 		</li>
 		
 		--><li>
-			<xp:link escape="true" text="Form controls: Date picker"
+			<xp:link escape="true" text="Date picker"
 				id="link1" value="/datePicker.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
 		<li>
-			<xp:link escape="true" text="Form controls: Time picker"
+			<xp:link escape="true" text="Time picker"
 				id="link4" value="/timePicker.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
@@ -64,12 +72,11 @@
 		</li>
 		
 		
-		<!--<li>
-			<xp:link escape="true" text="Select2 (supercharged combobox)"
-				id="link7" value="/demos.xsp#content=tabs">
-					<i class="icon-chevron-right"></i>
+		<li>
+			<xp:link escape="true" text="Select2" id="link10">
+				<xp:this.value><![CDATA[#{javascript:"/select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
-	--></ul>
+	-</ul>
 
 </xp:view>

@@ -484,6 +484,10 @@
 
 			</p>
 
+			<p>(for the sources of the XAgent / Java class: have a look at the&#160;
+			<xp:link escape="true" text="Bootstrap4XPages GitHub" id="link4" value="https://github.com/markleusink/Bootstrap4XPages" target="_blank"></xp:link>
+			&#160;repository)</p>
+
 		</xp:div>
 	</xc:ccLayout>
 

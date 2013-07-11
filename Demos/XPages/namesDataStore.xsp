@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" rendered="false">
+
+	<xp:this.afterRenderResponse><![CDATA[#{javascript:
+	
+var externalContext = facesContext.getExternalContext();
+var writer = facesContext.getResponseWriter();
+var response = externalContext.getResponse();
+  
+response.setContentType("application/json"); 
+response.setHeader("Cache-Control", "no-cache");
+
+var id = context.getUrlParameter("id");			//specific username
+var query = context.getUrlParameter("q");		//query
+
+if (id != null && id.length>0) {
+
+	writer.write( namePickerBean.getUser( id ) );
+	
+} else {
+
+	writer.write( namePickerBean.findUsers( query ) );
+	
+}
+writer.endDocument();
+
+}]]>
+	</xp:this.afterRenderResponse>
+	
+</xp:view>

@@ -1,43 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
-<note default='true' class='view' xmlns='http://www.lotus.com/dxl' version='9.0'
- replicaid='C1257B7400241DBD'>
+<view name='vwArticles' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400241DBD'
+ hide='web' showinmenu='false' publicaccess='false' designerversion='8.5.3'
+ default='true' unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator'
+ headers='beveled' opencollapsed='false' showresponsehierarchy='true' showmargin='true'
+ shrinkrows='false' extendlastcolumn='false' showhierarchies='false' unreadcolor='black'
+ rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white' totalscolor='black'
+ headerbgcolor='white' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
+ allowcustomizations='false' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
+ uniquekeys='false'>
 <noteinfo noteid='14e' unid='8A00E48D89311951C1257B5900550EFC' sequence='13'>
 <created><datetime dst='true'>20130426T172903,96+02</datetime></created>
 <modified><datetime dst='true'>20130525T112357,02+02</datetime></modified>
 <revised><datetime dst='true'>20130525T112357,01+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130525T112357,02+02</datetime></lastaccessed>
+<lastaccessed><datetime dst='true'>20130714T084607,39+02</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T083429,39+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
-<item name='$FormulaClass' sign='true'><text>1</text></item>
-<item name='$TITLE' sign='true'><text>vwArticles</text></item>
-<item name='$Index' sign='true'><text/></item>
-<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
-pAACAAwAAgAkMWkAAwAFAEwASAAIAAYAAgAFAAoAAwANAAkABABpc0xpbmskMXRpdGxlYXV0aG9y
-TmFtZXVybHB1Ymxpc2hlZERhdGUkQ29uZmxpY3QkUkVGBAAEAAAANAAFAAQARm9ybQEACABmQXJ0
-aWNsZQoCBQAGAHN0YXR1cwEABQBkcmFmdAALAhwCAwAHABIADAAJTDFTNFM1UzZTN1M=
-</formula></item>
-<item name='$Collation' summary='true'>
-<rawitemdata type='2'>
-HAACAABEgWYAAAAGAIFmAAYAAgBpc0xpbmskMQ==
-</rawitemdata></item>
-<item name='$ViewFormat' summary='true' sign='true'>
-<rawitemdata type='5'>
-AQAGAAYACAAAAFZDBQAGAAYAAAAAAFAAAQAACgAAAAAAAAAAAAICAAAAVkMFAAIABwAOAAAAYgAB
-AAAKAAAAAAAAAAAAAgIAAABWQwAABQAFAAAAAAC8AAEAAAoAAAAAAAAAAAACAgAAAFZDAAAKAAoA
-AAAAAFAAAQAACgAAAAAAAAAAAAICAAAAVkMAAAMAAwAAAAAAcgABAAAKAAAAAAAAAAAAAgIAAABW
-QwAADQANAAAAAABQAAEAAAoAAAAAAAAAAAACAgAAAGlzTGlua2lzTGluayQxY3JlYXRlZA4AAgAM
-AAIAJDFpAAMAdGl0bGV0aXRsZWF1dGhvck5hbWVhdXRob3JOYW1ldXJsdXJscHVibGlzaGVkRGF0
-ZXB1Ymxpc2hlZERhdGUmAAEAAAABAQAJAQAACgEBDgoAAAEArSsBAAEAAQAAAAAAAAAAAFdDAQEA
-CQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABXQwEBAAkAAAAAAAAAAAAA
-AAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAQAJAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAA//8AAAAAAAAAAAAAAAAAAFdDAQEACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAA
-AAAAAAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MB
-AQAJAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAA//8AAAAAAAAAAAAAAAAAAEIAEAAAAAEA////AAUA
-////AAEAAAAAAAAAAAAAAAAAAQD///8AAQD///8AAAABAAAAAAABAAAAAAABAAAAAAAAAAgAAAAA
-AAEA
-</rawitemdata></item>
-<item name='$Comment' sign='true'><text/></item>
-<item name='$Flags'><text>Yw</text></item>
-<item name='$DesignerVersion'><text>8.5.3</text></item></note>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='selection'><formula
+>SELECT Form="fArticle" &amp; status != "draft"</formula></code>
+<column sort='descending' hidedetailrows='false' itemname='isLink' width='10'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='false' sortnocase='true'
+ showaslinks='false'><columnheader title='isLink'><font size='9pt' style='bold'/></columnheader></column>
+<column sort='descending' hidedetailrows='false' itemname='$1' width='12.2500'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='false' sortnocase='true'
+ showaslinks='false'><columnheader title='created'><font size='9pt' style='bold'/></columnheader><code
+ event='value'><formula>@Created</formula></code></column>
+<column hidedetailrows='false' itemname='title' width='23.5000' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><columnheader
+ title='title'><font size='9pt' style='bold'/></columnheader></column>
+<column hidedetailrows='false' itemname='authorName' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='authorName'><font size='9pt' style='bold'/></columnheader></column>
+<column hidedetailrows='false' itemname='url' width='14.2500' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='url'><font size='9pt' style='bold'/></columnheader></column>
+<column hidedetailrows='false' itemname='publishedDate' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><columnheader
+ title='publishedDate'><font size='9pt' style='bold'/></columnheader></column></view>
 

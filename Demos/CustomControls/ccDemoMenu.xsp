@@ -18,6 +18,13 @@
 		</li>
 		
 		<li>
+			<xp:link escape="true" text="Do more with buttons" id="link11"
+				value="/doMoreWithButtons.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
 			<xp:link escape="true" text="Dialog"
 				id="link5" value="/dialog.xsp">
 					<i class="icon-chevron-right"></i>

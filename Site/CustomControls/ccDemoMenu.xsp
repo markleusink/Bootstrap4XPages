@@ -17,6 +17,14 @@
 			</xp:link>
 		</li>
 		
+			
+		<li>
+			<xp:link escape="true" text="Do more with buttons" id="link11"
+				value="/.ibmxspres/domino/bs4xp/demos.nsf/doMoreWithButtons.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
 		<li>
 			<xp:link escape="true" text="Dialog"
 				id="link5" value="/.ibmxspres/domino/bs4xp/demos.nsf/dialog.xsp">
@@ -25,19 +33,20 @@
 		</li>
 		
 		<li>
+			<xp:link escape="true" text="Alerts"
+				id="link10" value="/.ibmxspres/domino/bs4xp/demos.nsf/alerts.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		
+		<li>
 			<xp:link escape="true" text="Forms"
 				id="link3" value="/.ibmxspres/domino/bs4xp/demos.nsf/form.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
-		<!--<li>
-			<xp:link escape="true" text="Tabs"
-				id="link6" value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=tabs">
-					<i class="icon-chevron-right"></i>
-			</xp:link>
-		</li>
-		
-		--><li>
+		<li>
 			<xp:link escape="true" text="Form controls: Date picker"
 				id="link1" value="/.ibmxspres/domino/bs4xp/demos.nsf/datePicker.xsp">
 					<i class="icon-chevron-right"></i>
@@ -64,12 +73,14 @@
 			</xp:link>
 		</li>
 		
-		<!--<li>
-			<xp:link escape="true" text="Select2 (supercharged combobox)"
-				id="link7" value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=tabs">
+		<li>
+			<xp:link escape="true" text="Select2"
+				id="link9" value="/.ibmxspres/domino/bs4xp/demos.nsf/select2.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
-	--></ul>
+		
+	
+	</ul>
 
 </xp:view>

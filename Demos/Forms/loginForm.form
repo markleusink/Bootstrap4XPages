@@ -1,159 +1,147 @@
 <?xml version='1.0' encoding='utf-8'?>
-<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400240773'>
-<noteinfo noteid='246' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='3'>
+<form name='loginForm' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257B7400240773' nocompose='true' noquery='true' noreplace='true'
+ publicaccess='true' designerversion='8.5.3'>
+<noteinfo noteid='252' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='5'>
 <created><datetime dst='true'>20130523T125435,99+02</datetime></created>
-<modified><datetime dst='true'>20130523T125441,95+02</datetime></modified>
-<revised><datetime dst='true'>20130523T125441,94+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130523T125441,95+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T125436,96+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst='true'>20130824T074616,46+02</datetime></modified>
+<revised><datetime dst='true'>20130824T074616,44+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20130824T074616,44+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T125721,03+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='windowtitle'><formula
+>"Login"</formula></code><code event='htmlbody'><formula>"onload=\"setFormFocus();\""</formula></code><code
+ event='htmlhead'><formula>"&lt;meta http-equiv='expires' content='0'&gt;" +
+"&lt;link href=\"/" + @WebDbName + "/bootstrap/css/bootstrap.min.css\" media=\"all\" type=\"text/css\" rel=\"stylesheet\"&gt;"</formula></code><code
+ event='jsheader' for='web'><javascript>//SPR# KMOA6YUDZ3: ignore any focus errors in case the focus can't be set (form invisible, etc)
+window.onerror = new Function("return true;");
+
+function setFormFocus() {
+	document.forms[0].Username.focus(); 
+	document.forms[0].Username.select();
+}
+</javascript></code>
+<body><richtext>
+<pardef id='1' leftmargin='1in' hide='web' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
+<par def='1'><run html='true'><font color='red'/></run><run html='true'><font
+ color='red'/><field type='text' kind='computedwhencomposed' name='$$HTMLFrontMatter'><code
+ event='defaultvalue'><formula>"&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"&gt;"</formula></code></field></run><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='11' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata><run html='true'><font
+ color='red'/></run></par>
+<pardef id='2'/>
+<par def='2'/>
+<par def='2'/>
+<pardef id='3' leftmargin='1in' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
+<par def='3'><run html='true'>&lt;div class="span5 offset2 well" style="margin-top:50px;"&gt;</run></par>
+<par def='3'/>
+<par def='3'><run html='true'>&lt;fieldset&gt;</run></par>
+<par def='3'><run html='true'>  </run><run html='true'>  &lt;div id="legend"&gt;</run></par>
+<par def='3'><run html='true'>   </run><run html='true'>   &lt;legend class=""&gt;Login&lt;/legend&gt;</run></par>
+<par def='3'><run html='true'>    &lt;/div&gt;</run></par>
+<par def='3'/>
+<par def='3'><run html='true'><computedtext><code event='value'><formula>sDefault 		:= "";
+sNotEnough	:= "%1, you are not authorized to access %2." + @NewLine + @NewLine + "Please sign in with a name which has sufficient access rights.";
+sInvalid		:= "You provided an invalid username or password.";
+sExpired		:= "Your login has expired. Please sign in again.";
+sOutOfSync	:= "%1, your login has been invalidated due to a timing issue with the login servers." + @NewLine + @NewLine + "(The servers may need to have their clocks synchronized to resolve this.)" + @NewLine + @NewLine + "Please sign in again.";
+sLockedOrInvalid	:= "You are locked out, or you have provided an invalid username or password.";
+
+"---DNT---";
+
+User	:= @ProperCase(@Name([CN]; @UserName));
+URL	:= @Right(redirectTo; "/");
+URL	:= @If(@Contains(URL; "?"); @Left(URL; "?"); URL);
+
+List	:= User:URL;
+@For(n:=1; n&lt;=@Elements(List); n:=n+1;
+ sNotEnough := @ReplaceSubstring(sNotEnough; "%" + @Text(n); List[n]);
+ sOutOfSync := @ReplaceSubstring(sOutOfSync; "%" + @Text(n); List[n])
+);
+
+t := @If(	reasonType = "0"; "";
+	reasonType = "1"; sNotEnough;
+	reasonType = "2"; sInvalid;
+	reasonType = "3"; sExpired;
+	reasonType = "4"; sOutOfSync;
+	reasonType = "5"; sLockedOrInvalid;
+	""
+);
+
+@If(t != ""; "&lt;div class=\"alert alert-error\"&gt;" + t + "&lt;/div&gt;"; "")</formula></code></computedtext></run></par>
+<par def='3'/>
+<par def='3'><run html='true'>    &lt;div class=</run><run html='true'>"control-group"&gt;</run></par>
+<par def='3'><run html='true'>      &lt;!-- Username --&gt;</run></par>
+<par def='3'><run html='true'>      &lt;label class="control-label"  for="user-id"&gt;Username&lt;/label&gt;</run></par>
+<par def='3'><run html='true'>      &lt;div class="controls"&gt;</run></par>
+<par def='2'><run html='true'> </run><run html='true'><font name='Courier New'
+ pitch='fixed' truetype='true' familyid='30'/><field defaultfocus='true' usenotesstyle='false'
+ height='0.2500in' width='1in' multiline='true' borderstyle='single' type='text'
+ kind='editable' name='Username' htmlid='user-id'><code event='htmlattributes'><formula
+>"type=\"text\" maxlength=50 autocomplete=off placeholder=\"Username\" class=\"input-xlarge\""</formula></code></field></run><run
+ html='true'> </run></par>
+<par def='3'><run html='true'>&lt;/div&gt;</run></par>
+<par def='3'><run html='true'> &lt;/div&gt;</run></par>
+<par def='3'><run html='true'> </run></par>
+<par def='3'><run html='true'>    &lt;div class="control-group"&gt;</run></par>
+<par def='3'><run html='true'>      &lt;label class="control-label" for="pw-id"&gt;Password&lt;/label&gt;</run></par>
+<par def='3'><run html='true'>      &lt;div class="controls"&gt;</run></par>
+<par def='2'><run html='true'> </run><run html='true'><font name='Courier New'
+ pitch='fixed' truetype='true' familyid='30'/><field type='password' usenotesstyle='false'
+ height='0.2500in' width='1in' multiline='true' borderstyle='single' kind='editable'
+ seal='true' name='Password' htmlid='pw-id'><code event='htmlattributes'><formula
+>"maxlength=255 autocomplete=off class=\"input-xlarge\" placeholder=\"Password\""</formula></code></field></run></par>
+<par def='3'><run html='true'>      &lt;/div&gt;</run></par>
+<par def='3'><run html='true'>    &lt;/div&gt;</run></par>
+<par def='3'><run html='true'> </run></par>
+<par def='3'><run html='true'> </run></par>
+<par def='3'><run html='true'>    &lt;div class="control-group"&gt;</run></par>
+<par def='3'><run html='true'>      &lt;!-- Button --&gt;</run></par>
+<par def='3'><run html='true'>      &lt;div class="controls"&gt;</run></par>
+<par def='2'><run html='true'><font size='9pt' name='Consolas' pitch='fixed'
+ truetype='true' familyid='30' color='#333333'/>&lt;button class="btn btn-primary" type="submit"&gt;Sign in&lt;/button&gt;</run></par>
+<par def='3'><run html='true'>      &lt;/div&gt;</run></par>
+<par def='3'><run html='true'>    &lt;/div&gt;</run></par>
+<par def='3'><run html='true'>  &lt;/fieldset&gt;</run></par>
+<par def='3'><run html='true'>&lt;/div&gt;</run></par>
+<par def='2'><run html='true'><font size='9pt'/>&lt;!--</run><run><font size='9pt'/> </run><button
+ width='2in' widthtype='maximum' maxlines='1' wraptext='true' bgcolor='system'
+ htmlclass='btn btn-success'>Login</button> <run html='true'>--&gt;</run></par>
+<pardef id='4' align='center' leftmargin='1in'/>
+<par def='4'><run><font size='9pt'/><field type='text' kind='editable' name='RedirectTo'
+ extrahtmlattrs='type=hidden'><code event='defaultvalue'><formula>"/"</formula></code></field></run><compositedata
+ type='98' prevtype='65402' nexttype='222' afterparcount='8' containertype='65418'
+ aftercontainercount='2' afterbegincount='4'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='4'/>
+<par def='4'/>
+<par def='4'/>
+<pardef id='5' align='center' leftmargin='1in' hide='notes web'/>
+<par def='5'/>
+<pardef id='6' leftmargin='1in' hide='notes web'/>
+<par def='6'><run><font size='9pt' color='red'/>Hidden: </run><run><font size='9pt'
+ color='red'/><field type='text' kind='editable' name='$PublicAccess'><code
+ event='defaultvalue'><formula>"1"</formula></code></field></run><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='10' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata><run><font size='9pt'
+ color='red'/> </run><run><font size='9pt' color='red'/><field type='text'
+ kind='editable' name='ReasonType'><code event='defaultvalue'><formula>"0"</formula></code></field></run><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='19' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata><run><font size='9pt'
+ color='red'/><field type='text' kind='computedfordisplay' name='$$HTMLTagAttributes'><code
+ event='defaultvalue'><formula>"lang=\"en\""</formula></code></field></run><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='25' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata><run><font size='9pt'/></run></par>
+<par def='5'><run><font size='9pt'/></run></par></richtext></body>
 <item name='OriginalModTime' sign='true'><datetime dst='true'>20050504T140639,65-04</datetime></item>
-<item name='$HTMLCode' sign='true'>
-<rawitemdata type='1'>
-+f8gAAAAAAAPAAQA+QAAAAAAAAAAAAAAAAAAAAAAAADc/wwB+f/6ACBOAAAAAAAAAAAvL1NQUiMg
-S01PQTZZVURaMzogaWdub3JlIGFueSBmb2N1cyBlcnJvcnMgaW4gY2FzZSB0aGUgZm9jdXMgY2Fu
-J3QgYmUgc2V0IChmb3JtIGludmlzaWJsZSwgZXRjKQ13aW5kb3cub25lcnJvciA9IG5ldyBGdW5j
-dGlvbigicmV0dXJuIHRydWU7Iik7DQ1mdW5jdGlvbiBzZXRGb3JtRm9jdXMoKSB7DQlkb2N1bWVu
-dC5mb3Jtc1swXS5Vc2VybmFtZS5mb2N1cygpOyANCWRvY3VtZW50LmZvcm1zWzBdLlVzZXJuYW1l
-LnNlbGVjdCgpOw19DQAAX/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata></item>
-<item name='$Info' sign='true'>
-<rawitemdata type='1'>
-hhgBAIAAAAAAgAAAAQABAP///wAAAAAA
-</rawitemdata></item>
-<item name='$WindowTitle' sign='true'><formula>"Login"</formula></item>
-<item name='$HTMLHeadTag' sign='true'><formula>"&lt;meta http-equiv='expires' content='0'&gt;" +
-"&lt;link href=\"/" + @WebDbName + "/bootstrap.min.css\" media=\"all\" type=\"text/css\" rel=\"stylesheet\"&gt;"</formula></item>
-<item name='$HTMLBodyTag' sign='true'><formula>"onload=\"setFormFocus();\""</formula></item>
-<item name='$Flags'><text>CDP</text></item>
-<item name='$Fonts'>
-<rawitemdata type='1'>
-i/9KAAIABTVDb3VyaWVyIE5ldwAAAAAAAAAAAAAAAAAAAAAAAAAAAAY1Q29uc29sYXMAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAA=
-</rawitemdata></item>
-<item name='$$ScriptName' summary='false' sign='true'><text>$$LoginUserForm</text></item>
-<item name='Username' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='Password' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='RedirectTo' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='reasonType' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='$$HTMLFrontMatter' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='$Fields'><textlist><text>$$HTMLFrontMatter</text><text>ReasonType</text><text
->$PublicAccess</text><text>RedirectTo</text><text>Password</text><text>Username</text></textlist></item>
-<item name='$Body' sign='true'>
-<rawitemdata type='1'>
-gQKC/1oAAQAAAAAAAAAAAKAFAACgBQgA0AKgBXAIQAsQDuAQsBOAFgAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAABAAAAAJWEoAUKAKAFCgAAAGQAAQAAAAQAAACDBAEAzP8IAAAAAADdBgAAhf+F/wgA
-AQACCtIIAQD/AAAA3gYAAIX/3QYAAIr//v9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAeAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACK/5wAgAAABQAw
-AgAAAAAAAAIBAAIKZgAAAAAAAAARAAAAAABmAAAAZAABAFoAPCFET0NUWVBFIEhUTUwgUFVCTElD
-ICItLy9XM0MvL0RURCBIVE1MIDQuMDEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvVFIvaHRtbDQv
-c3RyaWN0LmR0ZCI+AwAkJEhUTUxGcm9udE1hdHRlcgBiDgEAhAAAAAAAAAAAAN4GAACK/90GAACF
-/4X/CAABAAIK0ggBAP8AAADeBgAAhf+BAoL/WgACAAAAAAAAAAAAoAUAAKAFAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAlIcAAAAAAAAAAAAAAAABAAAABAAA
-AIMEAgCF/wgAAQAACoECgwQCAIX/CAABAAAKgQKC/1oAAwAAAAAAAAAAAKAFAACgBQgA0AKgBXAI
-QAsQDuAQsBOAFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAJSEoAUKAKAFCgAAAGQAAQAA
-AAQAAACDBAMAhf9BAAEAAAo8ZGl2IGNsYXNzPSJzcGFuNSBvZmZzZXQyIHdlbGwiIHN0eWxlPSJt
-YXJnaW4tdG9wOjUwcHg7Ij4AgQKDBAMAhf8IAAEAAAqBAoMEAwCF/xIAAQAACjxmaWVsZHNldD6B
-AoMEAwCF/woAAQAACiAghf8bAAEAAAogIDxkaXYgaWQ9ImxlZ2VuZCI+AIECgwQDAIX/CwABAAAK
-ICAgAIX/KgABAAAKICAgPGxlZ2VuZCBjbGFzcz0iIj5Mb2dpbjwvbGVnZW5kPoECgwQDAIX/EgAB
-AAAKICAgIDwvZGl2PoECgwQDAIX/CAABAAAKgQKDBAMAhf8IAAEAAArdBgAArf+p//wGAQAYAAQA
-8AbwBgoABAABABQACABzRGVmYXVsdAEAAAADAAcADgAHAAkxU1RUMlMAAQCKAAoAc05vdEVub3Vn
-aAEAKAAlMSwgeW91IGFyZSBub3QgYXV0aG9yaXplZCB0byBhY2Nlc3MgJTIuigAiAooAIgIBAD4A
-UGxlYXNlIHNpZ24gaW4gd2l0aCBhIG5hbWUgd2hpY2ggaGFzIHN1ZmZpY2llbnQgYWNjZXNzIHJp
-Z2h0cy4iAgMABwAaABMACTBSMVQyUzNTNFM1UzZTN1M4UwABAEIACABzSW52YWxpZAEALQBZb3Ug
-cHJvdmlkZWQgYW4gaW52YWxpZCB1c2VybmFtZSBvciBwYXNzd29yZC4AAwAHAA4ACAAJMFIxVFQy
-UwEAQgAIAHNFeHBpcmVkAQAtAFlvdXIgbG9naW4gaGFzIGV4cGlyZWQuIFBsZWFzZSBzaWduIGlu
-IGFnYWluLgADAAcADgAIAAkwUjFUVDJTAQDkAAoAc091dE9mU3luYwEAUQAlMSwgeW91ciBsb2dp
-biBoYXMgYmVlbiBpbnZhbGlkYXRlZCBkdWUgdG8gYSB0aW1pbmcgaXNzdWUgd2l0aCB0aGUgbG9n
-aW4gc2VydmVycy4AigAiAooAIgIBAEkAKFRoZSBzZXJ2ZXJzIG1heSBuZWVkIHRvIGhhdmUgdGhl
-aXIgY2xvY2tzIHN5bmNocm9uaXplZCB0byByZXNvbHZlIHRoaXMuKQAiAooAIgKKACICAQAVAFBs
-ZWFzZSBzaWduIGluIGFnYWluLgAiAgMABwAqACQACTBSMVQyUzNTNFM1UzZTN1M4UzlTMTBTMTFT
-MTJTMTNTMTRTAQBmABAAc0xvY2tlZE9ySW52YWxpZAEASQBZb3UgYXJlIGxvY2tlZCBvdXQsIG9y
-IHlvdSBoYXZlIHByb3ZpZGVkIGFuIGludmFsaWQgdXNlcm5hbWUgb3IgcGFzc3dvcmQuAAMABwAO
-AAcACTBSMVQyUwAIABQAAQAJAC0tLUROVC0tLQADAAcACgAEAAkwUlIBABwABABVc2VyAgAGAAAA
-AAAAAPQAtAJjAQMABwAQAAoACTBSUjFUMlM4UwEAIgADAFVSTAAFAAoAcmVkaXJlY3RUbwEAAQAv
-AGACAwAHABAACQAJMFIxVDJTNlMAAQBEAAMAVVJMAAUAAwBVUkwAAQABAD8ARwKvACYAFgAFAAMA
-VVJMAAEAAQA/AF8CrgAQAAUAAwBVUkwArgAEALUDAwAHABgAEgAJMFIxVDJTOFMxMVMxNVMxOFMB
-AB4ABABMaXN0BQAEAFVzZXIFAAMAVVJMAB8CAwAHAA4ACAAJMFJSMVQyUwgAyAAFAAEAbgAAAAAA
-AAAAAPA/CQIFAAEAbgAFAAQATGlzdGoBDAIFAAEAbgAFAAEAbgAAAAAAAAAAAPA/IgIJAgUACgBz
-Tm90RW5vdWdoBQAKAHNOb3RFbm91Z2gBAAEAJQAFAAEAbgBWASICBQAEAExpc3QFAAEAbgAgAoQD
-CQIFAAoAc091dE9mU3luYwUACgBzT3V0T2ZTeW5jAQABACUABQABAG4AVgEiAgUABABMaXN0BQAB
-AG4AIAKEAwkC+wVIAQMABwA+ADcACTBSNlMxM1MxOVJTMjBTMjFTMjVTMjZTMjdTMzJTMzhSUzM5
-UzQwUzQ0UzQ1UzQ2UzUxUzU2UgABACABAQB0AAUACgByZWFzb25UeXBlAQABADAACgKvAP4ACgAB
-AAAArgD0AAUACgByZWFzb25UeXBlAQABADEACgKvANoAFAAFAAoAc05vdEVub3VnaK4AxgAFAAoA
-cmVhc29uVHlwZQEAAQAyAAoCrwCsABIABQAIAHNJbnZhbGlkrgCaAAUACgByZWFzb25UeXBlAQAB
-ADMACgKvAIAAEgAFAAgAc0V4cGlyZWSuAG4ABQAKAHJlYXNvblR5cGUBAAEANAAKAq8AVAAUAAUA
-CgBzT3V0T2ZTeW5jrgBAAAUACgByZWFzb25UeXBlAQABADUACgKvACYAGgAFABAAc0xvY2tlZE9y
-SW52YWxpZK4ADAABAAAArgAEALUNAwAHAF4AWAAJMFJSMVMyUzRUNVM2UzhTMTBSVDExUzEyUzE0
-UzE2UlQxN1MxOFMyMFMyMlJUMjNTMjRTMjZTMjhSVDI5UzMwUzMyUzM0UlQzNVMzNlMzOFM0MFJU
-NDFSAABeAAUAAQB0AAEAAAALAq8ASgA+AAEAHwA8ZGl2IGNsYXNzPSJhbGVydCBhbGVydC1lcnJv
-ciI+AAUAAQB0ACICAQAGADwvZGl2PiICrgAMAAEAAACuAAQAtQMDAAcAHAAWAAkwUlIzUzRTNlM3
-UzhTOVMxMFMxMlOF/wgAAQAACqoC3gYAAK4Ahf8IAAEAAAqBAoMEAwCF/wgAAQAACoECgwQDAIX/
-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
-/4X/CAABAAAJgQKDBAUAhf8IAAEAAAk=
-</rawitemdata></item>
-<item name='$PublicAccess' sign='true'><text>1</text></item>
-<item name='$TITLE' sign='true'><text>loginForm</text></item>
-<item name='$DesignerVersion' sign='true'><text>8.5.3</text></item></note>
+<item name='$$ScriptName' summary='false' sign='true'><text>$$LoginUserForm</text></item></form>
 

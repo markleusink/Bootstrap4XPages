@@ -15,9 +15,11 @@
 	<xc:ccLayout>
 		<xp:div>
 
-			<div class="form-horizontal">
+			<xp:div id="form" styleClass="form-horizontal">
 
 				<legend>Time picker demo</legend>
+				
+				<xc:ccBS_Messages></xc:ccBS_Messages>
 
 				<!-- time picker -->
 				<div class="control-group">
@@ -38,12 +40,14 @@
 
 					<xp:button value="Save" id="button1" styleClass="btn btn-primary">
 						<i class="icon-ok icon-white" />
-					</xp:button>
+						<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="form">
+							<xp:this.action><![CDATA[#{javascript:context.setDocumentMode("docTemp", "readOnly")}]]></xp:this.action>
+						</xp:eventHandler></xp:button>
 
 					<xp:button styleClass="btn" value="Cancel" id="button2"></xp:button>
 
 				</div>
-			</div>
+			</xp:div>
 			
 			<xc:ccDemoViewSource componentName="XPages/timePicker.xsp">	</xc:ccDemoViewSource>
 

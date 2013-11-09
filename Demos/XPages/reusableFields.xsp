@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Reusable fields with validation">
+
+	<xp:this.data>
+		<xp:dominoDocument var="document1"></xp:dominoDocument>
+	</xp:this.data>
+
+	<xc:ccLayout>
+		<xp:div>
+
+			<legend>Reusable fields and form validation</legend>
+
+			<p>
+				Creating a field with a label with Bootstrap requires quite some HTML. Here's a basic structure for a form field in a horizontal layout as described&#160;
+				<xp:link escape="true" text="here" id="link1" target="_blank" value="http://getbootstrap.com/2.3.2/base-css.html#forms"></xp:link>
+				:
+
+			</p>
+			<pre>&lt;form class="form-horizontal"&gt;
+  &lt;div class="control-group"&gt;
+    &lt;label class="control-label" for="inputEmail"&gt;Email&lt;/label&gt;
+    &lt;div class="controls"&gt;
+      &lt;input type="text" id="inputEmail" placeholder="Email" /&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</pre>
+
+			<p>If we want to create this HTML from an XPage, we need to make a couple of changes. 
+			With XPages we don't need to create a form tag: that's done automatically (and probably on a whole different level in the DOM).
+				Luckily the form-horizontal class can also be applied to other elements. So the HTML above translated for use on an XPage
+				might look like this:
+</p>
+
+			<pre>&lt;div class="form-horizontal"&gt;
+  &lt;div class="control-group"&gt;
+    &lt;xp:label styleClass="control-label" for="inputEmail" value="Email" /&gt;
+    &lt;div class="controls"&gt;
+      &lt;xp:inputText type="text" id="inputEmail"&gt;
+        &lt;xp:this.attrs&gt;
+          &lt;xp:attr name="placeholder" value="Email"&gt;&lt;/xp:attr&gt;
+        &lt;/xp:this.attrs&gt;
+      &lt;/xp:inputText&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</pre>
+			<p>
+				(note that I used the "attrs" atrribute to add the placeholder attribute to the input control)
+
+			</p>
+
+			<p>
+				So for every field on your form you'll need all this HTML. Of course you can just copy-paste that a number of times, but
+				there's an easier and better way: use a generic 'Bootstrap field' custom control.
+			</p>
+			
+			<h4>A better way...</h4>
+			
+			<p>Start by copying the code above (starting at the 'control-group' div) into a custom control and adding
+				custom properties for everything that is dynamic. I created the following properties:
+
+				<ul>
+					<li>dataSource (Object, required: click the folder icon next to type and select Data Sources > Object data source)</li>
+					<li>fieldName (String, required)</li>
+					<li>fieldLabel (String, required)</li>
+					<li>placeholder (String, optional)</li>
+					<li>helpText (String, optional)</li>
+				</ul>
+
+				Next, we need to make the contents of the control dynamic by referencing the custom control properties. Using that same method we also create a dynamic
+				field binding of the input control (&lt;xp:inputText&gt;).
+				
+			</p>
+			
+			<p>
+				At the end your custom control source looks like this:
+			</p>
+
+			<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xp:view xmlns:xp="http://www.ibm.com/xsp/core"&gt;
+
+  &lt;xp:div styleClass="control-group"&gt;
+
+    &lt;xp:label styleClass="control-label" for="inputText1" value="${compositeData.fieldLabel}" /&gt;
+    &lt;div class="controls"&gt;
+      &lt;xp:inputText type="text" id="inputText1" loaded="${!empty compositeData.placeholder}" 
+        value="#{compositeData.dataSource[compositeData.fieldName]}"
+        required="${compositeData.required}"&gt;
+          &lt;xp:this.attrs&gt;
+            &lt;xp:attr name="placeholder" value="${compositeData.placeholder}"&gt;&lt;/xp:attr&gt;
+          &lt;/xp:this.attrs&gt;
+
+      &lt;/xp:inputText&gt;
+
+      &lt;xp:text escape="true" id="computedField1"
+        styleClass="help-inline" value="${compositeData.helpText}"
+        loaded="${!empty compositeData.helpText}"&gt;&lt;/xp:text&gt;
+    &lt;/div&gt;
+
+  &lt;/xp:div&gt;
+
+&lt;/xp:view&gt;</pre>
+
+
+			<p>
+				And looks like this in a browser:
+			</p>
+
+			<div class="form-horizontal" style="padding:15px 0">
+
+				<xc:ccBS_FieldNoValidation dataSource="#{document1}" fieldName="email" fieldLabel="Email" placeholder="Enter your email address"
+					helpText="Guess what you have to enter here...">
+				</xc:ccBS_FieldNoValidation>
+
+				<div class="form-actions">
+
+					<xp:button value="Save" styleClass="btn btn-primary" id="button2">
+					  <i class="icon-ok icon-white" />
+						<xp:eventHandler event="onclick" submit="false"></xp:eventHandler>
+					</xp:button>
+
+				</div>
+
+
+			</div>
+
+			<p>So for every field you now only need to add another instance of the custom control, change the properties and you're done. The 
+				sample will only work for (plain) text
+				fields but you can extend that for every other field type you need. A couple of important remarks here:
+				<ul>
+					<li>To reference a document data source in the calling XPage use the following syntax: dataSource="#{document1}"</li>
+					<li>I'm using the Expression Language's&#160;<b>empty</b>&#160;keyword to only load certain controls if a text is provided. See&#160;
+					<xp:link escape="true" text="here" id="link3" target="_blank" value="http://www.bestcoder.net/?p=601"></xp:link>&#160;for a couple of other EL examples.</li>
+				</ul>
+					
+			</p>
+			<p>(by the way: resize this page and see how the field layout changes due to Bootstrap's responsive features)</p>
+
+			<h4>Form validation</h4>
+
+			<p>
+				Bootstrap has built-in classes that you can use for form validation: adding the 'error' class to the control-group DIV will mark it
+				as having an error.</p>
+
+			<p>
+				Every input control on an XPage has an&#160;
+				<b>isValid()</b>
+				&#160;method. The return value of this method is false if, well, a field isn't valid... A field
+				will be marked as invalid if it didn't pass any of the validators that are attached to it.
+			</p>
+
+			<p>What if we combine these two pieces of information? We can end up with a reusable custom controls that automatically marks fields that are mandatory but weren't 
+			fille in. Here's how to do it:
+			<ul>
+			<li>Add a 'required' property to the custom control to indicate that the field is required.</li>
+			<li>Make the&#160;<b>styleClass</b>&#160;attribute of the&#160;control-group&#160; div computed.</li>
+			<li>Add a&#160;<b>&lt;xp:validateRequired&gt;</b>&#160;validator if needed.</li>
+			<li>Only show the help text if a field isn't marked as an error.</li>
+			<li>Add an&#160;<b>&lt;xp:message&gt;</b>&#160;control to show the error message.</li>
+			</ul>
+			Here's what the custom control now looks like:
+			</p>
+			
+			<pre>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;xp:view xmlns:xp="http://www.ibm.com/xsp/core"&gt;
+
+  &lt;xp:div&gt;
+    &lt;xp:this.styleClass&gt;&lt;![CDATA[#{javascript:"control-group" + ( getComponent("inputText1").isValid() ? "" : " error" )}]]&gt;&lt;/xp:this.styleClass&gt;
+
+    &lt;xp:label styleClass="control-label" for="inputText1" value="${compositeData.fieldLabel}" /&gt;
+    &lt;div class="controls"&gt;
+      &lt;xp:inputText type="text" id="inputText1" loaded="${!empty compositeData.placeholder}" 
+        value="#{compositeData.dataSource[compositeData.fieldName]}"
+        required="${compositeData.required}"&gt;
+          &lt;xp:this.attrs&gt;
+            &lt;xp:attr name="placeholder" value="${compositeData.placeholder}"&gt;&lt;/xp:attr&gt;
+          &lt;/xp:this.attrs&gt;
+          
+          &lt;xp:this.validators&gt;
+            &lt;xp:validateRequired message="#{javascript:compositeData.fieldLabel + ' is required'}"&gt;&lt;/xp:validateRequired&gt;
+          &lt;/xp:this.validators&gt;
+
+      &lt;/xp:inputText&gt;
+      
+      &lt;xp:text escape="true" id="computedField1" styleClass="help-inline" value="${compositeData.helpText}"&gt;
+        &lt;xp:this.rendered&gt;&lt;![CDATA[#{javascript:getComponent("inputText1").isValid() &amp;&amp; compositeData.helpText != null}]]&gt;&lt;/xp:this.rendered&gt;
+      &lt;/xp:text&gt;
+      
+      &lt;xp:message id="message1" for="inputText1" styleClass="help-inline"&gt;&lt;/xp:message&gt;
+
+    &lt;/div&gt;
+
+  &lt;/xp:div&gt;
+
+&lt;/xp:view&gt;</pre>
+			
+			
+			<p>
+				This updated version acts like this (click Save to see the error styling):
+			</p>
+
+			<xp:div id="formWithValidation" styleClass="form-horizontal"  style="padding:15px 0">
+
+				<xc:ccBS_Field dataSource="#{document1}" fieldName="name" fieldLabel="Name" placeholder="Enter your name" required="true">
+				</xc:ccBS_Field>
+
+				<xc:ccBS_Field dataSource="#{document1}" fieldName="email" fieldLabel="Email" placeholder="Enter your email address" required="true"
+					helpText="This is where you're supposed to enter an email address">
+				</xc:ccBS_Field>
+
+				<div class="form-actions">
+
+					<xp:button value="Save" styleClass="btn btn-primary" id="button1">
+						<i class="icon-ok icon-white" />
+						<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="formWithValidation" save="true"></xp:eventHandler>
+					</xp:button>
+
+				</div>
+
+			</xp:div>
+
+		</xp:div>
+	</xc:ccLayout>
+
+</xp:view>

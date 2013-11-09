@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="48e" sequence="5" unid="3BA4E17AAB5AC36AC1257BC7002CDCDA">
+<created><datetime dst="true">20130814T101001,22+02</datetime></created>
+<modified><datetime dst="true">20130822T131636,96+02</datetime></modified>
+<revised><datetime dst="true">20130822T131636,94+02</datetime></revised>
+<lastaccessed><datetime dst="true">20130822T131636,94+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130814T101001,23+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>eu/linqed/debugtoolbar/DemoClass.java</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>eu/linqed/debugtoolbar/DemoClass.java</text></item>
+
+
+</note>

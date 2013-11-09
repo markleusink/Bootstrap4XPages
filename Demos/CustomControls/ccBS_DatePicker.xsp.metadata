@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="1d2" sequence="8" unid="3A5E0B1AB9AF7C42C1257B6D004F2857">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="182" sequence="20" unid="3A5E0B1AB9AF7C42C1257B6D004F2857">
 <created><datetime dst="true">20130516T162436,71+02</datetime></created>
-<modified><datetime dst="true">20130523T083332,99+02</datetime></modified>
-<revised><datetime dst="true">20130516T163235,78+02</datetime></revised>
-<lastaccessed><datetime dst="true">20130523T083332,99+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20130523T083332,99+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst="true">20130822T131634,81+02</datetime></modified>
+<revised><datetime dst="true">20130822T131634,79+02</datetime></revised>
+<lastaccessed><datetime dst="true">20130822T131634,79+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130523T083457,61+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
 <item name="$TITLE"><text>ccBS_DatePicker.xsp</text></item>

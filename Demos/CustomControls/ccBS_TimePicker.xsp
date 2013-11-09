@@ -59,6 +59,7 @@ if (itDate != null) {
 	"x$('" + getClientId( compositeData.inputId ) + "').timepicker( {" +
 		"minuteStep: 10 ," +
 		"showMeridian: false," +
+		"showInputs:true," + 
 		"defaultTime:'" + dt + "'" +
 	"});" +
 "});" +

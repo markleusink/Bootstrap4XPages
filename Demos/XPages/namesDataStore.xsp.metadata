@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="386" sequence="20" unid="1F336A400774ADBDC1257B9C0074352E">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="38e" sequence="23" unid="1F336A400774ADBDC1257B9C0074352E">
 <created><datetime dst="true">20130702T230917,90+02</datetime></created>
-<modified><datetime dst="true">20130710T093234,60+02</datetime></modified>
-<revised><datetime dst="true">20130710T091647,54+02</datetime></revised>
-<lastaccessed><datetime dst="true">20130710T093234,60+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20130702T230917,91+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst="true">20130822T131640,66+02</datetime></modified>
+<revised><datetime dst="true">20130822T131640,64+02</datetime></revised>
+<lastaccessed><datetime dst="true">20130822T131640,64+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130702T232208,33+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
 <item name="$Flags"><text>gC~4K</text></item>
 <item name="$TITLE" sign="true"><text>namesDataStore.xsp</text></item>
-<item name="$DesignerVersion"><text>8.5</text></item>
-
-
 
 
 
 <item name="$FileNames" sign="true"><text>namesDataStore.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
 
 </note>

@@ -1,50 +1,32 @@
 <?xml version='1.0' encoding='utf-8'?>
-<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400241DBD'>
-<noteinfo noteid='1f2' unid='95F1BBD7A42AA062C1257B6E002AB3C3' sequence='3'>
+<form name='fShowcaseSite' xmlns='http://www.lotus.com/dxl' version='9.0'
+ maintenanceversion='1.0' replicaid='C1257B7400241DBD' hide='web' publicaccess='false'
+ designerversion='8.5.3' renderpassthrough='true'>
+<noteinfo noteid='1c2' unid='95F1BBD7A42AA062C1257B6E002AB3C3' sequence='4'>
 <created><datetime dst='true'>20130517T094625,31+02</datetime></created>
-<modified><datetime dst='true'>20130523T083430,21+02</datetime></modified>
-<revised><datetime dst='true'>20130517T101649,62+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130523T083430,21+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T083430,21+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst='true'>20130822T131557,98+02</datetime></modified>
+<revised><datetime dst='true'>20130822T131557,96+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20130822T131557,96+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083509,99+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
-<item name='$HTMLCode' sign='true'>
-<rawitemdata type='1'>
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata></item>
-<item name='$TITLE'><text>fShowcaseSite</text></item>
-<item name='$Comment' sign='true'><text/></item>
-<item name='$Info' sign='true'>
-<rawitemdata type='1'>
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata></item>
-<item name='$DesignerVersion'><text>8.5.3</text></item>
-<item name='$$ScriptName' summary='false' sign='true'><text>fShowcaseSite</text></item>
-<item name='url' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='title' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='description' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='$Fields'><textlist><text>description</text><text>title</text><text
->url</text></textlist></item>
-<item name='$Body' sign='true'>
-<rawitemdata type='1'>
-gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAAqBAoMEAQCF/w0A
-AQAACnVybDogAN0GAACK//7/UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHgA
-eAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiv8oAIoAAAUAMAIAAAAAAAAC
-AQAACgAAAAAAAAAAAwAAAAAAdXJsAGIOAQCEAAAAAAAAAAAA3gYAAIr/hf8IAAEAAAqBAoMEAQCF
-/w8AAQAACnRpdGxlOiAA3QYAAIr//v9QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAeAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACK/yoAigAABQAwAgAA
-AAAAAAIBAAAKAAAAAAAAAAAFAAAAAAB0aXRsZQBiDgEAhAAAAAAAAAAAAN4GAACK/4X/CAABAAAK
-gQKDBAEAhf8VAAEAAApkZXNjcmlwdGlvbjogAN0GAACK//7/UAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAHgAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-iv8wAIoAAAUAMAIAAAAAAAACAQAACgAAAAAAAAAACwAAAAAAZGVzY3JpcHRpb24AYg4BAIQAAAAA
-AAAAAADeBgAAiv+F/wgAAQAACg==
-</rawitemdata></item>
-<item name='$Flags'><text>w</text></item></note>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'/>
+<par def='1'>url: <field type='text' kind='editable' name='url'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='1'>title: <field type='text' kind='editable' name='title'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='1'>description: <field type='text' kind='editable' name='description'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>fShowcaseSite</text></item></form>
 

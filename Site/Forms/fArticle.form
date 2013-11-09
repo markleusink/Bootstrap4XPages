@@ -1,105 +1,102 @@
 <?xml version='1.0' encoding='utf-8'?>
-<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400241DBD'>
-<noteinfo noteid='162' unid='88C8F779E72F10A7C1257B6B002B6442' sequence='14'>
+<form name='fArticle' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257B7400241DBD' hide='web' publicaccess='false' designerversion='8.5.3'
+ renderpassthrough='true'>
+<noteinfo noteid='1b6' unid='88C8F779E72F10A7C1257B6B002B6442' sequence='15'>
 <created><datetime dst='true'>20130514T095357,14+02</datetime></created>
-<modified><datetime dst='true'>20130525T112343,02+02</datetime></modified>
-<revised><datetime dst='true'>20130525T112343,01+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130525T112343,02+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T083429,49+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst='true'>20130822T131557,92+02</datetime></modified>
+<revised><datetime dst='true'>20130822T131557,90+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20130822T131557,90+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083509,89+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
-<item name='$Comment' sign='true'><text/></item>
-<item name='$HTMLCode' sign='true'>
-<rawitemdata type='1'>
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata></item>
-<item name='$TITLE'><text>fArticle</text></item>
-<item name='$Info' sign='true'>
-<rawitemdata type='1'>
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata></item>
-<item name='$WindowTitle' sign='true'><formula>"Article"</formula></item>
-<item name='$Flags'><text>w</text></item>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='windowtitle'><formula
+>"Article"</formula></code>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'/>
+<par def='1'/>
+<table widthtype='fixedleft' colorstyle='left' bgcolor='blue' altbgcolor='white'
+ rowspacing='0.0396in' columnspacing='0.0396in' refwidth='10.9847in'><tablecolumn
+ width='1.1813in'/><tablecolumn width='9.6451in'/>
+<tablerow>
+<tablecell>
+<pardef id='3' keepwithnext='true' keeptogether='true'/>
+<par def='3'><run><font style='bold' color='white'/>title</run></par></tablecell>
+<tablecell>
+<pardef id='4' keepwithnext='true' keeptogether='true'/>
+<par def='4'><field type='text' kind='editable' name='title'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='7' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='3'><run><font style='bold' color='white'/>files</run></par></tablecell>
+<tablecell>
+<par def='4'><field type='richtext' kind='editable' name='files'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAEAAAA=
+</compositedata></par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='3'><run><font style='bold' color='white'/>body</run></par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='body'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='3'><run><font style='bold' color='white'/>authorName</run></par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='authorName'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='3'><run><font style='bold' color='white'/>isLink</run></par></tablecell>
+<tablecell>
+<par def='4'><field borderstyle='none' lookupeachchar='false' lookupaddressonrefresh='false'
+ type='keyword' allowmultivalues='true' kind='editable' name='isLink' listinputseparators='comma'
+ listdisplayseparator='comma'><keywords helperbutton='false' columns='1' ui='checkbox'><textlist
+><text>Yes|yes</text></textlist></keywords></field></par>
+<par def='4'>(yes/ no or blank)</par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='3'><run><font style='bold' color='white'/>url</run></par></tablecell>
+<tablecell>
+<par def='4'><field type='text' kind='editable' name='url'><code event='inputtranslation'><formula
+>@Trim(@ThisValue)</formula></code></field><compositedata type='98' prevtype='65418'
+ nexttype='222' afterparcount='6' containertype='65418' aftercontainercount='1'
+ afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='4'>(only for external links)</par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='3'><run><font style='bold' color='white'/>status</run></par></tablecell>
+<tablecell>
+<par def='4'><run><font style='bold' color='white'/></run><field borderstyle='none'
+ lookupeachchar='false' lookupaddressonrefresh='false' type='keyword' allowmultivalues='true'
+ kind='editable' name='status' listinputseparators='comma' listdisplayseparator='comma'><keywords
+ helperbutton='false' columns='1' ui='checkbox'><textlist><text>Draft|draft</text></textlist></keywords></field><run
+><font style='bold' color='white'/></run></par></tablecell></tablerow>
+<tablerow>
+<tablecell>
+<par def='3'><run><font style='bold' color='white'/>publishedDate</run></par></tablecell>
+<tablecell>
+<par def='4'><run><font style='bold' color='white'/></run><field type='datetime'
+ kind='editable' name='publishedDate'><datetimeformat show='date' date='yearmonthday'
+ fourdigityearfor21stcentury='true' zone='never' dateformat='weekdaydaymonthyear'
+ dayformat='twodigitday' monthformat='twodigitmonth' yearformat='fourdigityear'
+ weekdayformat='shortname' dateseparator1=' ' dateseparator2='-' dateseparator3='-'
+ timeseparator=':' timeformat24='true' preference='usersetting'/><code event='defaultvalue'><formula
+>@Today</formula></code></field></par></tablecell></tablerow></table>
+<par def='1'/></richtext></body>
 <item name='$XPageAlt'><text>article.xsp</text></item>
-<item name='$DesignerVersion'><text>8.5.3</text></item>
-<item name='$$ScriptName' summary='false' sign='true'><text>fArticle</text></item>
-<item name='title' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='files' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='body' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='authorName' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='isLink' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='url' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='status' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='publishedDate' summary='false'>
-<rawitemdata type='400'>
-AAAAAAAAAAA=
-</rawitemdata></item>
-<item name='$Fields'><textlist><text>publishedDate</text><text>status</text><text
->url</text><text>isLink</text><text>authorName</text><text>body</text><text
->files</text><text>title</text></textlist></item>
-<item name='$Body' sign='true'>
-<rawitemdata type='1'>
-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
-</rawitemdata></item></note>
+<item name='$$ScriptName' summary='false' sign='true'><text>fArticle</text></item></form>
 

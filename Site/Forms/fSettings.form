@@ -1,37 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
-<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400241DBD'>
-<noteinfo noteid='1ba' unid='05319DCF6BA7B88FC1257B6C002C14FD' sequence='4'>
+<form name='fSettings' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257B7400241DBD' hide='web' publicaccess='false' designerversion='8.5.3'
+ renderpassthrough='true'>
+<noteinfo noteid='14e' unid='05319DCF6BA7B88FC1257B6C002C14FD' sequence='5'>
 <created><datetime dst='true'>20130515T100129,57+02</datetime></created>
-<modified><datetime dst='true'>20130523T083429,93+02</datetime></modified>
-<revised><datetime dst='true'>20130517T101649,60+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130523T083429,93+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T083429,93+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst='true'>20130822T131557,95+02</datetime></modified>
+<revised><datetime dst='true'>20130822T131557,93+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20130822T131557,93+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083509,38+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
-<item name='$HTMLCode' sign='true'>
-<rawitemdata type='1'>
-X/8QAAIADwAHAAAAAAAAAA==
-</rawitemdata></item>
-<item name='$TITLE'><text>fSettings</text></item>
-<item name='$Comment' sign='true'><text/></item>
-<item name='$Info' sign='true'>
-<rawitemdata type='1'>
-hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
-</rawitemdata></item>
-<item name='$DesignerVersion'><text>8.5.3</text></item>
-<item name='$$ScriptName' summary='false' sign='true'><text>fSettings</text></item>
-<item name='githubSourceBaseURL' placeholder='true'>
-<rawitemdata type='0'>
-</rawitemdata></item>
-<item name='$Fields'><text>githubSourceBaseURL</text></item>
-<item name='$Body' sign='true'>
-<rawitemdata type='1'>
-gQKC/1oAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAABAAAAAJSHAAAAAAAAAAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAAqBAoMEAQCF/x0A
-AQAACmdpdGh1YlNvdXJjZUJhc2VVUkw6IADdBgAAiv/+/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAB4AHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIr/
-OACKAAAFADACAAAAAAAAAgEAAAoAAAAAAAAAABMAAAAAAGdpdGh1YlNvdXJjZUJhc2VVUkwAYg4B
-AIQAAAAAAAAAAADeBgAAiv+F/wgAAQAACg==
-</rawitemdata></item>
-<item name='$Flags'><text>w</text></item></note>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'/>
+<par def='1'>githubSourceBaseURL: <field type='text' kind='editable' name='githubSourceBaseURL'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>fSettings</text></item></form>
 

@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="38a" sequence="30" unid="B374489C967E686EC1257B9C00745275">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="392" sequence="31" unid="B374489C967E686EC1257B9C00745275">
 <created><datetime dst="true">20130702T231032,85+02</datetime></created>
-<modified><datetime dst="true">20130710T093234,62+02</datetime></modified>
-<revised><datetime dst="true">20130710T091626,07+02</datetime></revised>
-<lastaccessed><datetime dst="true">20130710T093234,62+02</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20130702T231032,86+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst="true">20130822T131635,93+02</datetime></modified>
+<revised><datetime dst="true">20130822T131635,91+02</datetime></revised>
+<lastaccessed><datetime dst="true">20130822T131635,91+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130702T232208,50+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>

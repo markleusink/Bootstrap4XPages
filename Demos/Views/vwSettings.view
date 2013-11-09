@@ -1,19 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
-<view name='vwSettings' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='C1257B7400240773'
- hide='web' showinmenu='false' publicaccess='false' designerversion='8.5.3'
- unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator' headers='beveled'
- opencollapsed='false' showresponsehierarchy='true' showmargin='true' shrinkrows='false'
- extendlastcolumn='false' showhierarchies='false' unreadcolor='black' rowlinecount='1'
- headerlinecount='1' rowspacing='1' bgcolor='white' totalscolor='black' headerbgcolor='white'
- boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
+<view name='vwSettings' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257B7400240773' hide='web' showinmenu='false' publicaccess='false'
+ designerversion='8.5.3' unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator'
+ headers='beveled' opencollapsed='false' showresponsehierarchy='true' showmargin='true'
+ shrinkrows='false' extendlastcolumn='false' showhierarchies='false' unreadcolor='black'
+ rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white' totalscolor='black'
+ headerbgcolor='white' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='1be' unid='62F19A3ADA39E1A8C1257B6C002C32DE' sequence='5'>
+<noteinfo noteid='142' unid='62F19A3ADA39E1A8C1257B6C002C32DE' sequence='6'>
 <created><datetime dst='true'>20130515T100246,06+02</datetime></created>
-<modified><datetime dst='true'>20130523T083332,89+02</datetime></modified>
-<revised><datetime dst='true'>20130515T100303,86+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130710T083645,39+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T083332,89+02</datetime></addedtofile></noteinfo>
+<modified><datetime dst='true'>20130822T131642,44+02</datetime></modified>
+<revised><datetime dst='true'>20130822T131642,42+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20130822T131642,42+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083457,34+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='selection'><formula
 >SELECT Form="fSettings"</formula></code>

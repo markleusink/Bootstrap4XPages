@@ -20,7 +20,7 @@
 					id="button1" styleClass="btn btn-warning"
 					onclick="$(this).button('loading');">
 					<xp:this.attrs>
-						<xp:attr name="data-loading-text" value="You're drink is being served"></xp:attr>
+						<xp:attr name="data-loading-text" value="Your drink is being served"></xp:attr>
 					</xp:this.attrs>
 					<i class="icon-glass icon-white" />
 					<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="button1">
@@ -46,7 +46,7 @@
 				
 				<pre>&lt;xp:button value="Get me a drink!" id="button2" styleClass="btn btn-warning" onclick="$(this).button('loading');"&gt;
   &lt;xp:this.attrs&gt;
-    &lt;xp:attr name="data-loading-text" value="You're drink is being served"&gt;&lt;/xp:attr&gt;
+    &lt;xp:attr name="data-loading-text" value="Your drink is being served"&gt;&lt;/xp:attr&gt;
   &lt;/xp:this.attrs&gt;
   &lt;i class="icon-glass icon-white" /&gt;
 &lt;/xp:button&gt;</pre>

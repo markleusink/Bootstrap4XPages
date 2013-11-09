@@ -28,7 +28,7 @@
 			<xp:link escape="true" text="Dialog"
 				id="link5" value="/dialog.xsp">
 					<i class="icon-chevron-right"></i>
-			</xp:link>
+			(Modal)&#160;</xp:link>
 		</li>
 		
 		<li>
@@ -45,14 +45,15 @@
 			</xp:link>
 		</li>
 		
-		<!--<li>
-			<xp:link escape="true" text="Tabs"
-				id="link6" value="/demos.xsp#content=tabs">
-					<i class="icon-chevron-right"></i>
+		<li>
+			<xp:link escape="true" id="link12" value="/reusableFields.xsp">
+				<xp:this.text><![CDATA[Reusable fields & validation]]></xp:this.text>
+				<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
-		--><li>
+		
+		<li>
 			<xp:link escape="true" text="Date picker"
 				id="link1" value="/datePicker.xsp">
 					<i class="icon-chevron-right"></i>
@@ -84,6 +85,6 @@
 				<xp:this.value><![CDATA[#{javascript:"/select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
-	-</ul>
+	</ul>
 
 </xp:view>

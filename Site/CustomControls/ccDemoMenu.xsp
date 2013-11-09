@@ -4,6 +4,13 @@
 	<ul class="nav nav-pills nav-stacked">
 	
 		<li>
+			<xp:link escape="true" id="link12" value="/.ibmxspres/domino/bs4xp/demos.nsf/reusableFields.xsp">
+				<xp:this.text><![CDATA[Reusable fields & validation]]></xp:this.text>
+				<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+	
+		<li>
 			<xp:link escape="true" text="All Bootstrap controls" id="link8"
 				value="/.ibmxspres/domino/bs4xp/demos.nsf/allControls.xsp">
 					<i class="icon-chevron-right"></i>
@@ -26,7 +33,7 @@
 		</li>
 		
 		<li>
-			<xp:link escape="true" text="Dialog"
+			<xp:link escape="true" text="(Modal) Dialog"
 				id="link5" value="/.ibmxspres/domino/bs4xp/demos.nsf/dialog.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>

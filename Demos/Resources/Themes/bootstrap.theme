@@ -14,7 +14,7 @@
 		<href>jquery/jquery-1.8.2.min.js</href>
 	</resource>
 	
-	<!-- jquery -->
+	<!-- bs4xp -->
 	<resource>
 		<content-type>application/x-javascript</content-type>
 		<href>bootstrap4xpages.js</href>

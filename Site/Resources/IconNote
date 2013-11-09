@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
- replicaid='C1257B7400241DBD'>
-<noteinfo noteid='11a' unid='88EB522D30977F4FC1257B5900550EFE' sequence='13'>
+ maintenanceversion='1.0' replicaid='C1257B7400241DBD'>
+<noteinfo noteid='126' unid='88EB522D30977F4FC1257B5900550EFE' sequence='13'>
 <created><datetime dst='true'>20130426T172903,98+02</datetime></created>
-<modified><datetime dst='true'>20130523T083430,27+02</datetime></modified>
+<modified><datetime dst='true'>20130523T083506,80+02</datetime></modified>
 <revised><datetime dst='true'>20130523T083430,26+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130523T083430,27+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T083429,13+02</datetime></addedtofile></noteinfo>
+<lastaccessed><datetime dst='true'>20130523T083506,79+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083506,79+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name><name>CN=Mark Leusink/O=SAXDEV</name><name
 >CN=Mark Leusink/O=LinQed</name></updatedby>
 <item name='IconBitmap' summary='true'>
@@ -28,6 +28,6 @@ AAAAUEECICABAAD/////+A4DgA==
 <item name='$Flags'><text>J7!f</text></item>
 <item name='$LaunchXPageRunOnServer'><text>0</text></item>
 <item name='$FlagsNoRefresh'><text/></item>
-<item name='$Daos'><text>0</text></item>
-<item name='$TITLE'><text>Bootstrap4XPages - Site</text></item></note>
+<item name='$TITLE'><text>Bootstrap4XPages - Site</text></item>
+<item name='$Daos'><text>0</text></item></note>
 

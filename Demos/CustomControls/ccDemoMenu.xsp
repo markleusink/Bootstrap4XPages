@@ -85,6 +85,12 @@
 				<xp:this.value><![CDATA[#{javascript:"/select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
+		
+		<li>
+			<xp:link escape="true" text="Multi file upload" id="link14">
+				<xp:this.value><![CDATA[#{javascript:"/uploadAdvanced.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
 	</ul>
 
 </xp:view>

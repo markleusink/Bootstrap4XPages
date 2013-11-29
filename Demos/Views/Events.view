@@ -1,22 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
 <view name='Events' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
- replicaid='C1257B7400240773' showinmenu='false' publicaccess='false' designerversion='8.5.3'
- default='true' unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator'
- headers='beveled' opencollapsed='true' showresponsehierarchy='true' showmargin='true'
- shrinkrows='false' extendlastcolumn='false' showhierarchies='false' unreadcolor='black'
- rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white' altrowcolor='#efefef'
- totalscolor='black' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
- allownewdocuments='false' allowcustomizations='false' hidemarginborder='false'
- marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='4ae' unid='D7FBE5357619273AC1257BC7002CDDB6' sequence='3'>
+ replicaid='C1257B7400240773' hide='web' showinmenu='false' publicaccess='false'
+ designerversion='8.5.3' default='true' unreadmarks='none' onopengoto='lastopened'
+ onrefresh='displayindicator' headers='beveled' opencollapsed='true' showresponsehierarchy='true'
+ showmargin='true' shrinkrows='false' extendlastcolumn='false' showhierarchies='false'
+ unreadcolor='black' rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white'
+ altrowcolor='#efefef' totalscolor='black' headerbgcolor='white' boldunreadrows='false'
+ evaluateactions='false' allownewdocuments='false' allowcustomizations='false'
+ hidemarginborder='false' marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
+<noteinfo noteid='436' unid='D7FBE5357619273AC1257BC7002CDDB6' sequence='6'>
 <created><datetime dst='true'>20130814T101003,42+02</datetime></created>
-<modified><datetime dst='true'>20130822T131637,27+02</datetime></modified>
-<revised><datetime dst='true'>20130822T131637,25+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130822T131637,25+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130814T101003,45+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='selection'><formula
->SELECT Form="LogEvent"</formula></code>
+<modified><datetime>20131129T101540,78+01</datetime></modified>
+<revised><datetime>20131128T125701,27+01</datetime></revised>
+<lastaccessed><datetime>20131129T101540,78+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130820T094730,37+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><code
+ event='selection'><formula>SELECT Form="LogEvent"</formula></code>
 <actionbar bgcolor='#f0f0f0' bordercolor='black'>
 <actionbuttonstyle bgcolor='#f0f0f0'/><font size='9pt' color='system'/><border
  style='solid' width='0px 0px 1px'/>

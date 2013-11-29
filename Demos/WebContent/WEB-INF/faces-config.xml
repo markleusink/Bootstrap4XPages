@@ -6,12 +6,6 @@
     <managed-bean-scope>view</managed-bean-scope>
     <managed-bean-class>com.bootstrap4xpages.NamesDataStore</managed-bean-class>
   </managed-bean>
-  <!-- bean for the file upload demo -->
-  <managed-bean>
-    <managed-bean-class>com.bootstrap4xpages.UploadHandler</managed-bean-class>
-    <managed-bean-name>uploadBean</managed-bean-name>
-    <managed-bean-scope>request</managed-bean-scope>
-  </managed-bean>
   <!-- phase listener for the alerts demo -->
   <lifecycle>
     <phase-listener>com.bootstrap4xpages.MultiPageMessages</phase-listener>

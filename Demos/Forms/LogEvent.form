@@ -1,15 +1,15 @@
 <?xml version='1.0' encoding='utf-8'?>
 <form name='LogEvent' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
- replicaid='C1257B7400240773' publicaccess='false' designerversion='8.5.3'
+ replicaid='C1257B7400240773' hide='web' publicaccess='false' designerversion='8.5.3'
  renderpassthrough='true'>
-<noteinfo noteid='4a2' unid='116B7265CA1DB4EFC1257BC7002CDD9A' sequence='3'>
+<noteinfo noteid='456' unid='116B7265CA1DB4EFC1257BC7002CDD9A' sequence='6'>
 <created><datetime dst='true'>20130814T101003,14+02</datetime></created>
-<modified><datetime dst='true'>20130822T131640,51+02</datetime></modified>
-<revised><datetime dst='true'>20130822T131640,49+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130822T131640,49+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130814T101003,17+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<modified><datetime>20131129T101541,06+01</datetime></modified>
+<revised><datetime>20131128T125720,93+01</datetime></revised>
+<lastaccessed><datetime>20131129T101541,06+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130820T094730,53+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby>
 <body><richtext>
 <pardef id='1'/>
 <par def='1'><run><font size='9pt'/></run></par>

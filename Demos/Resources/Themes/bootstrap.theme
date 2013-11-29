@@ -9,7 +9,7 @@
     </resources>
 	
 	<!-- jquery -->
-	<resource>
+	<resource rendered="#{javascript:view.getPageName().indexOf('upload') == -1}">
 		<content-type>application/x-javascript</content-type>
 		<href>jquery/jquery-1.8.2.min.js</href>
 	</resource>
@@ -21,7 +21,7 @@
 	</resource>
 	
 	<!-- bootstrap js -->
-	<resource>
+	<resource rendered="#{javascript:view.getPageName().indexOf('upload') == -1}">
 		<content-type>application/x-javascript</content-type>
 		<href>bootstrap/js/bootstrap.min.js</href>
 	</resource>
@@ -53,7 +53,11 @@
 		<href>bootstrap/css/amelia.min.css</href>
 	</resource>
 	
-	
+	<!-- overrides for resource aggregation -->
+	<resource rendered="#{javascript:context.getProperty('xsp.resources.aggregate').equals('true')}">
+		<content-type>text/css</content-type>
+		<href>override.css</href>
+	</resource>
 		
 	<!-- it looks like a link, but acts like a button -->
 	<control>

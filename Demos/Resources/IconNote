@@ -1,14 +1,14 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
  maintenanceversion='1.0' replicaid='C1257B7400240773'>
-<noteinfo noteid='126' unid='88EB522D30977F4FC1257B5900550EFE' sequence='0'>
+<noteinfo noteid='11a' unid='88EB522D30977F4FC1257B5900550EFE' sequence='0'>
 <created><datetime dst='true'>20130426T172903,98+02</datetime></created>
-<modified><datetime dst='true'>20130523T083831,19+02</datetime></modified>
-<revised><datetime dst='true'>20130523T083816,38+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130523T083831,17+02</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T083455,15+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=LinQed</name><name>CN=Mark Leusink/O=SAXDEV</name><name
->CN=Mark Leusink/O=LinQed</name></updatedby>
+<modified><datetime>20131129T101533,38+01</datetime></modified>
+<revised><datetime>20131125T100623,21+01</datetime></revised>
+<lastaccessed><datetime>20131129T101533,38+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083332,07+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby>
 <item name='IconBitmap' summary='true'>
 <rawitemdata type='6'>
 AiAgAQAA///////wD///4Af//8AD//4AAH/8AAA/+AAAH/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAA

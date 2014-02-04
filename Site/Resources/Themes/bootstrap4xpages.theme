@@ -1,0 +1,26 @@
+<theme extends="bootstrapv3.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
+
+	
+	<!-- overrides for resource aggregation -->
+	<resource rendered="#{javascript:context.getProperty('xsp.resources.aggregate').equals('true')}">
+		<content-type>text/css</content-type>
+		<href>bootstrap/css/bootstrap-aggr.css</href>
+	</resource>
+	
+	<!-- Bootstrap customizations -->
+	<resource>
+		<content-type>text/css</content-type>
+		<href>bootstrap-extended.css</href>
+	</resource>
+	
+	<resource rendered="#{javascript:sessionScope.theme=='yeti'}">
+		<content-type>text/css</content-type>
+		<href>bootstrap-themes/yeti.css</href>
+	</resource>
+		<resource rendered="#{javascript:sessionScope.theme=='cyborg'}">
+		<content-type>text/css</content-type>
+		<href>bootstrap-themes/cyborg.css</href>
+	</resource>
+	
+	
+</theme>

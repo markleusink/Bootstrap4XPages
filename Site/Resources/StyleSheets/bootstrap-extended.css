@@ -1,4 +1,4 @@
-body { padding-top: 60px; padding-bottom: 40px; }
+body { padding-bottom: 20px; }
 
 /* margin between icons and text in buttons/ links */
 button > i, a > i {
@@ -10,12 +10,6 @@ a + a, button + button, a + button, button + a {
 	margin-left: 5px;	
 }
 
-
-
-/*reset the left margin that Bootstrap adds to modal dialogs (we're using dijit dialogs and don't want that...)*/
-/*.modal {
-	margin-left: inherit;	
-}*/
 
 /*forms in modals shouldn't have a bottom margin*/
 .modal form {
@@ -32,4 +26,9 @@ article img {
   -moz-border-radius: 4px;
   -webkit-box-shadow: 4px 4px 6px #888;
   -webkit-border-radius: 4px;
+}
+
+.jumbotron p {
+	font-size: 16px;
+	line-height: 22px;
 }

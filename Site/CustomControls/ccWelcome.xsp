@@ -7,13 +7,12 @@
 		<xp:dominoView var="vwShowcase" viewName="vwShowcase"></xp:dominoView>
 	</xp:this.data> 
 
-	<!-- Main hero unit for a primary marketing message or call to action -->
-	<div class="hero-unit row" style="padding: 30px">
+	<div class="jumbotron" style="padding: 30px">
+	<div class="container">
+	<div class="row">
 	
-	
-		<div class="span8">
-			<h3>Welcome to Bootstrap4XPages</h3>
-		
+		<div class="col-md-8">
+			<h2>Welcome to Bootstrap4XPages !</h2>
 					
 				<p>
 					<xp:link escape="true" text="Bootstrap" id="link2"
@@ -28,28 +27,30 @@
 				</p>
 		
 				<p>
-					Oh and of course: this whole site was built using XPages.
-					You can view and download the source from&#160;<a href="https://github.com/markleusink/Bootstrap4XPages"
-						target="_blank">GitHub</a>&#160;or download the full <a href="/bs4xp/bootstrap4xpages.zip">databases</a>. 
+					This site was built using XPages and the&#160;<b><xp:link escape="true" text="Bootstrap4XPages plugin" id="link5" target="_blank">
+ 	<xp:this.value><![CDATA[http://bootstrap4xpages.openntf.org]]></xp:this.value>
+ </xp:link></b>&#160;that is available for free from OpenNTF. Use of that plugin would be my recommended way to build XPages applications with Bootstrap.
+					You can view the source code for this site at&#160;<a href="https://github.com/markleusink/Bootstrap4XPages"
+						target="_blank">GitHub</a>&#160;or download the full databases&#160;<a href="/bs4xp/bootstrap4xpages.zip">here</a>. 
 				If you miss anything or want to help making this site better: drop me a <a href="http://linqed.eu/?page_id=93">note</a>.</p>
 				
 				<p>
- (BTW: go&#160;
- <xp:link escape="true" text="here" id="link5" target="_blank">
- 	<xp:this.value><![CDATA[http://www.openntf.org/internal/home.nsf/project.xsp?action=openDocument&name=Bootstrap4XPages]]></xp:this.value>
- </xp:link>&#160;if you're looking for the Bootstrap Extension Library project on OpenNTF)</p> 
+ 					This site has been upgraded to Bootstrap 3. All the demos are created for and with Bootstrap 2.3.</p>
 			
 		</div>
-		<div class="span3">
+		<div class="cold-md-4">
 			<xp:image url="/dominodesigner_256x256.png" id="image1"></xp:image>
 	
 		</div>
 	</div>
+	</div>
+	</div>
 
 	<!-- Example row of columns -->
+	<div class="container">
 	<div class="row">
-		<div class="span6">
-			<h4>Articles</h4>
+		<div class="col-md-6">
+			<h4><span class="glyphicon glyphicon-file"  style="margin-right: 5px"></span> Articles</h4>
 			<p>
 
 				<xp:dataTable id="dataTable1" rows="30" value="#{view2}"
@@ -58,7 +59,7 @@
 					<xp:column>
 
 						<xp:text escape="true" tagName="i"
-							styleClass="icon-share-alt" title="External link"
+							styleClass="glyphicon glyphicon-share-alt" title="External link"
 							id="computedField2">
 							<xp:this.rendered><![CDATA[#{javascript:row.getColumnValue("isLink").equals("yes")}]]></xp:this.rendered>
 						</xp:text>
@@ -91,9 +92,9 @@ row.getColumnValue("url") :
 
 		</div>
 
-		<div class="span3">
+		<div class="col-md-3">
 
-			<h4>Demos</h4>
+			<h4><span class="glyphicon glyphicon-search" style="margin-right: 5px"></span> Demos</h4>
 			<p>
 
 				<xc:ccDemoMenu />
@@ -102,16 +103,16 @@ row.getColumnValue("url") :
 
 		</div>
 
-		<div class="span3">
+		<div class="col-md-3">
 
-			<h4>Built with Bootstrap*</h4>
+			<h4><span class="glyphicon glyphicon-wrench" style="margin-right: 5px"></span> Built with Bootstrap*</h4>
 
 			<ul class="nav nav-pills nav-stacked">
 			<xp:repeat id="repeat1" rows="30" value="#{vwShowcase}" disableOutputTag="true" var="row">
 			
 				<li>
 					<xp:link escape="true" text="#{row.title}" value="#{row.url}" target="_blank" id="link3">
-						<i class="icon-chevron-right"></i>
+						<i class="glyphicon glyphicon-chevron-right"></i>
 					</xp:link>
 				</li>
 			
@@ -124,10 +125,11 @@ row.getColumnValue("url") :
 
 
 	</div>
+	</div>
 
 	<hr />
 
-	<footer>
+	<div class="container">
 		<p>
 
 			<div style="margin-top:3px">
@@ -144,6 +146,6 @@ row.getColumnValue("url") :
 			<a href="http://www.twitter.com/markleusink" target="_blank">twitter</a>).
 		</p>
 		
-	</footer>
+	</div>
 
 </xp:view>

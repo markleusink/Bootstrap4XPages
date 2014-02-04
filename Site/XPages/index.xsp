@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	pageTitle="Welcome to Bootstrap4XPages !"
-	xmlns:xe="http://www.ibm.com/xsp/coreex"
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
-	<xc:ccLayout>
+	<xc:ccAppLayout>
+		<xp:this.facets>
+			<xc:ccWelcome
+				xp:key="facetMiddle" />
 
-		<xe:dynamicContent id="dynContent" defaultFacet="welcome"
-			useHash="true">
-			<xp:this.facets>
-
-				<xc:ccWelcome xp:key="welcome" />
-
-			</xp:this.facets>
-		</xe:dynamicContent>
-	</xc:ccLayout>
-
+		</xp:this.facets>
+	</xc:ccAppLayout>
 </xp:view>

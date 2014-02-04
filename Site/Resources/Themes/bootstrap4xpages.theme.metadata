@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400241DBD" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="20a" sequence="103" unid="F82EB2DE0B86A2C2C1257B5900555A31">
+<created><datetime dst="true">20130426T173216,49+02</datetime></created>
+<modified><datetime>20140204T161005,03+01</datetime></modified>
+<revised><datetime>20140204T161005,02+01</datetime></revised>
+<lastaccessed><datetime>20140204T161005,02+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130523T083510,29+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name="$Flags"><text>34567Cg~`</text></item>
+
+
+<item name="$FileNames" sign="true"><text>bootstrap.theme</text></item>
+<item name="$CSSFiles" sign="true"><textlist><text>bootstrap/css/bootstrap-aggr.css</text><text>bootstrap-extended.css</text><text>bootstrap-themes/yeti.css</text><text>bootstrap-themes/cyborg.css</text></textlist></item>
+<item name="$TITLE" sign="true"><text>bootstrap4xpages.theme</text></item>
+<item name="$DesignerVersion" sign="true"><text>8.5.3</text></item></note>

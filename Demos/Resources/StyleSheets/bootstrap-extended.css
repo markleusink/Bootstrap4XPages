@@ -1,4 +1,4 @@
-body { padding-top: 60px; padding-bottom: 40px; }
+body { padding-bottom: 0px; }
 
 /* margin between icons and text in buttons/ links */
 button > i, a > i {
@@ -10,8 +10,6 @@ a + a, button + button, a + button, button + a {
 	margin-left: 5px;	
 }
 
-
-
 /*reset the left margin that Bootstrap adds to modal dialogs (we're using dijit dialogs and don't want that...)*/
 /*.modal {
 	margin-left: inherit;	
@@ -21,7 +19,6 @@ a + a, button + button, a + button, button + a {
 .modal form {
 	margin-bottom: 0;
 }
-
 
 /*for this site only: style images in article*/
 article img {
@@ -37,4 +34,15 @@ article img {
 /*more margin for pre's*/
 pre {
 	margin: 20px 0;
+}
+
+/*correctly style Select2 comboboxes with an error*/
+/* Styling for Select2 with error */
+div.error ul.select2-choices {
+  border-color: rgb(185, 74, 72) !important;
+}
+
+div.error .select2-container a, 
+div.error .select2-drop {
+ border-color: rgb(185, 74, 72) !important;
 }

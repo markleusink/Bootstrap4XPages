@@ -2,12 +2,12 @@
 <form name='LogEvent' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
  replicaid='C1257B7400240773' hide='web' publicaccess='false' designerversion='8.5.3'
  renderpassthrough='true'>
-<noteinfo noteid='456' unid='116B7265CA1DB4EFC1257BC7002CDD9A' sequence='6'>
+<noteinfo noteid='4a2' unid='116B7265CA1DB4EFC1257BC7002CDD9A' sequence='6'>
 <created><datetime dst='true'>20130814T101003,14+02</datetime></created>
-<modified><datetime>20131129T101541,06+01</datetime></modified>
+<modified><datetime>20131128T125720,94+01</datetime></modified>
 <revised><datetime>20131128T125720,93+01</datetime></revised>
-<lastaccessed><datetime>20131129T101541,06+01</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130820T094730,53+02</datetime></addedtofile></noteinfo>
+<lastaccessed><datetime>20131128T125720,93+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130814T101003,17+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby>
 <body><richtext>

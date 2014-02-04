@@ -4,8 +4,9 @@
 	xmlns:xe="http://www.ibm.com/xsp/coreex"
 	pageTitle="Bootstrap4XPages | Do more with buttons">
 
-	<xc:ccLayout>
-		<xp:div>
+	<xc:ccAppLayout>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 
 			<legend>Do more with buttons: feedback and toggling</legend>
 
@@ -136,7 +137,7 @@
 
 		</xp:div>
 
-	
-	</xc:ccLayout>
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

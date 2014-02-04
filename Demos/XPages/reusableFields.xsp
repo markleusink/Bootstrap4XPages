@@ -4,9 +4,10 @@
 	<xp:this.data>
 		<xp:dominoDocument var="document1"></xp:dominoDocument>
 	</xp:this.data>
-
-	<xc:ccLayout>
-		<xp:div>
+	
+	<xc:ccAppLayout>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 
 			<legend>Reusable fields and form validation</legend>
 
@@ -221,8 +222,36 @@
 				</div>
 
 			</xp:div>
+			
+			<p>
+				<b>UPDATE</b>
+			</p>
+			<p>
+				The error class will style most Bootstrap field. One field type where it doesn't work is a Select2 enabled field. Brad
+				Balassaitis wrote an article describing how you also have an error class on those. Read it&#160;<a href="http://xcellerant.net/2013/12/05/adding-bootstrap-error-styling-to-a-select2/" target="_blank">here</a>.
+			</p>
+			
+			<xp:div id="div1" styleClass="form-horizontal"  style="padding:15px 0">
+				
+				<xc:ccBS_Field dataSource="#{document1}" fieldName="name" fieldLabel="Name" placeholder="Enter your name" required="true">
+				</xc:ccBS_Field>
+				
+				<xc:ccBS_Select2Field dataSource="#{document1}" fieldName="state" fieldLabel="State" required="true">
+				</xc:ccBS_Select2Field>
+				
+				<div class="form-actions">
 
+					<xp:button value="Save" styleClass="btn btn-primary" id="button3">
+						<i class="icon-ok icon-white" />
+						<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="div1" save="true"></xp:eventHandler>
+					</xp:button>
+
+				</div>
+
+			</xp:div>
 		</xp:div>
-	</xc:ccLayout>
+		
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

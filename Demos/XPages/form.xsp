@@ -6,8 +6,9 @@
 		<xp:dominoDocument var="docTemp" formName="fTemp"></xp:dominoDocument>
 	</xp:this.data>
 	
-	<xc:ccLayout>
-		<xp:div>
+	<xc:ccAppLayout>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 	
 			<div class="form-horizontal">
 			
@@ -82,6 +83,7 @@
 				componentName="XPages/form.xsp">
 			</xc:ccDemoViewSource>
 		</xp:div>
-	</xc:ccLayout>
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

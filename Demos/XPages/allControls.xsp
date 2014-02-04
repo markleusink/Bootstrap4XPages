@@ -4,8 +4,9 @@
 	pageTitle="Bootstrap4XPages | All controls"
 	xmlns:xe="http://www.ibm.com/xsp/coreex">
 	
-	<xc:ccLayout>
-		<xp:div>
+	<xc:ccAppLayout>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 
 			<!-- Masthead -->
 			<header class="jumbotron subhead" id="overview">
@@ -1378,7 +1379,9 @@
 			</footer>
 
 		</xp:div>
-	</xc:ccLayout>
+		
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 
 </xp:view>

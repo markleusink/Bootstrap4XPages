@@ -4,9 +4,10 @@
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	pageTitle="Bootstrap4XPages | Demos">
 
-	<xc:ccLayout>
+	<xc:ccAppLayout>
+	<xp:this.facets>
 	
-		<xe:dynamicContent id="dynContent" defaultFacet="buttons"
+		<xe:dynamicContent xp:key="facetMiddle" id="dynContent" defaultFacet="buttons"
 			useHash="true">
 			<xp:this.facets>
 
@@ -15,7 +16,8 @@
 				
 			</xp:this.facets>
 		</xe:dynamicContent>
-
-	</xc:ccLayout>
+		
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

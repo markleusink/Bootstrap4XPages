@@ -18,9 +18,10 @@
 		</xp:styleSheet>
 	</xp:this.resources>
 
-	<xc:ccLayout>
+	<xc:ccAppLayout>
+	<xp:this.facets>
 
-		<xp:div>
+		<xp:div xp:key="facetMiddle">
 
 		<div class="form-horizontal">
 
@@ -59,6 +60,8 @@
 			</xc:ccDemoViewSource>
 
 		</xp:div>
-	</xc:ccLayout>
+		
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

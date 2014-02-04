@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="143a" sequence="3" unid="424E2DDD42523902C1257C75007E6705">
+<created><datetime>20140205T000039,09+01</datetime></created>
+<modified><datetime>20140205T004739,98+01</datetime></modified>
+<revised><datetime>20140205T000040,53+01</datetime></revised>
+<lastaccessed><datetime>20140205T004739,97+01</datetime></lastaccessed>
+<addedtofile><datetime>20140205T004739,97+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Brian Gleeson/OU=Ireland/O=IBM</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>extlib/pickers/SimplePicker.java</text></item>
+
+
+
+
+
+
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>extlib/pickers/SimplePicker.java</text></item></note>

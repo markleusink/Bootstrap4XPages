@@ -9,8 +9,9 @@
 		<xp:styleSheet href="/select2-3.4.0/select2.css"></xp:styleSheet>
 	</xp:this.resources>
 
-	<xc:ccLayout>
-		<xp:div>
+	<xc:ccAppLayout>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 
 			<legend>Select2</legend>
 
@@ -489,6 +490,8 @@
 			&#160;repository)</p>
 
 		</xp:div>
-	</xc:ccLayout>
+		
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

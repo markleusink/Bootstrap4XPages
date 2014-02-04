@@ -2,12 +2,12 @@
 <form name='loginForm' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
  replicaid='C1257B7400240773' hide='web' nocompose='true' noquery='true' publicaccess='true'
  designerversion='8.5.3'>
-<noteinfo noteid='246' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='9'>
+<noteinfo noteid='252' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='9'>
 <created><datetime dst='true'>20130523T125435,99+02</datetime></created>
-<modified><datetime>20131129T101541,50+01</datetime></modified>
+<modified><datetime>20131128T125724,62+01</datetime></modified>
 <revised><datetime>20131128T125724,60+01</datetime></revised>
-<lastaccessed><datetime>20131129T101541,50+01</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T125436,96+02</datetime></addedtofile></noteinfo>
+<lastaccessed><datetime>20131128T125724,60+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T125721,03+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><code
  event='windowtitle'><formula>"Login"</formula></code><code event='htmlbody'><formula

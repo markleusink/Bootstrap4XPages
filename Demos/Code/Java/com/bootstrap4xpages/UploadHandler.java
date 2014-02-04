@@ -78,6 +78,14 @@ public class UploadHandler implements Serializable {
 			if ( uploadedFile.getServerFile().length() > MAX_FILE_SIZE_BYTES ) {
 				throw( new Exception("file is too large"));
 			}
+			
+			String ext = uploadedFile.getClientFileName().substring( uploadedFile.getClientFileName().lastIndexOf(".") + 1 );
+				
+			if (ext.equalsIgnoreCase("png") || ext.equalsIgnoreCase("gif") || ext.equalsIgnoreCase("jpg") || ext.equalsIgnoreCase("jpeg")) {
+				//ok
+			} else {
+				throw( new Exception("unsupported file type: " + ext) );
+			}
 
 			if (!storeUploadedFile(uploadedFile)) {
 				throw( new Exception("file could not be saved") );

@@ -4,7 +4,7 @@
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	pageTitle="Uploader">
 
-	<xc:ccLayout>
+	<xc:ccAppLayout>
 		<xp:div>
 
 			<legend>Upload - basic</legend>
@@ -62,6 +62,6 @@
 			</div>
 
 		</xp:div>
-	</xc:ccLayout>
+	</xc:ccAppLayout>
 
 </xp:view>

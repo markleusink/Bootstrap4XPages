@@ -12,8 +12,9 @@
 		<xp:styleSheet href="/bootstrap-timepicker/css/timepicker.css"></xp:styleSheet>
 	</xp:this.resources>
 
-	<xc:ccLayout>
-		<xp:div>
+	<xc:ccAppLayout>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 
 			<xp:div id="form" styleClass="form-horizontal">
 
@@ -52,6 +53,7 @@
 			<xc:ccDemoViewSource componentName="XPages/timePicker.xsp">	</xc:ccDemoViewSource>
 
 		</xp:div>
-	</xc:ccLayout>
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

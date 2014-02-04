@@ -60,14 +60,14 @@
 			</xp:link>
 		</li>
 		
-		<li>
+		<!--<li>
 			<xp:link escape="true" text="Time picker"
 				id="link4" value="/timePicker.xsp">
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
-		<li>
+		--><li>
 			<xp:link escape="true" text="Login form" id="link6">
 				<xp:this.value><![CDATA[#{javascript:"/?open&login"}]]></xp:this.value><i class="icon-chevron-right"></i>
 			</xp:link>
@@ -75,22 +75,39 @@
 		
 		<li>
 			<xp:link escape="true" text="Want more icons?" id="link7">
-				<xp:this.value><![CDATA[#{javascript:"/moreIcons.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+				<xp:this.value><![CDATA[#{javascript:"/fontAwesome.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
-		
-		
+	
 		<li>
 			<xp:link escape="true" text="Select2" id="link10">
 				<xp:this.value><![CDATA[#{javascript:"/select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
 			</xp:link>
-		</li>
+		</li><!--
 		
 		<li>
 			<xp:link escape="true" text="Multi file upload" id="link14">
 				<xp:this.value><![CDATA[#{javascript:"/uploadAdvanced.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
+		
+		--><li class="nav-header">Plugin demos</li>
+		
+		<li>
+			<xp:link escape="true" text="Select2 for Combo-/ Listbox" id="link13">
+				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2Listbox.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Select2 Value picker" id="link15">
+				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		
+		
+		
 	</ul>
 
 </xp:view>

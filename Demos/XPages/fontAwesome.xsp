@@ -20,7 +20,9 @@
 		1.2857142857142858em; text-align: center; }
 	</style>
 
-	<xc:ccLayout>
+	<xc:ccAppLayout>
+	<xp:this.facets>
+	<xp:div xp:key="facetMiddle">
 
 		<legend>So you want more icons?</legend>
 
@@ -80,6 +82,8 @@
 		<xc:ccDemoViewSource componentName="XPages/fontAwesome.xsp">
 		</xc:ccDemoViewSource>
 
-	</xc:ccLayout>
+	</xp:div>
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

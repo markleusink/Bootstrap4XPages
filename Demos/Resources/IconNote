@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='9.0'
  maintenanceversion='1.0' replicaid='C1257B7400240773'>
-<noteinfo noteid='11a' unid='88EB522D30977F4FC1257B5900550EFE' sequence='0'>
+<noteinfo noteid='126' unid='88EB522D30977F4FC1257B5900550EFE' sequence='7'>
 <created><datetime dst='true'>20130426T172903,98+02</datetime></created>
-<modified><datetime>20131129T101533,38+01</datetime></modified>
-<revised><datetime>20131125T100623,21+01</datetime></revised>
-<lastaccessed><datetime>20131129T101533,38+01</datetime></lastaccessed>
-<addedtofile><datetime dst='true'>20130523T083332,07+02</datetime></addedtofile></noteinfo>
+<modified><datetime>20140205T004740,84+01</datetime></modified>
+<revised><datetime>20140205T004740,83+01</datetime></revised>
+<lastaccessed><datetime>20140205T004740,83+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130523T083455,15+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby>
 <item name='IconBitmap' summary='true'>
@@ -24,10 +24,15 @@ d30fAAAAAPHXd33Xd3d913d9HwAAAADx13d913d3fdd3fR8AAAAA8R3d0dd3d30d3dEfAAAAAA8R
 EREdd3fRERER8AAAAAAA////Ed3dEf///wAAAAAAAAAAAPERER8AAAAAAAAAAAAAAAAP///wAAAA
 AAAAUEECICABAAD/////+A4DgA==
 </rawitemdata></item>
-<item name='$Flags'><text>J7!f</text></item>
 <item name='$LaunchXPageRunOnServer'><text>0</text></item>
 <item name='$FlagsNoRefresh'><text/></item>
-<item name='$TITLE'><text>Bootstrap4XPages - Demos</text></item>
 <item name='$DefaultXPage'><text>demos.xsp</text></item>
-<item name='$Daos'><text>0</text></item></note>
+<item name='$TITLE'><text>Bootstrap4XPages - Demos
+#2Bootstrap4XPages - Demos (plugin)</text></item>
+<item name='$PIRCRefreshModTime'><datetime>20140205T004800,56+01</datetime></item>
+<item name='$TemplateModTime'><datetime>20140205T004722,64+01</datetime></item>
+<item name='$TemplateServerName'><text>CN=Mark Leusink/O=LinQed</text></item>
+<item name='$TemplateFileName'><text>CN=Demo/O=LinQed!!bs4xp\demos-plugin.nsf</text></item>
+<item name='$Daos'><text>1</text></item>
+<item name='$Flags'><text>J7!f</text></item></note>
 

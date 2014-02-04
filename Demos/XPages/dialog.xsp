@@ -4,8 +4,9 @@
 	xmlns:xe="http://www.ibm.com/xsp/coreex"
 	pageTitle="Bootstrap4XPages | Dialog demo">
 
-	<xc:ccLayout>
-		<xp:div>
+	<xc:ccAppLayout>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 
 			<legend>Bootstrap dialog</legend>
 
@@ -113,6 +114,7 @@ titleBar.append("&lt;h3&gt;" + title + "&lt;/h3&gt;");
 			</xc:ccDemoViewSource>
 
 		</xp:div>
-	</xc:ccLayout>
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 </xp:view>

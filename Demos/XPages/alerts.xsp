@@ -2,9 +2,10 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 	
-	<xc:ccLayout>
+	<xc:ccAppLayout>
 			
-		<xp:panel id="messagePanel">
+		<xp:this.facets>
+		<xp:panel xp:key="facetMiddle" id="messagePanel">
 		
 			<legend>Bootstrap styled messages</legend>
 		
@@ -82,7 +83,9 @@ facesContext.addMessage(
 			</p>
 		
 		</xp:panel>
-	</xc:ccLayout>
+		
+	</xp:this.facets>
+	</xc:ccAppLayout>
 
 
 

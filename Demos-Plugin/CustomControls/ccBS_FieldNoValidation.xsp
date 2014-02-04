@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:div styleClass="control-group">
+	
+		<xp:label styleClass="control-label" for="inputText1" value="${compositeData.fieldLabel}" />
+		
+		<div class="controls">
+			<xp:inputText type="text" 
+				id="inputText1" 
+				loaded="${!empty compositeData.placeholder}"
+				value="#{compositeData.dataSource[compositeData.fieldName]}"
+				required="${compositeData.required}">
+				
+				<xp:this.attrs>
+					<xp:attr name="placeholder" value="${compositeData.placeholder}"></xp:attr>
+				</xp:this.attrs>
+				
+			</xp:inputText>
+			
+			<xp:text escape="true" id="computedField1"
+				styleClass="help-inline" value="${compositeData.helpText}"
+				loaded="${!empty compositeData.helpText}"></xp:text>
+		</div>
+	
+	</xp:div>
+
+</xp:view>

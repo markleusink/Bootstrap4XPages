@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<ul class="nav nav-pills nav-stacked">
+	
+		<li>
+			<xp:link escape="true" text="All Bootstrap controls" id="link8"
+				value="/allControls.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+	
+		<li>
+			<xp:link escape="true" text="Buttons" id="link2"
+				value="/demos.xsp#content=buttons">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Do more with buttons" id="link11"
+				value="/doMoreWithButtons.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Dialog"
+				id="link5" value="/dialog.xsp">
+					<i class="icon-chevron-right"></i>
+			(Modal)&#160;</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Alerts"
+				id="link9" value="/alerts.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Forms"
+				id="link3" value="/form.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" id="link12" value="/reusableFields.xsp">
+				<xp:this.text><![CDATA[Reusable fields & validation]]></xp:this.text>
+				<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		
+		<li>
+			<xp:link escape="true" text="Date picker"
+				id="link1" value="/datePicker.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Time picker"
+				id="link4" value="/timePicker.xsp">
+					<i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Login form" id="link6">
+				<xp:this.value><![CDATA[#{javascript:"/?open&login"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Want more icons?" id="link7">
+				<xp:this.value><![CDATA[#{javascript:"/fontAwesome.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+	
+		<li>
+			<xp:link escape="true" text="Select2" id="link10">
+				<xp:this.value><![CDATA[#{javascript:"/select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li><!--
+		
+		<li>
+			<xp:link escape="true" text="Multi file upload" id="link14">
+				<xp:this.value><![CDATA[#{javascript:"/uploadAdvanced.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		--><li class="nav-header">Plugin demos</li>
+		
+		<li>
+			<xp:link escape="true" text="Select2 for Combo-/ Listbox" id="link13">
+				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2Listbox.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Select2 Value picker" id="link15">
+				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		
+		
+		
+	</ul>
+
+</xp:view>

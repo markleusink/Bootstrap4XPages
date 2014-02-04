@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	pageTitle="Bootstrap4XPages | Demos">
+
+	<xc:ccAppLayout>
+	<xp:this.facets>
+	
+		<xe:dynamicContent xp:key="facetMiddle" id="dynContent" defaultFacet="buttons"
+			useHash="true">
+			<xp:this.facets>
+
+				<xc:ccDemoButtons xp:key="buttons" />
+				<xc:ccDemoTabs xp:key="tabs" />
+				
+			</xp:this.facets>
+		</xe:dynamicContent>
+		
+	</xp:this.facets>
+	</xc:ccAppLayout>
+
+</xp:view>

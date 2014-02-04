@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:bx="http://www.openntf.org/xsp/bootstrap"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	
+	<xe:applicationLayout id="applicationLayout1">
+
+		<xp:div styleClass="container">
+
+			<div class="row">
+
+				<div class="span3">
+
+					<xc:ccDemoMenu />
+
+				</div>
+
+				<div class="span9">
+
+					<xp:callback
+						facetName="facetMiddle"
+						id="facetMiddle">
+					</xp:callback>
+
+				</div>
+			</div>
+		</xp:div>
+
+
+
+
+		<!-- analytics -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
+			Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-31456612-3', 'bootstrap4xpages.com'); ga('send', 'pageview');
+
+		</script>
+
+		<xe:this.configuration>
+			<bx:bootstrapApplication
+				banner="true"
+				collapseLeftColumn="false"
+				footer="false"
+				legal="false"
+				placeBar="false"
+				titleBar="false"
+				navbarInverted="true"
+				productLogoAlt="Bootstrap4XPages">
+				<bx:this.bannerApplicationLinks>
+					<xe:basicLeafNode label="Demos">
+						<xe:this.href><![CDATA[/.ibmxspres/domino/bs4xp/demos-plugins.nsf]]></xe:this.href>
+					</xe:basicLeafNode>
+					<!--<xe:basicContainerNode label="Themes">
+						<xe:this.children>
+						<xe:basicLeafNode label="Default"></xe:basicLeafNode>
+						<xe:basicLeafNode label="Bootswatch - Yeti"></xe:basicLeafNode>
+						<xe:basicLeafNode label="Bootswatch - Cyborg"></xe:basicLeafNode>
+						</xe:this.children>
+						</xe:basicContainerNode>
+						
+					-->
+					<xe:basicContainerNode label="Bootstrap sites">
+						<xe:this.children>
+							<xe:basicLeafNode label="Official Bootstrap site">
+								<xe:this.href><![CDATA[http://getbootstrap.com]]></xe:this.href>
+							</xe:basicLeafNode>
+							<xe:basicLeafNode label="Bootstrap blog">
+								<xe:this.href><![CDATA[http://blog.getbootstrap.com]]></xe:this.href>
+							</xe:basicLeafNode>
+							<xe:basicLeafNode label="Bootswatch">
+								<xe:this.href><![CDATA[http://bootswatch.com]]></xe:this.href>
+							</xe:basicLeafNode>
+							<xe:basicLeafNode label="Wrapbootstrap">
+								<xe:this.href><![CDATA[http://wrapbootstrap.com]]></xe:this.href>
+							</xe:basicLeafNode>
+						</xe:this.children>
+					</xe:basicContainerNode>
+				</bx:this.bannerApplicationLinks>
+			</bx:bootstrapApplication>
+		</xe:this.configuration>
+	</xe:applicationLayout>
+</xp:view>

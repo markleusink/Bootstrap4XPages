@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257C75007D9A56" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="512" sequence="2" unid="7831911C8DFCE70DC1257C75007E6CAB">
+<created><datetime>20140205T000053,55+01</datetime></created>
+<modified><datetime>20140205T000055,87+01</datetime></modified>
+<revised><datetime>20140205T000055,85+01</datetime></revised>
+<lastaccessed><datetime>20140205T000055,85+01</datetime></lastaccessed>
+<addedtofile><datetime>20140205T000055,35+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Brian Gleeson/OU=Ireland/O=IBM</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>extlib/SampleDataUtil.java</text></item>
+
+
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>extlib/SampleDataUtil.java</text></item></note>

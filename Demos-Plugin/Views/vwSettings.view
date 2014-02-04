@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<view name='vwSettings' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='C1257C75007D9A56' hide='web' showinmenu='false' publicaccess='false'
+ designerversion='8.5.3' unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator'
+ headers='beveled' opencollapsed='false' showresponsehierarchy='true' showmargin='true'
+ shrinkrows='false' extendlastcolumn='false' showhierarchies='false' unreadcolor='black'
+ rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white' totalscolor='black'
+ headerbgcolor='white' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
+ allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
+ uniquekeys='false'>
+<noteinfo noteid='12e' unid='62F19A3ADA39E1A8C1257B6C002C32DE' sequence='8'>
+<created><datetime dst='true'>20130515T100246,06+02</datetime></created>
+<modified><datetime>20140204T235156,01+01</datetime></modified>
+<revised><datetime>20131111T114858,84+01</datetime></revised>
+<lastaccessed><datetime>20140204T235156,00+01</datetime></lastaccessed>
+<addedtofile><datetime>20140204T235156,00+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><code
+ event='selection'><formula>SELECT Form="fSettings"</formula></code>
+<column hidedetailrows='false' itemname='$0' width='10' resizable='true' separatemultiplevalues='false'
+ sortnoaccent='true' sortnocase='true' showaslinks='false'><columnheader title='#'><font
+ size='9pt' style='bold'/></columnheader><code event='value'><formula>@DocNumber</formula></code></column></view>
+

@@ -1,0 +1,27 @@
+<theme extends="bootstrapv2.3.2r" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
+
+	
+	<!-- Bootstrap customizations -->
+	<resource>
+		<content-type>text/css</content-type>
+		<href>bootstrap-extended.css</href>
+	</resource>
+	
+	<!-- themes -->
+	<resource rendered="#{javascript:sessionScope.theme=='cosmo'}">
+		<content-type>text/css</content-type>
+		<href>bootstrap/css/cosmo.min.css</href>
+	</resource>
+		<resource rendered="#{javascript:sessionScope.theme=='amelia'}">
+		<content-type>text/css</content-type>
+		<href>bootstrap/css/amelia.min.css</href>
+	</resource>
+	
+	<!-- overrides for resource aggregation -->
+	<resource rendered="#{javascript:context.getProperty('xsp.resources.aggregate').equals('true')}">
+		<content-type>text/css</content-type>
+		<href>override.css</href>
+	</resource>
+		
+	
+</theme>

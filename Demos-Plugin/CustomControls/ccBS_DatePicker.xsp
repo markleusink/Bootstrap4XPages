@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<!-- note: this date picker depends on a number of files:
+	- bootstrap
+	- bootstrap-datepicker (http://www.eyecon.ro/bootstrap-datepicker/)
+	- jquery
+-->
+	
+	<xp:text escape="true" id="computedField1" value="#{compositeData.fieldDataSource[compositeData.fieldName]}"
+		rendered="#{javascript:!compositeData.fieldDataSource.isEditable()}">
+		<xp:this.converter>
+			<xp:convertDateTime type="date" dateStyle="full"></xp:convertDateTime>
+		</xp:this.converter>
+	</xp:text>
+
+	<xp:div styleClass="input-append date" id="dateC"
+		rendered="#{javascript:compositeData.fieldDataSource.isEditable()}">
+		<xp:this.attrs>
+			<xp:attr name="data-date">
+				<xp:this.value><![CDATA[#{javascript://default date in the picker: today or the entered value
+var itDate:NotesItem = compositeData.fieldDataSource.getDocument().getFirstItem(compositeData.fieldName);
+var dt:java.util.Date = @Now();
+
+if (itDate != null) {
+	if (itDate.getDateTimeValue() != null) {
+		dt = itDate.getDateTimeValue().toJavaDate();
+	}
+}
+
+(new java.text.SimpleDateFormat( compositeData.dateFormat ) ).format(dt );}]]></xp:this.value>
+			</xp:attr>
+			<xp:attr name="data-date-format"
+				value="#{javascript:compositeData.dateFormat.toLowerCase()}">
+			</xp:attr>
+		</xp:this.attrs>
+
+		<xp:inputText styleClass="input-small" size="16" id="inputDatum"
+			value="#{compositeData.fieldDataSource[compositeData.fieldName]}">
+			<xp:this.converter>
+				<xp:convertDateTime type="date"
+					pattern="${compositeData.dateFormat}">
+				</xp:convertDateTime>
+			</xp:this.converter>
+			</xp:inputText>
+		<span class="add-on">
+			<i class="icon-calendar"></i>
+		</span>
+	</xp:div>
+
+	<xp:scriptBlock id="scriptBlock2">
+		<xp:this.value><![CDATA[
+		//function to retrieve jquery objects based on a xpage object id
+		//author: Mark Roden, http://openntf.org/XSnippets.nsf/snippet.xsp?id=x-jquery-selector-for-xpages
+		function x$(idTag, param){ //Updated 18 Feb 2012
+   idTag=idTag.replace(/:/gi, "\\:")+(param ? param : "");
+   return($("#"+idTag));
+}
+		
+$(function(){
+//initialize date picker, hide it after selecting a date 
+
+x$('#{id:dateC}').datepicker()
+		.on('changeDate', function(ev){
+					x$('#{id:dateC}').datepicker('hide');
+				});
+});
+]]></xp:this.value>
+	</xp:scriptBlock>
+
+</xp:view>

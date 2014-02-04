@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Bootstrap4XPages | Time picker demo">
+
+	<xp:this.data>
+		<xp:dominoDocument var="docTemp" formName="fTemp"></xp:dominoDocument>
+	</xp:this.data>
+
+	<!-- js & css for plugin -->
+	<xp:this.resources>
+		<xp:script src="/bootstrap-timepicker/js/bootstrap-timepicker.js"
+			clientSide="true"></xp:script>
+		<xp:styleSheet href="/bootstrap-timepicker/css/timepicker.css"></xp:styleSheet>
+	</xp:this.resources>
+
+	<xc:ccAppLayout>
+		<xp:div>
+
+			<xp:div id="form" styleClass="form-horizontal">
+
+				<legend>Time picker demo</legend>
+				
+				<xc:ccBS_Messages></xc:ccBS_Messages>
+
+				<!-- time picker -->
+				<div class="control-group">
+					<xp:label value="Start time" id="label6" for="inputCountry"
+						styleClass="control-label">
+					</xp:label>
+					<div class="controls">
+
+						<xc:ccBS_TimePicker fieldDataSource="#{docTemp}"
+							fieldName="startTime" requiredMessage="Begintijd is verplicht"
+							inputId="startTime" intialDefault="19:00">
+						</xc:ccBS_TimePicker>
+					</div>
+
+				</div>
+
+				<div class="form-actions">
+
+					<xp:button value="Save" id="button1" styleClass="btn btn-primary">
+						<i class="icon-ok icon-white" />
+						<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="form">
+							<xp:this.action><![CDATA[#{javascript:context.setDocumentMode("docTemp", "readOnly")}]]></xp:this.action>
+						</xp:eventHandler></xp:button>
+
+					<xp:button styleClass="btn" value="Cancel" id="button2"></xp:button>
+
+				</div>
+			</xp:div>
+			
+			<xc:ccDemoViewSource componentName="XPages/timePicker.xsp">	</xc:ccDemoViewSource>
+
+		</xp:div>
+	</xc:ccAppLayout>
+
+</xp:view>

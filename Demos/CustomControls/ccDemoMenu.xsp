@@ -9,6 +9,22 @@
 					<i class="icon-chevron-right"></i>
 			</xp:link>
 		</li>
+		
+		<li class="nav-header">Using the plugin</li>
+		
+		<li>
+			<xp:link escape="true" text="Select2 for Combo-/ Listbox" id="link13">
+				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2Listbox.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li>
+			<xp:link escape="true" text="Select2 Value picker" id="link15">
+				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
+			</xp:link>
+		</li>
+		
+		<li class="nav-header">Not using the plugin</li>
 	
 		<li>
 			<xp:link escape="true" text="Buttons" id="link2"
@@ -91,19 +107,8 @@
 			</xp:link>
 		</li>
 		
-		--><li class="nav-header">Plugin demos</li>
+		-->
 		
-		<li>
-			<xp:link escape="true" text="Select2 for Combo-/ Listbox" id="link13">
-				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2Listbox.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
-			</xp:link>
-		</li>
-		
-		<li>
-			<xp:link escape="true" text="Select2 Value picker" id="link15">
-				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2.xsp"}]]></xp:this.value><i class="icon-chevron-right"></i>
-			</xp:link>
-		</li>
 		
 		
 		

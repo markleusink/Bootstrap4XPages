@@ -1,25 +1,23 @@
-<theme extends="bootstrapv3.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
+<theme extends="bootstrapv3.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
 
-	
-	<!-- overrides for resource aggregation -->
-	<resource rendered="#{javascript:context.getProperty('xsp.resources.aggregate').equals('true')}">
-		<content-type>text/css</content-type>
-		<href>bootstrap/css/bootstrap-aggr.css</href>
-	</resource>
-	
 	<!-- Bootstrap customizations -->
 	<resource>
 		<content-type>text/css</content-type>
 		<href>bootstrap-extended.css</href>
 	</resource>
 	
-	<resource rendered="#{javascript:sessionScope.theme=='yeti'}">
+	<resource rendered="#{javascript:sessionScope.theme=='darkly'}">
 		<content-type>text/css</content-type>
-		<href>bootstrap-themes/yeti.css</href>
+		<href>darkly.min.css</href>
 	</resource>
-		<resource rendered="#{javascript:sessionScope.theme=='cyborg'}">
+	<resource rendered="#{javascript:sessionScope.theme=='superhero'}">
 		<content-type>text/css</content-type>
-		<href>bootstrap-themes/cyborg.css</href>
+		<href>superhero.min.css</href>
+	</resource>
+	<resource rendered="#{javascript:sessionScope.theme=='journal'}">
+		<content-type>text/css</content-type>
+		<href>journal.min.css</href>
 	</resource>
 	
 	

@@ -6,21 +6,21 @@
 		<li>
 			<xp:link escape="true" id="link12" value="/.ibmxspres/domino/bs4xp/demos.nsf/reusableFields.xsp">
 				<xp:this.text><![CDATA[Reusable fields & validation]]></xp:this.text>
-				<i class="icon-chevron-right"></i>
+				<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 	
 		<li>
 			<xp:link escape="true" text="All Bootstrap controls" id="link8"
 				value="/.ibmxspres/domino/bs4xp/demos.nsf/allControls.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 	
 		<li>
 			<xp:link escape="true" text="Buttons" id="link2"
 				value="/.ibmxspres/domino/bs4xp/demos.nsf/demos.xsp#content=buttons">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
@@ -28,21 +28,21 @@
 		<li>
 			<xp:link escape="true" text="Do more with buttons" id="link11"
 				value="/.ibmxspres/domino/bs4xp/demos.nsf/doMoreWithButtons.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
 		<li>
 			<xp:link escape="true" text="(Modal) Dialog"
 				id="link5" value="/.ibmxspres/domino/bs4xp/demos.nsf/dialog.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
 		<li>
 			<xp:link escape="true" text="Alerts"
 				id="link10" value="/.ibmxspres/domino/bs4xp/demos.nsf/alerts.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
@@ -50,44 +50,51 @@
 		<li>
 			<xp:link escape="true" text="Forms"
 				id="link3" value="/.ibmxspres/domino/bs4xp/demos.nsf/form.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		<li>
 			<xp:link escape="true" text="Form controls: Date picker"
 				id="link1" value="/.ibmxspres/domino/bs4xp/demos.nsf/datePicker.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
-		<li>
+		<!--<li>
 			<xp:link escape="true" text="Form controls: Time picker"
 				id="link4" value="/.ibmxspres/domino/bs4xp/demos.nsf/timePicker.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
-		<li>
+		--><li>
 			<xp:link escape="true" text="Login form" id="link6">
-				<xp:this.value><![CDATA[#{javascript:"/.ibmxspres/domino/bs4xp/demos.nsf?open&login"}]]></xp:this.value><i class="icon-chevron-right"></i>
+				<xp:this.value><![CDATA[#{javascript:"/.ibmxspres/domino/bs4xp/demos.nsf?open&login"}]]></xp:this.value><i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
 		<li>
 			<xp:link escape="true" text="Want more icons?"
-				id="link7" value="/.ibmxspres/domino/bs4xp/demos.nsf/moreIcons.xsp">
-					<i class="icon-chevron-right"></i>
+				id="link7" value="/.ibmxspres/domino/bs4xp/demos.nsf/fontAwesome.xsp">
+					<i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
 		<li>
 			<xp:link escape="true" text="Select2"
 				id="link9" value="/.ibmxspres/domino/bs4xp/demos.nsf/select2.xsp">
-					<i class="icon-chevron-right"></i>
+					<i class="glyphicon glyphicon-chevron-right"></i>
+			</xp:link>
+		</li><!--
+		
+			
+		<li>
+			<xp:link escape="true" text="Multi file upload" id="link14">
+				<xp:this.value><![CDATA[#{javascript:"/.ibmxspres/domino/bs4xp/demos.nsf/uploadAdvanced.xsp"}]]></xp:this.value><i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 		
 	
-	</ul>
+	--></ul>
 
 </xp:view>

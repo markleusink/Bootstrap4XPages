@@ -46,7 +46,7 @@ if (itDate != null) {
 				<xp:validateRequired message="Datum is verplicht."></xp:validateRequired>
 			</xp:this.validators></xp:inputText>
 		<span class="add-on">
-			<i class="icon-calendar"></i>
+			<i class="glyphicon glyphicon-calendar"></i>
 		</span>
 	</xp:div>
 

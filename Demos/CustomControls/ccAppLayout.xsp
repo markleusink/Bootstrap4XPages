@@ -52,8 +52,9 @@
 				navbarInverted="true"
 				productLogoAlt="Bootstrap4XPages">
 				<bx:this.bannerApplicationLinks>
-					<xe:basicLeafNode label="Demos">
-						<xe:this.href><![CDATA[/.ibmxspres/domino/bs4xp/demos-plugins.nsf]]></xe:this.href>
+					<xe:basicLeafNode label="Demos"
+						href="../demos.nsf/">
+
 					</xe:basicLeafNode>
 					<!--<xe:basicContainerNode label="Themes">
 						<xe:this.children>

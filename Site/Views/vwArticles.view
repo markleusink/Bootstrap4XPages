@@ -8,15 +8,15 @@
  totalscolor='black' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
  allownewdocuments='false' allowcustomizations='false' hidemarginborder='false'
  marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='14a' unid='8A00E48D89311951C1257B5900550EFC' sequence='15'>
+<noteinfo noteid='14a' unid='8A00E48D89311951C1257B5900550EFC' sequence='17'>
 <created><datetime dst='true'>20130426T172903,96+02</datetime></created>
-<modified><datetime dst='true'>20130822T131558,25+02</datetime></modified>
-<revised><datetime dst='true'>20130822T131558,24+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130822T131558,24+02</datetime></lastaccessed>
+<modified><datetime>20131111T115017,63+01</datetime></modified>
+<revised><datetime>20131111T115017,62+01</datetime></revised>
+<lastaccessed><datetime>20131111T115017,62+01</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T083509,37+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=SAXDEV</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='selection'><formula
->SELECT Form="fArticle" &amp; status != "draft"</formula></code>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><code
+ event='selection'><formula>SELECT Form="fArticle" &amp; status != "draft"</formula></code>
 <column sort='descending' hidedetailrows='false' itemname='isLink' width='10'
  resizable='true' separatemultiplevalues='false' sortnoaccent='false' sortnocase='true'
  showaslinks='false'><columnheader title='isLink'><font size='9pt' style='bold'/></columnheader></column>

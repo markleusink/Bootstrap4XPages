@@ -6,7 +6,7 @@ button > i, a > i {
 }
 
 /* margin between 2 buttons / button links */
-a + a, button + button, a + button, button + a {
+a.btn-link + a.btn-link, .btn + .btn {
 	margin-left: 5px;	
 }
 

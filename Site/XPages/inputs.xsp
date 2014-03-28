@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
+
+	<xp:inputText id="inputText1"></xp:inputText>
+	<xp:br></xp:br>
+	<xp:br></xp:br>
+	<xe:formTable id="formTable1">
+		<xe:formRow id="formRow1">
+			<xp:inputText id="inputText2"></xp:inputText>
+			<xp:this.facets>
+	<xp:text
+		escape="true"
+		id="computedField1"
+		xp:key="help">
+	<xp:this.value><![CDATA[#{javascript:"help me"}]]></xp:this.value></xp:text>
+	<xp:label
+		value="Label"
+		id="label1"
+		xp:key="label">
+	</xp:label></xp:this.facets></xe:formRow></xe:formTable>
+	<xp:br></xp:br>
+	<xp:button
+		value="Label"
+		id="button1">
+	</xp:button></xp:view>

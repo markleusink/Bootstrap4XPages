@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" maintenanceversion="1.0" name="dominodesigner_256x256.png" publicaccess="false" replicaid="C1257B7400241DBD" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="2be" sequence="2" unid="A0AC5230B4523B6AC1257B75004100A0">
+<noteinfo noteid="2be" sequence="5" unid="A0AC5230B4523B6AC1257B75004100A0">
 <created><datetime dst="true">20130524T135000,00+02</datetime></created>
-<modified><datetime dst="true">20130822T131557,88+02</datetime></modified>
-<revised><datetime dst="true">20130822T131557,87+02</datetime></revised>
-<lastaccessed><datetime dst="true">20130822T131557,87+02</datetime></lastaccessed>
+<modified><datetime>20131111T115018,34+01</datetime></modified>
+<revised><datetime>20131111T115018,32+01</datetime></revised>
+<lastaccessed><datetime>20131111T115018,32+01</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130524T135110,80+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><jpeg>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><jpeg>
 iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAVmUlEQVR42u2de5BU1Z3Hb8/0UEN4
 i4MgumbXXQMqrkQCbq2WW4JbywKivNcYY7KlVVvZTXT/2ZA//MNaIUbcoAYUrOJVm4BVKgygwCax
 KosLZDAQAYUkpTA4A2YmOMyLGXoed8/puc3caXpefc69fe49n2/VqZ5BbGZu/z7f3+Ocvp1wXddB
@@ -106,6 +106,5 @@ PdDaveDLQN/BbEF79s/cXdaf/S8BPyqkAfg/6MAPfxID0KbOLAPIdU954EcFM4BMSZqB/zIGoDX7
 nu4EfhR2BZBwen6QRKYd8MNPBaCvDfCbQK4bTQI/Cn0GkOn5XV9FkAD8UOYBue47h1CoBpCpBDpy
 QI8JBFMFOECPTDAAghGhmCjB23kRsldM7BHCABBCGABCyCr9P4OyShHo1GTTAAAAAElFTkSuQmCC
 </jpeg>
-
-<item name="$MimeType" sign="true"><text>image/png</text></item>
-<item name="$FileModDT" sign="true"><datetime dst="true">20130524T134938,28+02</datetime></item></imageresource>
+<item name="$FileModDT" sign="true"><datetime dst="true">20130524T134938,28+02</datetime></item>
+</imageresource>

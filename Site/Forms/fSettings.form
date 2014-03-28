@@ -2,11 +2,11 @@
 <form name='fSettings' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
  replicaid='C1257B7400241DBD' hide='web' publicaccess='false' designerversion='8.5.3'
  renderpassthrough='true'>
-<noteinfo noteid='14e' unid='05319DCF6BA7B88FC1257B6C002C14FD' sequence='5'>
+<noteinfo noteid='14e' unid='05319DCF6BA7B88FC1257B6C002C14FD' sequence='8'>
 <created><datetime dst='true'>20130515T100129,57+02</datetime></created>
-<modified><datetime dst='true'>20130822T131557,95+02</datetime></modified>
-<revised><datetime dst='true'>20130822T131557,93+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20130822T131557,93+02</datetime></lastaccessed>
+<modified><datetime>20140319T092232,59+01</datetime></modified>
+<revised><datetime>20140319T092232,58+01</datetime></revised>
+<lastaccessed><datetime>20140319T092232,58+01</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T083509,38+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
@@ -14,6 +14,14 @@
 <pardef id='1'/>
 <par def='1'/>
 <par def='1'>githubSourceBaseURL: <field type='text' kind='editable' name='githubSourceBaseURL'/><compositedata
+ type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
+ aftercontainercount='1' afterbegincount='3'>
+Yg4BAIQAAAAAAAAAAAA=
+</compositedata></par>
+<par def='1'/>
+<par def='1'>welcomeText: </par>
+<par def='1'/>
+<par def='1'><field type='text' kind='editable' name='welcomeText'/><compositedata
  type='98' prevtype='65418' nexttype='222' afterparcount='6' containertype='65418'
  aftercontainercount='1' afterbegincount='3'>
 Yg4BAIQAAAAAAAAAAAA=

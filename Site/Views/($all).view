@@ -8,15 +8,15 @@
  totalscolor='black' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
  allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
  marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='146' unid='8735BFCA6F870E71C1257B6E002D6AE9' sequence='6'>
+<noteinfo noteid='146' unid='8735BFCA6F870E71C1257B6E002D6AE9' sequence='8'>
 <created><datetime dst='true'>20130517T101604,89+02</datetime></created>
-<modified><datetime dst='true'>20130822T131558,43+02</datetime></modified>
-<revised><datetime dst='true'>20130822T131558,41+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20131011T100043,58+02</datetime></lastaccessed>
+<modified><datetime>20131111T115017,73+01</datetime></modified>
+<revised><datetime>20131111T115017,71+01</datetime></revised>
+<lastaccessed><datetime>20140115T112221,21+01</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T083509,26+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='selection'><formula
->SELECT @All</formula></code>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><code
+ event='selection'><formula>SELECT @All</formula></code>
 <column sort='ascending' hidedetailrows='false' itemname='form' width='10'
  resizable='true' separatemultiplevalues='true' sortnoaccent='true' sortnocase='true'
  showaslinks='false' categorized='true' twisties='true'><font size='9pt' style='bold'/><columnheader

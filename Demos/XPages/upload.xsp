@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	pageTitle="Bootstrap4XPages | Uploader">
+
+	<xp:this.properties>
+		<xp:parameter
+			name="xsp.resources.aggregate"
+			value="true" />
+	</xp:this.properties>
+
+	<xp:this.resources>
+
+		<!--		<xp:styleSheet href="/jquery-File-Upload-9.4.1/css/style.css"></xp:styleSheet>-->
+		<!--		<xp:styleSheet href="/jquery-File-Upload-9.4.1/css/jquery.fileupload.css"></xp:styleSheet>-->
+		<!--		<xp:styleSheet href="/jquery-File-Upload-9.4.1/css/jquery.fileupload-ui.css"></xp:styleSheet>-->
+		<!--		-->
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jquery/jquery-1.8.2.min.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="bootstrap/js/bootstrap.min.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jquery-File-Upload-9.4.1/js/vendor/jquery.ui.widget.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="JavaScript-Templates-2.4.0/tmpl.min.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="JavaScript-Load-Image/js/load-image.min.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.iframe-transport.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.fileupload.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.fileupload-process.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.fileupload-image.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.fileupload-audio.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.fileupload-video.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.fileupload-validate.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+
+		<xp:headTag tagName="script">
+			<xp:this.attributes>
+				<xp:parameter
+					name="type"
+					value="text/javascript" />
+				<xp:parameter
+					name="src"
+					value="jQuery-File-Upload-9.4.1/js/jquery.fileupload-ui.js" />
+			</xp:this.attributes>
+		</xp:headTag>
+
+	</xp:this.resources>
+
+	<xc:ccLayout_1>
+
+		<xp:div>
+
+			<legend>Upload - advanced</legend>
+
+			<p>
+				You're looking at an XPage implementation of the awesome&#160;<a href="https://github.com/blueimp/jQuery-File-Upload" target="_blank">jQuery File Upload plugin</a>. 
+				The plugin is open source and released under a&#160;<a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>.
+				<ul>
+					<li>Works with Domino 8.5.3 and 9</li>
+					<li>HTML 5 based - no plugins required</li>
+					<li>Multiple file selection</li>
+					<li>Drag&amp;drop support</li>
+					<li>Progress bars</li>
+					<li>Validation</li>
+					<li>Preview images, audio and video</li>
+					<li>Client side image resizing</li>
+					<li>Supports cross-domain, chunked and resumable file uploads and client-side image resizing</li>
+				</ul>
+				
+			</p>
+
+			<xc:ccUploadAdvanced></xc:ccUploadAdvanced>
+
+			
+
+
+		</xp:div>
+
+	</xc:ccLayout_1>
+
+</xp:view>

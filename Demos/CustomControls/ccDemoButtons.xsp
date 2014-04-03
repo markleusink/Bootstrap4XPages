@@ -11,10 +11,10 @@
 		
 		<p>
 		
-			<xp:button value="Standard button" styleClass="btn" id="button1"></xp:button>
-			<xp:button value="Primary" id="button2" styleClass="btn btn-primary"></xp:button>
-			<xp:button value="Info" id="button3" styleClass="btn btn-info"></xp:button>
-			<xp:button value="Success" id="button5" styleClass="btn btn-success"></xp:button>
+			<xp:button value="Standard button" id="button1"></xp:button>
+			<xp:button value="Primary" id="button2" themeId="Button.Primary"></xp:button>
+			<xp:button value="Info" id="button3" themeId="Button.Info"></xp:button>
+			<xp:button value="Success" id="button5" themeId="Button.Success"></xp:button>
 			
 		</p>
 		
@@ -30,15 +30,15 @@
 		<p>
 		
 			<xp:button value="Home" id="button4" styleClass="btn">
-				<i class="icon-home" />
+				<i class="glyphicon glyphicon-home" />
 			</xp:button>
 			
-			<xp:button value="Have a drink" id="button6" styleClass="btn">
-				<i class="icon-glass" />
+			<xp:button value="Have a drink" id="button6" themeId="Button.Info">
+				<i class="glyphicon glyphicon-glass" />
 			</xp:button>
 			
 			<xp:button value="Where's the fire?" id="button7" styleClass="btn btn-danger">
-				<i class="icon-fire icon-white" />
+				<i class="glyphicon glyphicon-fire " />
 			</xp:button>
 			
 		</p>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
 
-	<xp:div styleClass="control-group">
+	<xp:div styleClass="form-group">
 	
-		<xp:label styleClass="control-label" for="inputText1" value="${compositeData.fieldLabel}" />
+		<xp:label styleClass="col-sm-2 control-label" for="inputText1" value="${compositeData.fieldLabel}" />
 		
-		<div class="controls">
+		<div class="col-sm-10">
 			<xp:inputText type="text" 
 				id="inputText1" 
 				loaded="${!empty compositeData.placeholder}"

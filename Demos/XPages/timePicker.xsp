@@ -40,7 +40,7 @@
 				<div class="form-actions">
 
 					<xp:button value="Save" id="button1" styleClass="btn btn-primary">
-						<i class="icon-ok icon-white" />
+						<i class="glyphicon glyphicon-ok " />
 						<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="form">
 							<xp:this.action><![CDATA[#{javascript:context.setDocumentMode("docTemp", "readOnly")}]]></xp:this.action>
 						</xp:eventHandler></xp:button>

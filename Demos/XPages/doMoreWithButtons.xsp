@@ -23,7 +23,7 @@
 					<xp:this.attrs>
 						<xp:attr name="data-loading-text" value="Your drink is being served"></xp:attr>
 					</xp:this.attrs>
-					<i class="icon-glass icon-white" />
+					<i class="glyphicon glyphicon-glass " />
 					<xp:eventHandler event="onclick" submit="true" refreshMode="partial" refreshId="button1">
 						<xp:this.action><![CDATA[#{javascript:java.lang.Thread.currentThread().sleep(2000);}]]></xp:this.action>
 					</xp:eventHandler>
@@ -49,7 +49,7 @@
   &lt;xp:this.attrs&gt;
     &lt;xp:attr name="data-loading-text" value="Your drink is being served"&gt;&lt;/xp:attr&gt;
   &lt;/xp:this.attrs&gt;
-  &lt;i class="icon-glass icon-white" /&gt;
+  &lt;i class="glyphicon glyphicon-glass " /&gt;
 &lt;/xp:button&gt;</pre>
 				
 			</p>

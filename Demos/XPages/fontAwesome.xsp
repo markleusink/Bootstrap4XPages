@@ -4,7 +4,7 @@
 	pageTitle="Bootstrap4XPages | Font awesome">
 
 	<xp:this.resources>
-		<xp:styleSheet href="/font-awesome/css/font-awesome.min.css"></xp:styleSheet>
+		<xp:styleSheet href="/font-awesome-4.0.3/css/font-awesome.xpages.css"></xp:styleSheet>
 	</xp:this.resources>
 
 	<!-- these styles are only needed to make this page look good -->
@@ -14,8 +14,8 @@
 		display: block; cursor: pointer; line-height: 32px; height:
 		32px; padding-left: 12px; -webkit-border-radius: 6px;
 		-moz-border-radius: 6px; border-radius: 6px; } .the-icons li a
-		[class^="icon-"], .the-icons li a [class*=" icon-"] { width:
-		32px; font-size: 14px; } .the-icons li [class^="icon-"],
+		[class^="glyphicon glyphicon-"], .the-icons li a [class*=" icon-"] { width:
+		32px; font-size: 14px; } .the-icons li [class^="glyphicon glyphicon-"],
 		.the-icons li [class*=" icon-"] { display: inline-block; width:
 		1.2857142857142858em; text-align: center; }
 	</style>
@@ -53,7 +53,7 @@
 				<li>
 					The latest Font Awesome collection tries to load a
 					font file from the font-awesome folder using a
-					parameter (fontawesome-webfont.eot?v=3.1.0).
+					parameter (fontawesome-webfont.eot?v=4.0.3).
 				</li>
 				<li>
 					Domino doesn't like that syntax. To fix it: find all&#160;<b>url()</b>&#160;references in the Font Awesome CSS files, add 
@@ -66,11 +66,11 @@
 						escape="false" disableTheme="true">
 
 						<xp:this.value><![CDATA[#{javascript:return 
-"url('../font/fontawesome-webfont.eot?v=3.1.0');<br />" +
+"url('../font/fontawesome-webfont.eot?v=4.0.3');<br />" +
 "<br />" +
 "becomes<br />" +
 "<br />" +
-"url('../font/fontawesome-webfont.eot?open&v=3.1.0');"}]]></xp:this.value>
+"url('../font/fontawesome-webfont.eot?open&v=4.0.3');"}]]></xp:this.value>
 					</xp:text>
 
 				</li>

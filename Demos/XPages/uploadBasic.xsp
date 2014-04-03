@@ -5,7 +5,8 @@
 	pageTitle="Uploader">
 
 	<xc:ccAppLayout>
-		<xp:div>
+	<xp:this.facets>
+		<xp:div xp:key="facetMiddle">
 
 			<legend>Upload - basic</legend>
 
@@ -62,6 +63,7 @@
 			</div>
 
 		</xp:div>
+	</xp:this.facets>
 	</xc:ccAppLayout>
 
 </xp:view>

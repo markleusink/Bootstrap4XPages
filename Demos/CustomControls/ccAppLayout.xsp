@@ -6,30 +6,18 @@
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 	
 	<xe:applicationLayout id="applicationLayout1">
-
-		<xp:div styleClass="container">
-
-			<div class="row">
-
-				<div class="span3">
-
-					<xc:ccDemoMenu />
-
-				</div>
-
-				<div class="span9">
-
-					<xp:callback
-						facetName="facetMiddle"
-						id="facetMiddle">
-					</xp:callback>
-
-				</div>
-			</div>
-		</xp:div>
-
-
-
+	
+	<xe:this.facets>
+			<xc:ccDemoMenu
+			
+				xp:key="LeftColumn">
+			</xc:ccDemoMenu>
+		</xe:this.facets>
+	
+		<xp:callback
+			facetName="facetMiddle"
+			id="callback1">
+		</xp:callback>
 
 		<!-- analytics -->
 		<script>
@@ -44,7 +32,7 @@
 		<xe:this.configuration>
 			<bx:bootstrapApplication
 				banner="true"
-				collapseLeftColumn="false"
+				collapseLeftColumn="true"
 				footer="false"
 				legal="false"
 				placeBar="false"
@@ -52,9 +40,8 @@
 				navbarInverted="true"
 				productLogoAlt="Bootstrap4XPages">
 				<bx:this.bannerApplicationLinks>
-					<xe:basicLeafNode label="Demos"
-						href="../demos.nsf/">
-
+					<xe:basicLeafNode label="Demos">
+						<xe:this.href><![CDATA[/.ibmxspres/domino/bs4xp/demos.nsf]]></xe:this.href>
 					</xe:basicLeafNode>
 					<!--<xe:basicContainerNode label="Themes">
 						<xe:this.children>

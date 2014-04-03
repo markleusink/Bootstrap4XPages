@@ -10,16 +10,6 @@ a + a, button + button, a + button, button + a {
 	margin-left: 5px;	
 }
 
-/*reset the left margin that Bootstrap adds to modal dialogs (we're using dijit dialogs and don't want that...)*/
-/*.modal {
-	margin-left: inherit;	
-}*/
-
-/*forms in modals shouldn't have a bottom margin*/
-.modal form {
-	margin-bottom: 0;
-}
-
 /*for this site only: style images in article*/
 article img {
 	margin: 10px 0;

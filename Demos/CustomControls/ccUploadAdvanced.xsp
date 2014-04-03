@@ -29,7 +29,7 @@ max-height: 80px;}
 		<div>
 			<!-- The fileinput-button span is used to style the file input field as button -->
 			<span class="btn btn-success fileinput-button">
-				<i class="icon-plus icon-white"></i>
+				<i class="glyphicon glyphicon-plus "></i>
 				<span>Add files...</span>
 				<xp:fileUpload id="fileUpload1">
 					<xp:this.attrs>
@@ -43,19 +43,19 @@ max-height: 80px;}
 			<button
 				type="submit"
 				class="btn btn-primary start">
-				<i class="icon-upload icon-white"></i>
+				<i class="glyphicon glyphicon-upload "></i>
 				<span>Start upload</span>
 			</button>
 			<button
 				type="reset"
 				class="btn btn-warning cancel">
-				<i class="icon-ban-circle icon-white"></i>
+				<i class="glyphicon glyphicon-ban-circle "></i>
 				<span>Cancel upload</span>
 			</button>
 <!--			<button-->
 <!--				type="button"-->
 <!--				class="btn btn-danger delete">-->
-<!--				<i class="icon-trash icon-white"></i>-->
+<!--				<i class="glyphicon glyphicon-trash "></i>-->
 <!--				<span>Delete</span>-->
 <!--			</button>-->
 <!--			<input-->
@@ -109,13 +109,13 @@ max-height: 80px;}
  "       <td>" + @NewLine() +
   "          {% if (!i && !o.options.autoUpload) { %}" + @NewLine() +
  "               <button class=\"btn btn-primary start\" disabled>" + @NewLine() +
- "                   <i class=\"icon-upload icon-white\"></i>" + @NewLine() +
+ "                   <i class=\"glyphicon glyphicon-upload \"></i>" + @NewLine() +
  "                   <span>Start</span>" + @NewLine() +
 "               </button>" + @NewLine() +
  "           {% } %}" + @NewLine() +
  "           {% if (!i) { %}" + @NewLine() +
  "               <button class=\"btn btn-warning cancel\">" + @NewLine() +
-"                    <i class=\"icon-ban-circle icon-white\"></i>" + @NewLine() +
+"                    <i class=\"glyphicon glyphicon-ban-circle \"></i>" + @NewLine() +
  "                   <span>Cancel</span>" + @NewLine() +
  "               </button>" + @NewLine() +
  "           {% } %}" + @NewLine() +
@@ -156,13 +156,13 @@ max-height: 80px;}
  "       <td>" + @NewLine() +
  "           {% if (file.deleteUrl) { %}" + @NewLine() +
   "              <button class=\"btn btn-danger delete\" data-type=\"{%=file.deleteType%}\" data-url=\"{%=file.deleteUrl%}\"{% if (file.deleteWithCredentials) { %} data-xhr-fields='{\"withCredentials\":true}'{% } %}>" + @NewLine() +
- "                   <i class=\"icon-trash icon-white\"></i>" + @NewLine() +
+ "                   <i class=\"glyphicon glyphicon-trash \"></i>" + @NewLine() +
  "                   <span>Delete</span>" + @NewLine() +
  "               </button>" + @NewLine() +
  "               <input type=\"checkbox\" name=\"delete\" value=\"1\" class=\"toggle\">" + @NewLine() +
 // "           {% } else { %}" + @NewLine() +
 // "               <button class=\"btn btn-warning cancel\">" + @NewLine() +
-// "                   <i class=\"icon-ban-circle icon-white\"></i>" + @NewLine() +
+// "                   <i class=\"glyphicon glyphicon-ban-circle \"></i>" + @NewLine() +
 // "                   <span>Cancel</span>" + @NewLine() +
 // "               </button>" + @NewLine() +
  "           {% } %}" + @NewLine() +

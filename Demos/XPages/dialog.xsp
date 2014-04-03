@@ -9,7 +9,9 @@
 		<xp:div xp:key="facetMiddle">
 
 			<legend>Bootstrap dialog</legend>
-
+			
+			<p><b>Update: The workaround below isn't needed if you use the Bootstrap4Xpage plugin: you can use the standard Dialog control from the Extension Library.</b></p>
+			
 			<p>Bootstrap has a component to create a modal dialog, but it doesn't play well with XPages. The Extension Library has a modal dialog component that plays well with XPages, but doesn't look like Bootstrap.</p>
 
 <p><img src="modal.png" /></p>
@@ -63,23 +65,9 @@ titleBar.append("&lt;h3&gt;" + title + "&lt;/h3&gt;");
 				</xp:link>
 			</p>
 
-			<xe:dialog id="dialog1" title="Your remarks"
-				styleClass="modal" style="margin-left: inherit">
+			<xe:dialog id="dialog1" title="Your remarks">
 
-				<xe:this.onShow><![CDATA[var titleBar = $(".modal .dijitDialogTitleBar").addClass("modal-header");
-		
-		//replace titlenode
-		var titleNode = $(".dijitDialogTitle", titleBar);
-		var title = titleNode.text();
-		titleNode.remove();
-		
-		var close = $(".dijitDialogCloseIcon", titleBar).removeClass("dijitDialogCloseIcon").addClass("close");
-		
-		titleBar.append("<h3>" + title + "</h3>");
-		
-		]]></xe:this.onShow>
-				<xe:dialogContent id="dialogContent1"
-					styleClass="modal-body">
+				<xe:dialogContent id="dialogContent1">
 
 					Enter your remarks here:
 
@@ -87,8 +75,7 @@ titleBar.append("&lt;h3&gt;" + title + "&lt;/h3&gt;");
 
 				</xe:dialogContent>
 
-				<xe:dialogButtonBar id="dialogButtonBar1"
-					styleClass="modal-footer">
+				<xe:dialogButtonBar id="dialogButtonBar1">
 
 					<xp:button value="Close" id="button2"
 						styleClass="btn">

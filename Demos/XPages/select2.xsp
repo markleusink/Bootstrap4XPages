@@ -250,7 +250,7 @@
 				<p style="margin-top: 5px">
 					<xp:button value="do not click me"
 						styleClass="btn btn-danger" id="button1">
-						<i class="icon-fire icon-white" />
+						<i class="glyphicon glyphicon-fire " />
 						<xp:eventHandler event="onclick" submit="true"
 							refreshMode="partial" refreshId="valuePickerSample"
 							execMode="partial" execId="valuePickerSample">
@@ -411,7 +411,7 @@
 			<p style="margin-top: 5px">
 				<xp:button value="refresh the name picker above"
 					id="button2" styleClass="btn btn-success">
-					<i class="icon-ok icon-white" />
+					<i class="glyphicon glyphicon-ok " />
 					<xp:eventHandler event="onclick" submit="true"
 						refreshMode="partial" refreshId="valuePickerSample2"
 						execMode="partial" execId="valuePickerSample2">

@@ -119,9 +119,9 @@
 				<div class="container" style="width: auto;">
 					<a class="btn btn-navbar" data-toggle="collapse"
 						data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
 					</a>
 					<a class="brand" href="#">Project name</a>
 					<div class="nav-collapse">
@@ -210,9 +210,9 @@
 				<div class="container" style="width: auto;">
 					<a class="btn btn-navbar" data-toggle="collapse"
 						data-target=".nav-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
+						<span class="glyphicon glyphicon-bar"></span>
 					</a>
 					<a class="brand" href="#">Project name</a>
 					<div class="nav-collapse">
@@ -333,7 +333,7 @@
 					</td>
 					<td>
 						<a class="btn" href="#">
-							<i class="icon-cog"></i>
+							<i class="glyphicon glyphicon-cog"></i>
 							Default
 						</a>
 					</td>
@@ -383,7 +383,7 @@
 					</td>
 					<td>
 						<a class="btn btn-primary" href="#">
-							<i class="icon-shopping-cart icon-white"></i>
+							<i class="glyphicon glyphicon-shopping-cart "></i>
 							Primary
 						</a>
 					</td>
@@ -436,7 +436,7 @@
 					<td>
 						<a class="btn btn-info" href="#">
 							<i
-								class="icon-exclamation-sign icon-white">
+								class="glyphicon glyphicon-exclamation-sign ">
 							</i>
 							Info
 						</a>
@@ -487,7 +487,7 @@
 					</td>
 					<td>
 						<a class="btn btn-success" href="#">
-							<i class="icon-ok icon-white"></i>
+							<i class="glyphicon glyphicon-ok "></i>
 							Success
 						</a>
 					</td>
@@ -539,7 +539,7 @@
 					</td>
 					<td>
 						<a class="btn btn-warning" href="#">
-							<i class="icon-warning-sign icon-white"></i>
+							<i class="glyphicon glyphicon-warning-sign "></i>
 							Warning
 						</a>
 					</td>
@@ -591,7 +591,7 @@
 					</td>
 					<td>
 						<a class="btn btn-danger" href="#">
-							<i class="icon-remove icon-white"></i>
+							<i class="glyphicon glyphicon-remove "></i>
 							Danger
 						</a>
 					</td>
@@ -643,7 +643,7 @@
 					</td>
 					<td>
 						<a class="btn btn-inverse" href="#">
-							<i class="icon-random icon-white"></i>
+							<i class="glyphicon glyphicon-random "></i>
 							Inverse
 						</a>
 					</td>

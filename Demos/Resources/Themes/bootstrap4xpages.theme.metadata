@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="20a" sequence="129" unid="F82EB2DE0B86A2C2C1257B5900555A31">
+<noteinfo noteid="20a" sequence="139" unid="F82EB2DE0B86A2C2C1257B5900555A31">
 <created><datetime dst="true">20130426T173216,49+02</datetime></created>
-<modified><datetime>20140205T004736,25+01</datetime></modified>
-<revised><datetime>20140204T235520,93+01</datetime></revised>
-<lastaccessed><datetime>20140205T004736,24+01</datetime></lastaccessed>
+<modified><datetime dst="true">20140401T105005,42+02</datetime></modified>
+<revised><datetime dst="true">20140401T105005,40+02</datetime></revised>
+<lastaccessed><datetime dst="true">20140401T105005,40+02</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130523T083458,07+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>bootstrap4xpages.theme</text></item>
-<item name="$CSSFiles"><textlist><text>bootstrap-extended.css</text><text>bootstrap/css/cosmo.min.css</text><text>bootstrap/css/amelia.min.css</text><text>override.css</text></textlist></item></note>
+<item name="$CSSFiles"><textlist><text>bootstrap-extended.css</text><text>bootstrap/css/cosmo.min.css</text><text>bootstrap/css/amelia.min.css</text></textlist></item></note>

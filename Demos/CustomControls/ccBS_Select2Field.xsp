@@ -1,48 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core">
-
-	<xp:this.resources>
-		<xp:script src="/select2-3.4.0/select2.min.js"
-			clientSide="true">
-		</xp:script>
-		<xp:styleSheet href="/select2-3.4.0/select2.css"></xp:styleSheet>
-	</xp:this.resources>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:bx="http://www.openntf.org/xsp/bootstrap">
 
 	<xp:div>
-		<xp:this.styleClass><![CDATA[#{javascript:( getComponent("comboBox5").isValid() ? "control-group" : "control-group error" )}]]></xp:this.styleClass>
-		
-		<xp:label styleClass="control-label" for="comboBox5">
+		<xp:this.styleClass><![CDATA[#{javascript:( getComponent("comboBox5").isValid() ? "form-group" : "form-group error" )}]]></xp:this.styleClass>
+
+		<xp:label
+			styleClass="col-sm-2 control-label"
+			for="comboBox5">
 			<xp:this.value><![CDATA[#{javascript:compositeData.fieldLabel + (compositeData.required ? " *" : "")}]]></xp:this.value>
 		</xp:label>
 
-		<div class="controls">
-			
-			<xp:comboBox id="comboBox5" value="#{compositeData.dataSource[compositeData.fieldName]}" required="${compositeData.required}">
-				<xp:selectItem itemLabel="Choose" itemValue=""></xp:selectItem>
+		<div class="col-sm-10">
+
+			<xp:comboBox
+				id="comboBox5"
+				value="#{compositeData.dataSource[compositeData.fieldName]}"
+				required="${compositeData.required}">
+				<xp:selectItem
+					itemLabel="Choose"
+					itemValue="">
+				</xp:selectItem>
 				<xp:selectItem itemLabel="Alaska"></xp:selectItem>
 				<xp:selectItem itemLabel="Hawaii"></xp:selectItem>
 				<xp:selectItem itemLabel="California"></xp:selectItem>
-				
+
 				<xp:this.validators>
 					<xp:validateRequired message="#{javascript:compositeData.fieldLabel + ' is required'}"></xp:validateRequired>
 				</xp:this.validators>
 
 			</xp:comboBox>
 
-			<xp:scriptBlock id="scriptBlock1">
-				<xp:this.value><![CDATA[$(document).ready( 
-	function() {
-		x$( "#{id:comboBox5}" ).select2();
-	}
-);]]></xp:this.value>
-			</xp:scriptBlock>
+			<bx:select2PickerCombo id="select2PickerCombo1" for="comboBox5"></bx:select2PickerCombo>
 
-			<xp:text escape="true" id="computedField1" styleClass="help-inline" value="${compositeData.helpText}">
+			<xp:text
+				escape="true"
+				id="computedField1"
+				styleClass="help-inline"
+				value="${compositeData.helpText}">
 				<xp:this.rendered><![CDATA[#{javascript:getComponent("comboBox5").isValid() && compositeData.helpText != null}]]></xp:this.rendered>
 			</xp:text>
 
-			<xp:message id="message1" for="comboBox5" styleClass="help-inline"></xp:message>
-			
+			<xp:message
+				id="message1"
+				for="comboBox5"
+				styleClass="help-inline">
+			</xp:message>
+
 		</div>
 
 	</xp:div>

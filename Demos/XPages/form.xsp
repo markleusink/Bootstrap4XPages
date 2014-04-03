@@ -12,24 +12,24 @@
 	
 			<div class="form-horizontal">
 			
-				<legend>Bootstrap form controls</legend>
+				<legend>Bootstrap form</legend>
 		
 				<!-- standard text field -->
-				<div class="control-group">
+				<div class="form-group">
 					<xp:label value="Name" id="label2" for="inputName"
-						styleClass="control-label">
+						styleClass="control-label col-sm-2">
 					</xp:label>
-					<div class="controls">
+					<div class="col-sm-10">
 						<xp:inputText id="inputName"></xp:inputText>
 					</div>
 				</div>
 		
 				<!-- standard text field with placeholder -->
-				<div class="control-group">
+				<div class="form-group">
 					<xp:label value="Email" id="label1" for="inputEmail"
-						styleClass="control-label">
+						styleClass="control-label col-sm-2">
 					</xp:label>
-					<div class="controls">
+					<div class="col-sm-10">
 						<xp:inputText id="inputEmail">
 							<xp:this.attrs>
 								<xp:attr name="placeholder" value="Email"></xp:attr>
@@ -42,11 +42,11 @@
 				</div>
 		
 				<!-- dropdown -->
-				<div class="control-group">
+				<div class="form-group">
 					<xp:label value="Favorite color" id="label3"
-						for="inputCountry" styleClass="control-label">
+						for="inputCountry" styleClass="control-label col-sm-2">
 					</xp:label>
-					<div class="controls">
+					<div class="col-sm-10">
 						<xp:comboBox id="comboBox1">
 							<xp:selectItem itemLabel="Red" itemValue="red"></xp:selectItem>
 							<xp:selectItem itemLabel="Green"
@@ -58,20 +58,19 @@
 				</div>
 		
 				<!-- textarea -->
-				<div class="control-group">
+				<div class="form-group">
 					<xp:label value="About me" id="label4" for="inputAboutMe"
-						styleClass="control-label">
+						styleClass="control-label col-sm-2">
 					</xp:label>
-					<div class="controls">
+					<div class="col-sm-10">
 						<xp:inputTextarea id="inputAboutMe"></xp:inputTextarea>
 					</div>
 				</div>
 		
 				<div class="form-actions">
 		
-					<xp:button value="Save" id="button1"
-						styleClass="btn btn-primary">
-						<i class="icon-ok icon-white" />
+					<xp:button value="Save" id="button1" themeId="Button.Primary">
+						<i class="glyphicon glyphicon-ok " />
 					</xp:button>
 		
 					<xp:button styleClass="btn" value="Cancel" id="button2"></xp:button>

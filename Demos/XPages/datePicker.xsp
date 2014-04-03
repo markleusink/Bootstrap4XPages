@@ -45,7 +45,7 @@
 
 					<xp:button value="Save" id="button1"
 						styleClass="btn btn-primary">
-						<i class="icon-ok icon-white" />
+						<i class="glyphicon glyphicon-ok " />
 					</xp:button>
 
 					<xp:button value="Cancel" styleClass="btn"

@@ -2,18 +2,18 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
 
 	<xp:this.resources>
-		<xp:styleSheet href="/jquery-File-Upload-9.4.1/css/style.css"></xp:styleSheet>
-		<xp:styleSheet href="/jquery-File-Upload-9.4.1/css/jquery.fileupload.css"></xp:styleSheet>
-		<xp:script src="/jquery-File-Upload-9.4.1/js/vendor/jquery.ui.widget.js"
+		<xp:styleSheet href="/jquery-File-Upload-9.5.6-NoAMD/css/style.css"></xp:styleSheet>
+		<xp:styleSheet href="/jquery-File-Upload-9.5.6-NoAMD/css/jquery.fileupload.css"></xp:styleSheet>
+		<xp:script src="/jquery-File-Upload-9.5.6-NoAMD/js/vendor/jquery.ui.widget.js"
 			clientSide="true">
 		</xp:script>
-		<xp:script src="/jquery-File-Upload-9.4.1/js/vendor/jquery.ui.widget.js"
+		<xp:script src="/jquery-File-Upload-9.5.6-NoAMD/js/vendor/jquery.ui.widget.js"
 			clientSide="true">
 		</xp:script>
-		<xp:script src="/jquery-File-Upload-9.4.1/js/jquery.iframe-transport.js"
+		<xp:script src="/jquery-File-Upload-9.5.6-NoAMD/js/jquery.iframe-transport.js"
 			clientSide="true">
 		</xp:script>
-		<xp:script src="/jquery-File-Upload-9.4.1/js/jquery.fileupload.js"
+		<xp:script src="/jquery-File-Upload-9.5.6-NoAMD/js/jquery.fileupload.js"
 			clientSide="true">
 		</xp:script>
 	</xp:this.resources>

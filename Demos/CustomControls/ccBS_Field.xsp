@@ -2,13 +2,13 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
 
 	<xp:div>
-		<xp:this.styleClass><![CDATA[#{javascript:( getComponent("inputText1").isValid() ? "control-group" : "control-group error" )}]]></xp:this.styleClass>
+		<xp:this.styleClass><![CDATA[#{javascript:( getComponent("inputText1").isValid() ? "form-group" : "form-group error" )}]]></xp:this.styleClass>
 		
-		<xp:label styleClass="control-label" for="inputText1">
+		<xp:label styleClass="control-label col-sm-2" for="inputText1">
 			<xp:this.value><![CDATA[#{javascript:compositeData.fieldLabel + (compositeData.required ? " *" : "")}]]></xp:this.value>
 		</xp:label>
 
-		<div class="controls">
+		<div class="col-sm-10">
 			<xp:inputText type="text" id="inputText1" loaded="${!empty compositeData.placeholder}"
 				value="#{compositeData.dataSource[compositeData.fieldName]}" required="${compositeData.required}">
 

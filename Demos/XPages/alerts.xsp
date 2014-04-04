@@ -1,76 +1,125 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
-	
+
 	<xc:ccAppLayout>
-			
+
 		<xp:this.facets>
-		<xp:panel xp:key="facetMiddle" id="messagePanel">
-		
-			<legend>Bootstrap styled messages</legend>
-		
-			<xc:ccBS_Messages></xc:ccBS_Messages>
-		
-			<p>
-				This demo shows you how you can add Bootstrap styled messages.
+			<xp:panel
+				xp:key="facetMiddle"
+				id="messagePanel">
+
+				<legend>Bootstrap styled messages</legend>
+
+				<xc:ccBS_Messages></xc:ccBS_Messages>
+
+				<p>
+					This demo shows you how you can add Bootstrap styled messages.
 			</p>
-			<p>
-				The messages are added server side to the facesContext object using the following code:
+				<p>
+					The messages are added server side to the facesContext object using the following code:
 			</p>
-			<pre>
-var msg = "I'm an info message, click the X and I'm gone forever";
-		
+				<pre>
+					var msg = "I'm an info message, click the X and I'm gone forever";
+
 facesContext.addMessage(
- null,
+  null,
   new javax.faces.application.FacesMessage(
-    javax.faces.application.FacesMessage.SEVERITY_INFO, 
-    msg,
-    msg)
+  javax.faces.application.FacesMessage.SEVERITY_INFO,
+  msg,
+  msg)
 );
 </pre>
-			
-			<p>
-			<xp:button value="Add info message" id="button1" styleClass="btn btn-info">
-				<i class="glyphicon glyphicon-info-sign " />
-			
-				<xp:eventHandler event="onclick" submit="true"
-					refreshMode="partial" refreshId="messagePanel">
-					<xp:this.action><![CDATA[#{javascript:var msg = "I'm an info message, click the X (or refresh) and I'm gone forever";
+
+				<p>
+					<xp:button
+						value="Add info message"
+						id="button1"
+						themeId="Button.Info">
+						<i
+							class="glyphicon glyphicon-info-sign" />
+
+						<xp:eventHandler
+							event="onclick"
+							submit="true"
+							refreshMode="partial"
+							refreshId="messagePanel">
+							<xp:this.action><![CDATA[#{javascript:var msg = "I'm an info message, click the X (or refresh) and I'm gone forever";
 		
 		facesContext.addMessage(
 			null, 
 			new javax.faces.application.FacesMessage( javax.faces.application.FacesMessage.SEVERITY_INFO, msg, msg) );}]]></xp:this.action>
-				</xp:eventHandler></xp:button>
-				
-				&#160;
-				
-			<xp:button value="Add error message" id="button2" styleClass="btn btn-danger">
-				<i class="glyphicon glyphicon-exclamation-sign " />
-			
-				<xp:eventHandler event="onclick" submit="true"
-					refreshMode="partial" refreshId="messagePanel">
-					<xp:this.action><![CDATA[#{javascript:var msg = "I'm an warning message";
+						</xp:eventHandler>
+					</xp:button>
+					&#160;
+
+					<xp:button
+						value="Add warning message"
+						id="button2"
+						themeId="Button.Warning">
+						<i
+							class="glyphicon glyphicon-fire" />
+
+						<xp:eventHandler
+							event="onclick"
+							submit="true"
+							refreshMode="partial"
+							refreshId="messagePanel">
+							<xp:this.action><![CDATA[#{javascript:var msg = "I'm a warning message";
+		
+		facesContext.addMessage(
+			null, 
+			new javax.faces.application.FacesMessage( javax.faces.application.FacesMessage.SEVERITY_WARN, msg, msg) );}]]></xp:this.action>
+						</xp:eventHandler>
+					</xp:button>
+
+					<xp:button
+						value="Add error message"
+						id="button4"
+						themeId="Button.Danger">
+						<i
+							class="glyphicon glyphicon-exclamation-sign" />
+
+						<xp:eventHandler
+							event="onclick"
+							submit="true"
+							refreshMode="partial"
+							refreshId="messagePanel">
+							<xp:this.action><![CDATA[#{javascript:var msg = "I'm an error message";
 		
 		facesContext.addMessage(
 			null, 
 			new javax.faces.application.FacesMessage( javax.faces.application.FacesMessage.SEVERITY_ERROR, msg, msg) );}]]></xp:this.action>
-				</xp:eventHandler></xp:button>
-			</p>
-			
-			<p>
-				The lifetime of these message is very short: they are gone after a request is processed. If you want them to live 
-				longer (e.g. after redirecting a user to another page, you can implement a PhaseListener to store them temporarily 
-				in the sessionScope. The technique to do so is described&#160;<a href="http://linqed.eu/?p=66" target="_blank">here</a>.
-			</p>
-			
-			<p>
-			
-			<xp:button value="Add info message and redirect to date picker" id="button3" styleClass="btn btn-info">
-				<i class="glyphicon glyphicon-info-sign " />
-			
-				<xp:eventHandler event="onclick" submit="true"
-					refreshMode="partial" refreshId="messagePanel">
-					<xp:this.action><![CDATA[#{javascript:var msg = "I was added in the messages demo page. Refresh this page and I'm gone.";
+						</xp:eventHandler>
+					</xp:button>
+				</p>
+
+				<p>
+					The lifetime of these message is very short: they are gone after a request is processed. If you want them to live
+					longer (e.g. after redirecting a user to another page, you can implement a PhaseListener to store them temporarily
+					in the sessionScope. The technique to do so is described&#160;
+					<a
+						href="http://linqed.eu/?p=66"
+						target="_blank">here</a>
+					.
+				</p>
+
+				<p>
+
+					<xp:button
+						value="Add info message and redirect to date picker"
+						id="button3"
+						styleClass="btn btn-info">
+						<i
+							class="glyphicon glyphicon-info-sign " />
+
+						<xp:eventHandler
+							event="onclick"
+							submit="true"
+							refreshMode="partial"
+							refreshId="messagePanel">
+							<xp:this.action><![CDATA[#{javascript:var msg = "I was added in the messages demo page. Refresh this page and I'm gone.";
 		
 		facesContext.addMessage(
 			null, 
@@ -78,13 +127,14 @@ facesContext.addMessage(
 			
 		context.redirectToPage("datePicker");
 			}]]></xp:this.action>
-				</xp:eventHandler></xp:button>
-				
-			</p>
-		
-		</xp:panel>
-		
-	</xp:this.facets>
+						</xp:eventHandler>
+					</xp:button>
+
+				</p>
+
+			</xp:panel>
+
+		</xp:this.facets>
 	</xc:ccAppLayout>
 
 

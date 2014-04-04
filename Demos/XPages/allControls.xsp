@@ -964,7 +964,7 @@
 					</label>
 						<div class="controls">
 							<input type="text" id="inputWarning" />
-							<span class="help-inline">
+							<span class="help-block">
 								Something may have gone wrong
 					</span>
 						</div>
@@ -975,7 +975,7 @@
 					</label>
 						<div class="controls">
 							<input type="text" id="inputError" />
-							<span class="help-inline">
+							<span class="help-block">
 								Please correct the error
 					</span>
 						</div>
@@ -986,7 +986,7 @@
 					</label>
 						<div class="controls">
 							<input type="text" id="inputSuccess" />
-							<span class="help-inline">Woohoo!</span>
+							<span class="help-block">Woohoo!</span>
 						</div>
 					</div>
 					<div class="control-group info">
@@ -1001,7 +1001,7 @@
 								<option>4</option>
 								<option>5</option>
 							</select>
-							<span class="help-inline">Woohoo!</span>
+							<span class="help-block">Woohoo!</span>
 						</div>
 					</div>
 					<div class="form-actions">

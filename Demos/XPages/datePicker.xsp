@@ -7,17 +7,6 @@
 		<xp:dominoDocument var="docTemp" formName="fTemp"></xp:dominoDocument>
 	</xp:this.data>
 
-	<!-- js & css for plugin -->
-	<xp:this.resources>
-		<xp:script
-			src="/bootstrap-datepicker/js/bootstrap-datepicker.js"
-			clientSide="true">
-		</xp:script>
-		<xp:styleSheet
-			href="/bootstrap-datepicker/css/datepicker.css">
-		</xp:styleSheet>
-	</xp:this.resources>
-
 	<xc:ccAppLayout>
 	<xp:this.facets>
 
@@ -27,30 +16,54 @@
 
 				<legend>Date picker demo</legend>
 				
+				<p>
+					This page show an implementation of a Bootstrap date picker by Eternicode, found at&#160;<a href="https://github.com/eternicode/bootstrap-datepicker" target="_blank">https://github.com/eternicode/bootstrap-datepicker</a>.
+				</p>
+				
+				<p>
+					For the demo I've configured the picker with the following options:
+					<ul>
+						<li>You can only select weekdays.</li>
+					<li>The date format used is dd-mm-yyyy.</li>
+					<li>Today's date is highlighted.</li>
+					</ul>
+				</p>
+				
 				<!-- custom control for the message demo (not needed for the date picker) -->
 				<xc:ccBS_Messages></xc:ccBS_Messages>
 
-				<div class="control-group">
+				<div class="form-group">
 					<xp:label value="Birth date" id="label5"
-						for="inputCountry" styleClass="control-label">
+						for="inputCountry" styleClass="control-label col-sm-2">
 					</xp:label>
-					<div class="controls">
-						<xc:ccBS_DatePicker dateFormat="dd-mm-yyyy"
-							fieldDataSource="#{docTemp}" fieldName="date">
+					<div class="col-sm-10">
+						<xc:ccBS_DatePicker
+							dateFormat="dd-mm-yyyy"
+							fieldDataSource="#{docTemp}"
+							fieldName="date">
+							<xc:this.options><![CDATA[#{javascript:return {
+    daysOfWeekDisabled: "0,6",
+    autoclose: true,
+    todayBtn: "linked",
+    todayHighlight: true
+}}]]></xc:this.options>
 						</xc:ccBS_DatePicker>
 					</div>
 				</div>
 
-				<div class="form-actions">
+				<div class="form-group">
+				<div class="col-sm-offset-2 col-sm-10">
 
 					<xp:button value="Save" id="button1"
-						styleClass="btn btn-primary">
+						themeId="Button.Primary">
 						<i class="glyphicon glyphicon-ok " />
 					</xp:button>
 
-					<xp:button value="Cancel" styleClass="btn"
+					<xp:button value="Cancel" styleClass="btn btn-link"
 						id="button2">
 					</xp:button>
+					
+					</div>
 				</div>
 
 			</div>

@@ -2,17 +2,16 @@
 <form name='loginForm' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
  replicaid='C1257B7400240773' hide='web' nocompose='true' noquery='true' publicaccess='true'
  designerversion='8.5.3'>
-<noteinfo noteid='252' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='9'>
+<noteinfo noteid='252' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='10'>
 <created><datetime dst='true'>20130523T125435,99+02</datetime></created>
-<modified><datetime>20131128T125724,62+01</datetime></modified>
-<revised><datetime>20131128T125724,60+01</datetime></revised>
-<lastaccessed><datetime>20131128T125724,60+01</datetime></lastaccessed>
+<modified><datetime dst='true'>20140401T105017,56+02</datetime></modified>
+<revised><datetime dst='true'>20140401T105017,54+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20140401T105017,54+02</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T125721,03+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><code
- event='windowtitle'><formula>"Login"</formula></code><code event='htmlbody'><formula
->"onload=\"setFormFocus();\""</formula></code><code event='htmlhead'><formula
->"&lt;meta http-equiv='expires' content='0'&gt;" +
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='windowtitle'><formula
+>"Login"</formula></code><code event='htmlbody'><formula>"onload=\"setFormFocus();\""</formula></code><code
+ event='htmlhead'><formula>"&lt;meta http-equiv='expires' content='0'&gt;" +
 "&lt;link href=\"/" + @WebDbName + "/bootstrap/css/bootstrap.min.css\" media=\"all\" type=\"text/css\" rel=\"stylesheet\"&gt;"</formula></code><code
  event='jsheader' for='web'><javascript>//SPR# KMOA6YUDZ3: ignore any focus errors in case the focus can't be set (form invisible, etc)
 window.onerror = new Function("return true;");

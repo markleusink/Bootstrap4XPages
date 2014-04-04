@@ -19,7 +19,7 @@
 			</xp:inputText>
 			
 			<xp:text escape="true" id="computedField1"
-				styleClass="help-inline" value="${compositeData.helpText}"
+				styleClass="help-block" value="${compositeData.helpText}"
 				loaded="${!empty compositeData.helpText}"></xp:text>
 		</div>
 	

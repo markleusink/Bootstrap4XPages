@@ -2,7 +2,7 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core">
 
 	<xp:div>
-		<xp:this.styleClass><![CDATA[#{javascript:( getComponent("inputText1").isValid() ? "form-group" : "form-group error" )}]]></xp:this.styleClass>
+		<xp:this.styleClass><![CDATA[#{javascript:( getComponent("inputText1").isValid() ? "form-group" : "form-group has-error" )}]]></xp:this.styleClass>
 		
 		<xp:label styleClass="control-label col-sm-2" for="inputText1">
 			<xp:this.value><![CDATA[#{javascript:compositeData.fieldLabel + (compositeData.required ? " *" : "")}]]></xp:this.value>
@@ -21,11 +21,11 @@
 				</xp:this.validators>
 			</xp:inputText>
 
-			<xp:text escape="true" id="computedField1" styleClass="help-inline" value="${compositeData.helpText}">
+			<xp:text escape="true" id="computedField1" styleClass="help-block" value="${compositeData.helpText}">
 				<xp:this.rendered><![CDATA[#{javascript:getComponent("inputText1").isValid() && compositeData.helpText != null}]]></xp:this.rendered>
 			</xp:text>
 
-			<xp:message id="message1" for="inputText1" styleClass="help-inline"></xp:message>
+			<xp:message id="message1" for="inputText1" styleClass="help-block"></xp:message>
 			
 		</div>
 

@@ -13,7 +13,11 @@ var sev = msg.getSeverity();
 var alertTypeClass = "";
 
 if ( sev == javax.faces.application.FacesMessage.SEVERITY_INFO ) {
-	alertTypeClass ="alert-success";
+	alertTypeClass ="alert-info";
+} else if ( sev == javax.faces.application.FacesMessage.SEVERITY_WARN ) {
+	alertTypeClass ="alert-warning";
+} else if ( sev == javax.faces.application.FacesMessage.SEVERITY_ERROR ) {
+	alertTypeClass ="alert-danger";
 }
 
 "alert fade in " + alertTypeClass}]]></xp:this.styleClass>

@@ -27,9 +27,18 @@
     <property>
       <property-name>dateFormat</property-name>
       <property-class>string</property-class>
-      <description>date format, e.g. dd-MM-yyyy (use uppercase M for months!)</description>
+      <description>date format, e.g. dd-mm-yyyy</description>
       <property-extension>
         <required>true</required>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>options</property-name>
+      <property-class>object</property-class>
+      <property-extension>
+        <designer-extension>
+          <editor>com.ibm.std.String</editor>
+        </designer-extension>
       </property-extension>
     </property>
   </composite-component>

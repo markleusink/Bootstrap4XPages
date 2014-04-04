@@ -13,7 +13,12 @@
 	<xp:this.facets>
 		<xp:div xp:key="facetMiddle">
 
+
+
 			<legend>Select2</legend>
+			
+			<p><b>Update: In most cases, the implementation of Select2 described below isn't needed anymore if you use the Bootstrap4XPages plugin: it is built-in. See the other Select2 examples in this database for details.</b></p>
+			
 
 			<p>
 				<xp:link escape="true" target="_blank"

@@ -7,6 +7,14 @@
 		<href>bootstrap-extended.css</href>
 	</resource>
 	
+	<!-- Bootstrap META tag -->
+	<resources>
+		<metaData>
+			<name>viewport</name>
+			<content>width=device-width, initial-scale=1</content>
+		</metaData>
+	</resources>
+	
 	<resource rendered="#{javascript:sessionScope.theme=='darkly'}">
 		<content-type>text/css</content-type>
 		<href>darkly.min.css</href>

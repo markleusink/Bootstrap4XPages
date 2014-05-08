@@ -6,6 +6,14 @@
 		<href>bootstrap-extended.css</href>
 	</resource>
 	
+	<!-- Bootstrap META tag -->
+	<resources>
+		<metaData>
+			<name>viewport</name>
+			<content>width=device-width, initial-scale=1</content>
+		</metaData>
+	</resources>
+	
 	<!-- themes -->
 	<resource rendered="#{javascript:sessionScope.theme=='cosmo'}">
 		<content-type>text/css</content-type>

@@ -124,6 +124,22 @@
 							class="col-sm-10">
 							<xp:inputTextarea
 								id="inputAboutMe"></xp:inputTextarea>
+							
+						</div>
+					</div>
+					
+					<!-- rich text -->
+					<div
+						class="form-group">
+						<xp:label
+							value="Bio"
+							id="label6"
+							for="inputAboutMe"
+							styleClass="control-label col-sm-2">
+						</xp:label>
+						<div
+							class="col-sm-10">
+							<xp:inputRichText id="inputRichText1"></xp:inputRichText>
 						</div>
 					</div>
 

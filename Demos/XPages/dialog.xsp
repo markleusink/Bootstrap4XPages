@@ -1,107 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	xmlns:xe="http://www.ibm.com/xsp/coreex"
 	pageTitle="Bootstrap4XPages | Dialog demo">
 
 	<xc:ccAppLayout>
-	<xp:this.facets>
-		<xp:div xp:key="facetMiddle">
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetMiddle">
 
-			<legend>Bootstrap dialog</legend>
-			
-			<p><b>Update: The workaround below isn't needed if you use the Bootstrap4Xpage plugin: you can use the standard Dialog control from the Extension Library.</b></p>
-			
-			<p>Bootstrap has a component to create a modal dialog, but it doesn't play well with XPages. The Extension Library has a modal dialog component that plays well with XPages, but doesn't look like Bootstrap.</p>
+				<legend>Bootstrap dialog</legend>
 
-<p><img src="modal.png" /></p>
+				<xp:div id="dlg"
+					styleClass="well well-sm">
+					<b>
+						Update: The workaround below isn't needed if you use the Bootstrap4Xpage plugin: you can use the standard Dialog control from
+						the
+						Extension Library:
+						
+						<xp:button
+							value="Open the dialog"
+							styleClass="btn btn-sm btn-info"
+							style="margin: 5px"
+							id="button1">
+						<xp:eventHandler
+							event="onclick"
+							submit="true"
+							refreshMode="partial"
+							refreshId="dlg">
+							<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").show()}]]></xp:this.action>
+						</xp:eventHandler></xp:button>
 
-<p>Luckily, by changing some properties and little jQuery magic, we can let the <b>xe:dialog control</b> from the Extension Library look like a Bootstrap dialog, so you'll have the best of both. Here's the sample code. </p>
 
-<p>
-<pre>&lt;xe:dialog id="dialog1" title="Dialog title" styleClass="modal" style="margin-left: inherit;"&gt;
+					</b>
+				</xp:div>
 
-    &lt;xe:this.onShow&gt;
-        &lt;![CDATA[//make the dialog look like a Bootstrap dialog using some jQuery magic
+				<p>Bootstrap has a component to create a modal dialog, but it doesn't play well with XPages. The Extension Library has a modal
+					dialog component that plays well with XPages, but doesn't look like Bootstrap.</p>
 
-    //add the modal-header class to the title bar
-    var titleBar = $(".modal .dijitDialogTitleBar").addClass("modal-header");
+				<p>
+					<img
+						src="modal.png" />
+				</p>
 
-//replace title node (by default it's a span)
-var titleNode = $(".dijitDialogTitle", titleBar);
-var title = titleNode.text();
-titleNode.remove();
+				<p>
+					Luckily, by changing some properties and little jQuery magic, we can let the
+					<b>xe:dialog control</b>
+					from the Extension Library look like a Bootstrap dialog, so you'll have the best of both. Here's the sample code.
+				</p>
 
-//add a class to the close icon
-$(".dijitDialogCloseIcon", titleBar).removeClass("dijitDialogCloseIcon").addClass("close");
+				<p>
+					<pre>&lt;xe:dialog id="dialog1" title="Dialog title" styleClass="modal" style="margin-left: inherit;"&gt;
 
-//add a new h3 node with the title 
-titleBar.append("&lt;h3&gt;" + title + "&lt;/h3&gt;");
-        ]]&gt;
-    &lt;/xe:this.onShow&gt;
+						&lt;xe:this.onShow&gt;
+						&lt;![CDATA[//make the dialog look like a Bootstrap dialog using some jQuery magic
 
-    &lt;xe:dialogContent id="dialogContent1" styleClass="modal-body"&gt;
-        dialog content here
-    &lt;/xe:dialogContent&gt;
+						//add the modal-header class
+						to the title bar
+						var titleBar = $(".modal .dijitDialogTitleBar").addClass("modal-header");
 
-    &lt;xe:dialogButtonBar id="dialogButtonBar1" styleClass="modal-footer"&gt;
-        &lt;xp:button value="Close" id="button2"&gt;&lt;/xp:button&gt;
-    &lt;/xe:dialogButtonBar&gt;
+						//replace title node (by default it's a span)
+						var titleNode = $(".dijitDialogTitle", titleBar);
+						var title = titleNode.text();
+						titleNode.remove();
 
-&lt;/xe:dialog&gt;</pre></p>
+						//add a class to the close icon
+						$(".dijitDialogCloseIcon", titleBar).removeClass("dijitDialogCloseIcon").addClass("close");
 
-			<p>
-				The dialog shown on this page is the standard Dialog
-				component from the Extension Library. It has been
-				configured to reflect a Bootstrap style dialog.
+						//add a new h3 node with the title
+						titleBar.append("&lt;h3&gt;" + title + "&lt;/h3&gt;");
+						]]&gt;
+						&lt;/xe:this.onShow&gt;
+
+						&lt;xe:dialogContent id="dialogContent1"
+						styleClass="modal-body"&gt;
+						dialog content here
+						&lt;/xe:dialogContent&gt;
+
+						&lt;xe:dialogButtonBar id="dialogButtonBar1"
+						styleClass="modal-footer"&gt;
+						&lt;xp:button value="Close" id="button2"&gt;&lt;/xp:button&gt;
+						&lt;/xe:dialogButtonBar&gt;
+
+						&lt;/xe:dialog&gt;</pre>
+				</p>
+
+				<p>
+					The dialog shown on this page is the standard Dialog
+					component from the Extension Library. It has been
+					configured to reflect a
+					Bootstrap style dialog.
 			</p>
 
-			<p>
-				<xp:link escape="true" text="Show dialog" id="link2">
-					<xp:eventHandler event="onclick" submit="true"
-						refreshMode="partial" refreshId="dialog1">
-						<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").show();}]]></xp:this.action>
-					</xp:eventHandler>
-				</xp:link>
-			</p>
-
-			<xe:dialog id="dialog1" title="Your remarks">
-
-				<xe:dialogContent id="dialogContent1">
-
-					Enter your remarks here:
-
-					<xp:inputTextarea id="inputTextarea1"></xp:inputTextarea>
-
-				</xe:dialogContent>
-
-				<xe:dialogButtonBar id="dialogButtonBar1">
-
-					<xp:button value="Close" id="button2"
-						styleClass="btn">
-						<xp:eventHandler event="onclick" submit="true"
-							refreshMode="partial" refreshId="dialog1">
-							<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").hide()}]]></xp:this.action>
+				<p>
+					<xp:link
+						escape="true"
+						text="Show dialog"
+						id="link2">
+						<xp:eventHandler
+							event="onclick"
+							submit="true"
+							refreshMode="partial"
+							refreshId="dialog1">
+							<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").show();}]]></xp:this.action>
 						</xp:eventHandler>
-					</xp:button>
+					</xp:link>
+				</p>
 
-					<xp:button value="Ok" id="button3"
-						styleClass="btn btn-primary">
-						<xp:eventHandler event="onclick" submit="true"
-							refreshMode="partial" refreshId="dialog1">
-							<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").hide()}]]></xp:this.action>
-						</xp:eventHandler>
-					</xp:button>
+				<xe:dialog
+					id="dialog1"
+					title="Your remarks">
 
-				</xe:dialogButtonBar>
+					<xe:dialogContent
+						id="dialogContent1">
 
-			</xe:dialog>
+						Enter your remarks here:
 
-			<xc:ccDemoViewSource componentName="XPages/dialog.xsp">
-			</xc:ccDemoViewSource>
+						<xp:inputTextarea
+							id="inputTextarea1"></xp:inputTextarea>
 
-		</xp:div>
-	</xp:this.facets>
+					</xe:dialogContent>
+
+					<xe:dialogButtonBar
+						id="dialogButtonBar1">
+
+						<xp:button
+							value="Close"
+							id="button2"
+							styleClass="btn btn-default">
+							<xp:eventHandler
+								event="onclick"
+								submit="true"
+								refreshMode="partial"
+								refreshId="dialog1">
+								<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").hide()}]]></xp:this.action>
+							</xp:eventHandler>
+						</xp:button>
+
+						<xp:button
+							value="Ok"
+							id="button3"
+							themeId="Button.Primary">
+							<i class="glyphicon glyphicon-ok" />
+							<xp:eventHandler
+								event="onclick"
+								submit="true"
+								refreshMode="partial"
+								refreshId="dialog1">
+								<xp:this.action><![CDATA[#{javascript:getComponent("dialog1").hide()}]]></xp:this.action>
+							</xp:eventHandler>
+						</xp:button>
+
+					</xe:dialogButtonBar>
+
+				</xe:dialog>
+
+				<xc:ccDemoViewSource
+					componentName="XPages/dialog.xsp">
+				</xc:ccDemoViewSource>
+
+			</xp:div>
+		</xp:this.facets>
 	</xc:ccAppLayout>
 
 </xp:view>

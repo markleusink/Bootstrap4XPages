@@ -36,3 +36,19 @@ div.error .select2-container a,
 div.error .select2-drop {
  border-color: rgb(185, 74, 72) !important;
 }
+
+/* fix for combo boxes in RT editor in Bootstrap 3 */
+.cke_editor * {
+        box-sizing:content-box;
+   -moz-box-sizing:content-box;
+    -ms-box-sizing:content-box;
+-webkit-box-sizing:content-box;
+}
+
+/* style the collapsed left column menu button */
+.applayout-main .container-full > .row > .dropdown {
+	margin: 5px 0;
+}
+.dropdown .caret {
+	margin-left: 5px;
+}

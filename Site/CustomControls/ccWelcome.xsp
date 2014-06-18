@@ -18,6 +18,7 @@
 		</xp:dominoView>
 	</xp:this.data>
 
+	<!-- jumbotron -->
 	<div
 		class="jumbotron"
 		style="padding: 30px">
@@ -36,7 +37,7 @@
 		</div>
 	</div>
 
-	<!-- Example row of columns -->
+	<!-- 3 columns -->
 	<div
 		class="container">
 		<div

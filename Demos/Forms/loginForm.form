@@ -1,18 +1,21 @@
 <?xml version='1.0' encoding='utf-8'?>
 <form name='loginForm' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
- replicaid='C1257B7400240773' hide='web' nocompose='true' noquery='true' publicaccess='true'
+ replicaid='C1257B7400240773' nocompose='true' noquery='true' publicaccess='true'
  designerversion='8.5.3'>
-<noteinfo noteid='252' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='10'>
+<noteinfo noteid='252' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='31'>
 <created><datetime dst='true'>20130523T125435,99+02</datetime></created>
-<modified><datetime dst='true'>20140401T105017,56+02</datetime></modified>
-<revised><datetime dst='true'>20140401T105017,54+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20140401T105017,54+02</datetime></lastaccessed>
+<modified><datetime dst='true'>20140618T101849,34+02</datetime></modified>
+<revised><datetime dst='true'>20140618T101849,32+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20140618T101849,32+02</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T125721,03+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='windowtitle'><formula
->"Login"</formula></code><code event='htmlbody'><formula>"onload=\"setFormFocus();\""</formula></code><code
- event='htmlhead'><formula>"&lt;meta http-equiv='expires' content='0'&gt;" +
-"&lt;link href=\"/" + @WebDbName + "/bootstrap/css/bootstrap.min.css\" media=\"all\" type=\"text/css\" rel=\"stylesheet\"&gt;"</formula></code><code
+>"Sign in"</formula></code><code event='htmlbody'><formula>"onload=\"setFormFocus();\""</formula></code><code
+ event='htmlhead'><formula>REM {load the Bootstrap stylesheet. Note: this assume that the Bootstrap4XPages plugin is installed};
+
+"&lt;meta http-equiv='expires' content='0'&gt;" +
+"&lt;meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"&gt;" +
+"&lt;link href=\"/xsp/.ibmxspres/.extlib/bootstrap/bootstrap311/css/bootstrap.min.css\" media=\"all\" type=\"text/css\" rel=\"stylesheet\"&gt;"</formula></code><code
  event='jsheader' for='web'><javascript>//SPR# KMOA6YUDZ3: ignore any focus errors in case the focus can't be set (form invisible, etc)
 window.onerror = new Function("return true;");
 
@@ -26,23 +29,22 @@ function setFormFocus() {
 <par def='1'><run html='true'><font color='red'/></run><run html='true'><font
  color='red'/><field type='text' kind='computedwhencomposed' name='$$HTMLFrontMatter'><code
  event='defaultvalue'><formula>"&lt;!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"&gt;"</formula></code></field></run><compositedata
- type='98' prevtype='65418' nexttype='222' afterparcount='13' containertype='65418'
+ type='98' prevtype='65418' nexttype='222' afterparcount='11' containertype='65418'
  aftercontainercount='1' afterbegincount='3'>
 Yg4BAIQAAAAAAAAAAAA=
 </compositedata><run html='true'><font
  color='red'/></run></par>
 <pardef id='2'/>
 <par def='2'/>
-<par def='2'/>
 <pardef id='3' leftmargin='1in' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
-<par def='3'><run html='true'>&lt;div class="span5 offset2 well" style="margin-top:50px;"&gt;</run></par>
+<par def='3'><run html='true'>&lt;div class="container" style="margin-top:30px"&gt;</run></par>
+<par def='3'><run html='true'>  &lt;div class="col-md-4 col-md-offset-4"&gt;</run></par>
+<par def='3'><run html='true'>    &lt;div class="panel panel-default"&gt;</run></par>
+<par def='3'><run html='true'>      &lt;div class="panel-heading"&gt;&lt;h3 class="panel-title"&gt;&lt;strong&gt;Sign in &lt;/strong&gt;&lt;/h3&gt;&lt;/div&gt;</run></par>
+<par def='3'><run html='true'>        &lt;div class="panel-body"&gt;</run></par>
 <par def='3'/>
-<par def='3'><run html='true'>&lt;fieldset&gt;</run></par>
-<par def='3'><run html='true'>  </run><run html='true'>  &lt;div id="legend"&gt;</run></par>
-<par def='3'><run html='true'>   </run><run html='true'>   &lt;legend class=""&gt;Login&lt;/legend&gt;</run></par>
-<par def='3'><run html='true'>    &lt;/div&gt;</run></par>
-<par def='3'/>
-<par def='3'><run html='true'><computedtext><code event='value'><formula>sDefault 		:= "";
+<par def='3'><run html='true'><font color='blue'/><computedtext><code event='value'><formula
+>sDefault 		:= "";
 sNotEnough	:= "%1, you are not authorized to access %2." + @NewLine + @NewLine + "Please sign in with a name which has sufficient access rights.";
 sInvalid		:= "You provided an invalid username or password.";
 sExpired		:= "Your login has expired. Please sign in again.";
@@ -70,49 +72,48 @@ t := @If(	reasonType = "0"; "";
 	""
 );
 
-@If(t != ""; "&lt;div class=\"alert alert-error\"&gt;" + t + "&lt;/div&gt;"; "")</formula></code></computedtext></run></par>
+@If(
+	t != ""; "&lt;div class=\"alert alert-danger\"&gt;" + t + "&lt;/div&gt;";
+"&lt;p&gt;This is a Bootstrap styled login form that is actually in use as this site's login form.&lt;/p&gt;")</formula></code></computedtext></run></par>
 <par def='3'/>
-<par def='3'><run html='true'>    &lt;div class=</run><run html='true'>"control-group"&gt;</run></par>
+<par def='3'><run html='true'>    &lt;div class=</run><run html='true'>"form-group"&gt;</run></par>
 <par def='3'><run html='true'>      &lt;!-- Username --&gt;</run></par>
 <par def='3'><run html='true'>      &lt;label class="control-label"  for="user-id"&gt;Username&lt;/label&gt;</run></par>
-<par def='3'><run html='true'>      &lt;div class="controls"&gt;</run></par>
-<par def='2'><run html='true'> </run><run html='true'><font name='Courier New'
+<par def='3'><run html='true'> </run><run html='true'><font name='Courier New'
  pitch='fixed' truetype='true' familyid='30'/><field defaultfocus='true' usenotesstyle='false'
  height='0.2500in' width='1in' multiline='true' borderstyle='single' type='text'
  kind='editable' name='Username' htmlid='user-id'><code event='htmlattributes'><formula
->"type=\"text\" maxlength=50 autocomplete=off placeholder=\"Username\" class=\"input-xlarge\""</formula></code></field></run><run
+>"type=\"text\" maxlength=50 autocomplete=off placeholder=\"Username\" class=\"form-control\""</formula></code></field></run><run
  html='true'> </run></par>
-<par def='3'><run html='true'>&lt;/div&gt;</run></par>
 <par def='3'><run html='true'> &lt;/div&gt;</run></par>
 <par def='3'><run html='true'> </run></par>
-<par def='3'><run html='true'>    &lt;div class="control-group"&gt;</run></par>
+<par def='3'><run html='true'>    &lt;div class="form-group"&gt;</run></par>
 <par def='3'><run html='true'>      &lt;label class="control-label" for="pw-id"&gt;Password&lt;/label&gt;</run></par>
-<par def='3'><run html='true'>      &lt;div class="controls"&gt;</run></par>
 <par def='2'><run html='true'> </run><run html='true'><font name='Courier New'
  pitch='fixed' truetype='true' familyid='30'/><field type='password' usenotesstyle='false'
  height='0.2500in' width='1in' multiline='true' borderstyle='single' kind='editable'
  seal='true' name='Password' htmlid='pw-id'><code event='htmlattributes'><formula
->"maxlength=255 autocomplete=off class=\"input-xlarge\" placeholder=\"Password\""</formula></code></field></run></par>
-<par def='3'><run html='true'>      &lt;/div&gt;</run></par>
+>"maxlength=255 autocomplete=off class=\"form-control\" placeholder=\"Password\""</formula></code></field></run></par>
 <par def='3'><run html='true'>    &lt;/div&gt;</run></par>
 <par def='3'><run html='true'> </run></par>
-<par def='3'><run html='true'> </run></par>
-<par def='3'><run html='true'>    &lt;div class="control-group"&gt;</run></par>
+<par def='3'><run html='true'>    &lt;div class="form-group"&gt;</run></par>
 <par def='3'><run html='true'>      &lt;!-- Button --&gt;</run></par>
 <par def='3'><run html='true'>      &lt;div class="controls"&gt;</run></par>
 <par def='2'><run html='true'><font size='9pt' name='Consolas' pitch='fixed'
  truetype='true' familyid='30' color='#333333'/>&lt;button class="btn btn-primary" type="submit"&gt;Sign in&lt;/button&gt;</run></par>
 <par def='3'><run html='true'>      &lt;/div&gt;</run></par>
 <par def='3'><run html='true'>    &lt;/div&gt;</run></par>
-<par def='3'><run html='true'>  &lt;/fieldset&gt;</run></par>
-<par def='3'><run html='true'>&lt;/div&gt;</run></par>
+<par def='3'/>
+<par def='3'><run html='true'>    &lt;/div&gt;&lt;!--panel--&gt;</run></par>
+<par def='3'><run html='true'>  &lt;/div&gt;&lt;!--col--&gt;</run></par>
+<par def='3'><run html='true'>&lt;/div&gt;&lt;!--container--&gt;</run></par>
 <par def='2'><run html='true'><font size='9pt'/>&lt;!--</run><run><font size='9pt'/> </run><button
  width='2in' widthtype='maximum' maxlines='1' wraptext='true' bgcolor='system'
  htmlclass='btn btn-success'>Login</button> <run html='true'>--&gt;</run></par>
 <pardef id='4' align='center' leftmargin='1in'/>
 <par def='4'><run><font size='9pt'/><field type='text' kind='editable' name='RedirectTo'
  extrahtmlattrs='type=hidden'><code event='defaultvalue'><formula>"/"</formula></code></field></run><compositedata
- type='98' prevtype='65402' nexttype='222' afterparcount='7' containertype='65418'
+ type='98' prevtype='65402' nexttype='222' afterparcount='8' containertype='65418'
  aftercontainercount='2' afterbegincount='4'>
 Yg4BAIQAAAAAAAAAAAA=
 </compositedata></par>
@@ -137,7 +138,7 @@ Yg4BAIQAAAAAAAAAAAA=
 </compositedata><run><font size='9pt'
  color='red'/><field type='text' kind='computedfordisplay' name='$$HTMLTagAttributes'><code
  event='defaultvalue'><formula>"lang=\"en\""</formula></code></field></run><compositedata
- type='98' prevtype='65418' nexttype='222' afterparcount='24' containertype='65418'
+ type='98' prevtype='65418' nexttype='222' afterparcount='25' containertype='65418'
  aftercontainercount='1' afterbegincount='3'>
 Yg4BAIQAAAAAAAAAAAA=
 </compositedata><run><font size='9pt'/></run></par>

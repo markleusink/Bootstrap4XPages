@@ -1,0 +1,31 @@
+<theme extends="bootstrapv3.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
+
+	<!-- Bootstrap customizations -->
+	<resource>
+		<content-type>text/css</content-type>
+		<href>bootstrap-extended.css</href>
+	</resource><!--
+	
+	<resource rendered="#{javascript:sessionScope.theme=='darkly'}">
+		<content-type>text/css</content-type>
+		<href>darkly.min.css</href>
+	</resource>
+	<resource rendered="#{javascript:sessionScope.theme=='superhero'}">
+		<content-type>text/css</content-type>
+		<href>superhero.min.css</href>
+	</resource>
+	<resource rendered="#{javascript:sessionScope.theme=='journal'}">
+		<content-type>text/css</content-type>
+		<href>journal.min.css</href>
+	</resource>
+	
+	--><resource>
+		<content-type>text/css</content-type>
+		<href>http://bootswatch.com/assets/css/bootswatch.min.css</href>
+	</resource>
+	
+	
+	
+	
+</theme>

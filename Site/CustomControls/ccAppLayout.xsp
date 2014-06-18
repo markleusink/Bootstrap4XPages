@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xe="http://www.ibm.com/xsp/coreex" xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	xmlns:bx="http://www.openntf.org/xsp/bootstrap">
 
-	<xe:applicationLayout id="applicationLayout1">
-	
+	<xe:applicationLayout
+		id="applicationLayout1">
+
 		<xp:callback
 			facetName="facetMiddle"
 			id="facetMiddle">
@@ -14,7 +18,8 @@
 			Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-31456612-3', 'bootstrap4xpages.com'); ga('send', 'pageview');
+			ga('create', 'UA-31456612-3', 'bootstrap4xpages.com');
+			ga('send', 'pageview');
 
 		</script>
 
@@ -30,43 +35,71 @@
 				productLogoAlt="Bootstrap4XPages">
 				<bx:this.bannerApplicationLinks>
 
-					<xe:basicLeafNode label="Demos">
+					<xe:basicLeafNode
+						label="Demos">
 						<xe:this.href><![CDATA[/.ibmxspres/domino/bs4xp/demos.nsf]]></xe:this.href>
 					</xe:basicLeafNode>
 
-					<xe:basicContainerNode label="Themes">
+					<xe:basicContainerNode
+						label="Themes">
 						<xe:this.children>
-							<xe:basicLeafNode label="Default" submitValue="default"></xe:basicLeafNode>
-							<xe:basicLeafNode label="Bootswatch - Superhero" submitValue="superhero"></xe:basicLeafNode>
-							<xe:basicLeafNode label="Bootswatch - Journal" submitValue="journal"></xe:basicLeafNode>
-							<xe:basicLeafNode label="Bootswatch - Darkly" submitValue="darkly"></xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Default"
+								submitValue="default"></xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Superhero"
+								submitValue="superhero"></xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Journal"
+								submitValue="journal"></xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Darkly"
+								submitValue="darkly"></xe:basicLeafNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
 
-					<xe:basicContainerNode label="Bootstrap sites">
+					<xe:basicContainerNode
+						label="External sites">
 						<xe:this.children>
-							<xe:basicLeafNode label="Official Bootstrap site">
+							<xe:basicLeafNode
+								label="Official Bootstrap site">
 								<xe:this.href><![CDATA[http://getbootstrap.com]]></xe:this.href>
 							</xe:basicLeafNode>
-							<xe:basicLeafNode label="Bootstrap blog">
+							<xe:basicLeafNode
+								label="Bootstrap blog">
 								<xe:this.href><![CDATA[http://blog.getbootstrap.com]]></xe:this.href>
 							</xe:basicLeafNode>
-							<xe:basicLeafNode label="Bootswatch">
+							<xe:basicLeafNode
+								label="Bootswatch">
 								<xe:this.href><![CDATA[http://bootswatch.com]]></xe:this.href>
 							</xe:basicLeafNode>
-							<xe:basicLeafNode label="Wrapbootstrap">
+							<xe:basicLeafNode
+								label="Wrapbootstrap">
 								<xe:this.href><![CDATA[http://wrapbootstrap.com]]></xe:this.href>
+							</xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootsnipp">
+								<xe:this.href><![CDATA[http://bootsnipp.com]]></xe:this.href>
+							</xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Mark Leusink's blog">
+								<xe:this.href><![CDATA[http://linqed.eu]]></xe:this.href>
 							</xe:basicLeafNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
-
 				</bx:this.bannerApplicationLinks>
+				<bx:this.bannerUtilityLinks>
+					<xe:loginTreeNode></xe:loginTreeNode>
+				</bx:this.bannerUtilityLinks>
 			</bx:bootstrapApplication>
 		</xe:this.configuration>
-		
-		 <xp:eventHandler event="onItemClick" submit="true" refreshMode="complete">
-            <xe:this.action><![CDATA[#{javascript:sessionScope.put("theme",context.getSubmittedValue())}]]></xe:this.action>
-        </xp:eventHandler>
+
+		<xp:eventHandler
+			event="onItemClick"
+			submit="true"
+			refreshMode="complete">
+			<xe:this.action><![CDATA[#{javascript:sessionScope.put("theme",context.getSubmittedValue())}]]></xe:this.action>
+		</xp:eventHandler>
 
 	</xe:applicationLayout>
 

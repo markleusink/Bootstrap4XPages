@@ -7,16 +7,14 @@
 <div class="jumbotron jumbotron-ad hidden-print">
   <div class="container">
     <h1><i class="fa fa-flag"></i>&#160; The Icons</h1>
-    <p>The complete set of 369 icons in Font Awesome 4.0.3</p>
   </div>
 </div>
 
 <div class="container">
 
   <div id="new">
-  <h2 class="page-header">11 New Icons in 4.0</h2>
+  <h2 class="page-header">New Icons in 4.0</h2>
   
-
   <div class="row fontawesome-icon-list">
     
 

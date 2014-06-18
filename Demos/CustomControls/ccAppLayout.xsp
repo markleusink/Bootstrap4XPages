@@ -4,31 +4,36 @@
 	xmlns:xe="http://www.ibm.com/xsp/coreex"
 	xmlns:bx="http://www.openntf.org/xsp/bootstrap"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
-	
-	<xe:applicationLayout id="applicationLayout1">
-	
-	<xe:this.facets>
+
+	<xe:applicationLayout
+		id="applicationLayout1">
+
+		<!-- load the menu -->
+		<xe:this.facets>
 			<xc:ccDemoMenu
-			
+
 				xp:key="LeftColumn">
 			</xc:ccDemoMenu>
 		</xe:this.facets>
-	
+
+		<!-- callback for main content -->
 		<xp:callback
 			facetName="facetMiddle"
 			id="callback1">
 		</xp:callback>
 
-		<!-- analytics -->
+		<!-- Google analytics code for bootstrap4xpages.com: remove this for your own site -->
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new
 			Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-			ga('create', 'UA-31456612-3', 'bootstrap4xpages.com'); ga('send', 'pageview');
+			ga('create', 'UA-31456612-3', 'bootstrap4xpages.com');
+			ga('send', 'pageview');
 
 		</script>
-
+	
+		<!-- Bootstrap configuration object for the app layout -->
 		<xe:this.configuration>
 			<bx:bootstrapApplication
 				banner="true"
@@ -43,16 +48,28 @@
 					<xe:basicLeafNode label="Demos">
 						<xe:this.href><![CDATA[/.ibmxspres/domino/bs4xp/demos.nsf]]></xe:this.href>
 					</xe:basicLeafNode>
-					<!--<xe:basicContainerNode label="Themes">
+					<xe:basicContainerNode label="Themes">
 						<xe:this.children>
-						<xe:basicLeafNode label="Default"></xe:basicLeafNode>
-						<xe:basicLeafNode label="Bootswatch - Yeti"></xe:basicLeafNode>
-						<xe:basicLeafNode label="Bootswatch - Cyborg"></xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Default"
+								submitValue="default">
+							</xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Superhero"
+								submitValue="superhero">
+							</xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Journal"
+								submitValue="journal">
+							</xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Darkly"
+								submitValue="darkly">
+							</xe:basicLeafNode>
 						</xe:this.children>
-						</xe:basicContainerNode>
-						
-					-->
-					<xe:basicContainerNode label="Bootstrap sites">
+					</xe:basicContainerNode>
+
+					<xe:basicContainerNode label="External sites">
 						<xe:this.children>
 							<xe:basicLeafNode label="Official Bootstrap site">
 								<xe:this.href><![CDATA[http://getbootstrap.com]]></xe:this.href>
@@ -66,10 +83,27 @@
 							<xe:basicLeafNode label="Wrapbootstrap">
 								<xe:this.href><![CDATA[http://wrapbootstrap.com]]></xe:this.href>
 							</xe:basicLeafNode>
+							<xe:basicLeafNode label="Bootsnipp">
+								<xe:this.href><![CDATA[http://bootsnipp.com]]></xe:this.href>
+							</xe:basicLeafNode>
+							<xe:basicLeafNode label="Mark Leusink's blog">
+								<xe:this.href><![CDATA[http://linqed.eu]]></xe:this.href>
+							</xe:basicLeafNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
 				</bx:this.bannerApplicationLinks>
-			</bx:bootstrapApplication>
+				<bx:this.bannerUtilityLinks>
+					<xe:loginTreeNode></xe:loginTreeNode>
+				</bx:this.bannerUtilityLinks></bx:bootstrapApplication>
 		</xe:this.configuration>
+
+		<!-- event handler to store the selected theme in the sessionScope -->
+		<xp:eventHandler
+			event="onItemClick"
+			submit="true"
+			refreshMode="complete">
+			<xe:this.action><![CDATA[#{javascript:sessionScope.put("theme",context.getSubmittedValue())}]]></xe:this.action>
+		</xp:eventHandler>
+
 	</xe:applicationLayout>
 </xp:view>

@@ -2,14 +2,14 @@
 <form name='fSettings' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
  replicaid='C1257B7400240773' hide='web' publicaccess='false' designerversion='8.5.3'
  renderpassthrough='true'>
-<noteinfo noteid='14e' unid='05319DCF6BA7B88FC1257B6C002C14FD' sequence='7'>
+<noteinfo noteid='14e' unid='05319DCF6BA7B88FC1257B6C002C14FD' sequence='9'>
 <created><datetime dst='true'>20130515T100129,57+02</datetime></created>
-<modified><datetime>20131111T114902,75+01</datetime></modified>
-<revised><datetime>20131111T114902,74+01</datetime></revised>
-<lastaccessed><datetime>20131111T114902,74+01</datetime></lastaccessed>
+<modified><datetime dst='true'>20140618T094958,65+02</datetime></modified>
+<revised><datetime>20131129T104150,99+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20140618T094958,63+02</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T083457,46+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Domino Administrator/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
 <body><richtext>
 <pardef id='1'/>
 <par def='1'/>

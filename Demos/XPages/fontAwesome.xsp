@@ -1,89 +1,104 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	pageTitle="Bootstrap4XPages | Font awesome">
 
 	<xp:this.resources>
-		<xp:styleSheet href="/font-awesome-4.0.3/css/font-awesome.xpages.css"></xp:styleSheet>
+		<xp:styleSheet
+			href="/font-awesome-4.1.0/css/font-awesome.min.css"></xp:styleSheet>
 	</xp:this.resources>
 
 	<!-- these styles are only needed to make this page look good -->
-	<style type="text/css">
+	<style
+		type="text/css">
 		.the-icons { list-style-type: none; margin: 0; } .the-icons li
 		a, .the-icons li a:hover { color: #222; } .the-icons li a {
-		display: block; cursor: pointer; line-height: 32px; height:
+		display:
+		block; cursor: pointer; line-height: 32px; height:
 		32px; padding-left: 12px; -webkit-border-radius: 6px;
-		-moz-border-radius: 6px; border-radius: 6px; } .the-icons li a
+		-moz-border-radius: 6px;
+		border-radius: 6px; } .the-icons li a
 		[class^="glyphicon glyphicon-"], .the-icons li a [class*=" icon-"] { width:
-		32px; font-size: 14px; } .the-icons li [class^="glyphicon glyphicon-"],
+		32px; font-size: 14px; }
+		.the-icons li [class^="glyphicon glyphicon-"],
 		.the-icons li [class*=" icon-"] { display: inline-block; width:
-		1.2857142857142858em; text-align: center; }
+		1.2857142857142858em;
+		text-align: center; }
 	</style>
 
 	<xc:ccAppLayout>
-	<xp:this.facets>
-	<xp:div xp:key="facetMiddle">
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetMiddle">
 
-		<legend>So you want more icons?</legend>
+				<legend>Need more icons? Try Font Awesome!</legend>
 
-		<p>
-			Check out&#160;
-			<a href="http://fortawesome.github.io/Font-Awesome/"
-				target="_blank">
-				Font Awesome
-			</a>
-			! An MIT licensed collection with over 350 scalable icons.
-		</p>
-		<p>
-			To use the collection in an XPage application:
-			<ul>
-				<li>Download the latest version from the site.</li>
-				<li>
-					Add the &#160;
-					<b>font-awesome</b>
-					&#160; folder from the ZIP file to the WebContent
-					folder your application.
-				</li>
-				<li>
-					Add the &#160;
-					<b>font-awesome.min.css</b>
-					&#160; CSS file to your XPage/ theme/ layout custom
-					control.
-				</li>
-				<li>
-					The latest Font Awesome collection tries to load a
-					font file from the font-awesome folder using a
-					parameter (fontawesome-webfont.eot?v=4.0.3).
-				</li>
-				<li>
-					Domino doesn't like that syntax. To fix it: find all&#160;<b>url()</b>&#160;references in the Font Awesome CSS files, add 
-					?open right after the filename and check if the syntax of the resulting URL is correct. 
-					You might need to replace a ? by a an ampersand 
-					(<b>UPDATE: this seems to be better for compatibility with older browsers than just removing the parameters</b>)<br />
-					<br />
-					Example:<br />
-					<xp:text
-						escape="false" disableTheme="true">
+				<p>
 
-						<xp:this.value><![CDATA[#{javascript:return 
-"url('../font/fontawesome-webfont.eot?v=4.0.3');<br />" +
+					<a
+						href="http://fortawesome.github.io/Font-Awesome/"
+						target="_blank">
+						Font Awesome
+			</a>&#160;
+					is an MIT licensed collection with over 400 scalable icons.
+				</p>
+				<p>
+					To use the collection in an XPage application:
+					<ul>
+						<li>Download the latest version from the site (I tested this page with 4.1.0) and extract the contents from the ZIP file.</li>
+						<li>
+							Font Awesome tries to load a
+							font file from the font-awesome-4.1.0 folder using a URL with a parameter (fontawesome-webfont.eot?v=4.1.0), but Domino doesn't like that
+							syntax. To fix that: open the font awesome CSS files (there should be 2), search the file for 'url' (you should find 5 occurrences) references, and add
+							&#160;<b>?open</b>&#160; right after the filename that's referenced. You might need to replace a ? by a an ampersand
+							(
+							<b>UPDATE: this seems to be better for compatibility with older browsers than just removing the parameters</b>
+							)
+							<br />
+							<br />
+							Example:<br />
+							<br />
+							<xp:text
+								escape="false"
+								disableTheme="true">
+
+								<xp:this.value><![CDATA[#{javascript:return 
+"url('../font/fontawesome-webfont.eot?v=4.1.0');<br />" +
 "<br />" +
 "becomes<br />" +
 "<br />" +
-"url('../font/fontawesome-webfont.eot?open&v=4.0.3');"}]]></xp:this.value>
-					</xp:text>
+"url('../font/fontawesome-webfont.eot?open&v=4.1.0');<br /><br />"}]]></xp:this.value>
+							</xp:text>
 
-				</li>
-			</ul>
-		</p>
+						</li>
 
-		<xc:ccFontAwesomeIconList></xc:ccFontAwesomeIconList>
+						<li>
+							Add the&#160;
+							<b>font-awesome-4.1.0</b>
+							&#160; folder from the ZIP file (with the modified CSS files) to the WebContent
+							folder your application (tip: just drag-n-drop it from Windows Explorer to the Package Explorer in Domino Designer)
+						</li>
+						<li>
+							Include the &#160;
+							<b>font-awesome.min.css</b>
+							&#160; CSS file to be loaded by your XPage/ theme/ layout custom control.
+						</li>
 
-		<xc:ccDemoViewSource componentName="XPages/fontAwesome.xsp">
-		</xc:ccDemoViewSource>
+					</ul>
+				</p>
+				
+				<div style="margin-top:10px">
 
-	</xp:div>
-	</xp:this.facets>
+				<xc:ccFontAwesomeIconList></xc:ccFontAwesomeIconList>
+				</div>
+
+				<xc:ccDemoViewSource
+					componentName="XPages/fontAwesome.xsp">
+				</xc:ccDemoViewSource>
+
+			</xp:div>
+		</xp:this.facets>
 	</xc:ccAppLayout>
 
 </xp:view>

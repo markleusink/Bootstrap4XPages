@@ -13,12 +13,12 @@
 		});]]></xp:this.value>
 	</xp:scriptBlock>
 
-	<xc:ccAppLayoutLeftCol>
+	<xc:ccAppLayoutScrollSpy>
 		<xp:this.facets>
 
 			<xp:div
 				xp:key="facetLeft">
-	
+
 				<div
 					class="menu affix">
 
@@ -57,51 +57,23 @@
 					id="section1">
 					<xe:widgetContainer
 						id="widgetContainer1"
-						titleBarText="Section 1">
-
-						Section 1 content. Lorem ipsum dolor sit amet, mei ne sint iusto animal, mea alterum consetetur ad. Vim oblique
-						detracto
-						ex. Ius fugit nobis verear ei, ex tamquam inciderint quo. Ut mel liber quando appetere, oporteat qualisque
-						disputando an eam. Eos autem
-						invenire mediocrem an, ad dico meliore ius, volumus eleifend efficiendi qui ei.
-
-						Omnes accusamus ea usu, in eum probo ullum laoreet. At
-						cum minimum probatus, te maiorum omittam sententiae mea. Eam
-						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
-						vix, nec ignota vituperata necessitatibus
-						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
-						feugiat dolores, his in
-						diam ponderum, at diceret hendrerit sea.
-
-						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
-						everti impedit quo. At has dicat veritus, an
-						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
-						viris eloquentiam vix.
-
-						Nisl atqui reformidans cu ius. Ne propriae accusata conceptam quo. Ea ius apeirian hendrerit, mazim legimus nam
-						et.
-						Legere inciderint mel et, id facer omnesque principes sed.
-
-						Vide viderer nominati pro id, putant commune comprehensam eu mea.
-						Deseruisse complectitur an per, duo adolescens
-						temporibus ut, scripta conclusionemque mel te. Sea quod delectus liberavisse ad, at nam
-						graeci discere delicata. Ad
-						vix sapientem interesset, ex quo idque graeco. Te diam doming maluisset has. Odio sonet civibus ad sed, qui
-						ea errem
-						ullamcorper voluptatibus.
-						
-						Omnes accusamus ea usu, in eum probo ullum laoreet. At
-						cum minimum probatus, te maiorum omittam sententiae mea. Eam
-						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
-						vix, nec ignota vituperata necessitatibus
-						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
-						feugiat dolores, his in
-						diam ponderum, at diceret hendrerit sea.
-
-						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
-						everti impedit quo. At has dicat veritus, an
-						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
-						viris eloquentiam vix.
+						titleBarText="Section 1"> Section 1 content. Lorem ipsum dolor sit amet, mei ne sint iusto animal, mea alterum consetetur ad. Vim oblique detracto
+						ex. Ius fugit nobis verear ei, ex tamquam inciderint quo. Ut mel liber quando appetere, oporteat qualisque disputando an eam. Eos
+						autem invenire mediocrem an, ad dico meliore ius, volumus eleifend efficiendi qui ei. Omnes accusamus ea usu, in eum probo ullum
+						laoreet. At cum minimum probatus, te maiorum omittam sententiae mea. Eam id putent mediocritatem. Detracto ullamcorper no est, ferri
+						probatus et vix, nec ignota vituperata necessitatibus et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo
+						dolores. Duo et feugiat dolores, his in diam ponderum, at diceret hendrerit sea. In nam utinam detracto persecuti, eos in clita animal
+						efficiendi. Ea everti impedit quo. At has dicat veritus, an dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus
+						menandri at, an viris eloquentiam vix. Nisl atqui reformidans cu ius. Ne propriae accusata conceptam quo. Ea ius apeirian hendrerit,
+						mazim legimus nam et. Legere inciderint mel et, id facer omnesque principes sed. Vide viderer nominati pro id, putant commune
+						comprehensam eu mea. Deseruisse complectitur an per, duo adolescens temporibus ut, scripta conclusionemque mel te. Sea quod delectus
+						liberavisse ad, at nam graeci discere delicata. Ad vix sapientem interesset, ex quo idque graeco. Te diam doming maluisset has. Odio
+						sonet civibus ad sed, qui ea errem ullamcorper voluptatibus. Omnes accusamus ea usu, in eum probo ullum laoreet. At cum minimum
+						probatus, te maiorum omittam sententiae mea. Eam id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et vix, nec
+						ignota vituperata necessitatibus et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et feugiat
+						dolores, his in diam ponderum, at diceret hendrerit sea. In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea everti
+						impedit quo. At has dicat veritus, an dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an viris
+						eloquentiam vix.
 
 					</xe:widgetContainer>
 				</div>
@@ -142,18 +114,22 @@
 						vix sapientem interesset, ex quo idque graeco. Te diam doming maluisset has. Odio sonet civibus ad sed, qui
 						ea errem
 						ullamcorper voluptatibus.
-						
+
 						Omnes accusamus ea usu, in eum probo ullum laoreet. At
 						cum minimum probatus, te maiorum omittam sententiae mea. Eam
-						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
+						id putent mediocritatem.
+						Detracto ullamcorper no est, ferri probatus et
 						vix, nec ignota vituperata necessitatibus
-						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
+						et. Qui te enim ipsum pertinax, in sit alii
+						conclusionemque, vim ut probo dolores. Duo et
 						feugiat dolores, his in
 						diam ponderum, at diceret hendrerit sea.
 
-						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
+						In nam utinam detracto
+						persecuti, eos in clita animal efficiendi. Ea
 						everti impedit quo. At has dicat veritus, an
-						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
+						dicit postea periculis est, eam ea ferri
+						accusamus. Sit mucius civibus menandri at, an
 						viris eloquentiam vix.
 
 					</xe:widgetContainer>
@@ -197,18 +173,22 @@
 						vix sapientem interesset, ex quo idque graeco. Te diam doming maluisset has. Odio sonet civibus ad sed, qui
 						ea errem
 						ullamcorper voluptatibus.
-						
+
 						Omnes accusamus ea usu, in eum probo ullum laoreet. At
 						cum minimum probatus, te maiorum omittam sententiae mea. Eam
-						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
+						id putent mediocritatem.
+						Detracto ullamcorper no est, ferri probatus et
 						vix, nec ignota vituperata necessitatibus
-						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
+						et. Qui te enim ipsum pertinax, in sit alii
+						conclusionemque, vim ut probo dolores. Duo et
 						feugiat dolores, his in
 						diam ponderum, at diceret hendrerit sea.
 
-						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
+						In nam utinam detracto
+						persecuti, eos in clita animal efficiendi. Ea
 						everti impedit quo. At has dicat veritus, an
-						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
+						dicit postea periculis est, eam ea ferri
+						accusamus. Sit mucius civibus menandri at, an
 						viris eloquentiam vix.
 
 					</xe:widgetContainer>
@@ -250,18 +230,22 @@
 						vix sapientem interesset, ex quo idque graeco. Te diam doming maluisset has. Odio sonet civibus ad sed, qui
 						ea errem
 						ullamcorper voluptatibus.
-						
+
 						Omnes accusamus ea usu, in eum probo ullum laoreet. At
 						cum minimum probatus, te maiorum omittam sententiae mea. Eam
-						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
+						id putent mediocritatem.
+						Detracto ullamcorper no est, ferri probatus et
 						vix, nec ignota vituperata necessitatibus
-						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
+						et. Qui te enim ipsum pertinax, in sit alii
+						conclusionemque, vim ut probo dolores. Duo et
 						feugiat dolores, his in
 						diam ponderum, at diceret hendrerit sea.
 
-						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
+						In nam utinam detracto
+						persecuti, eos in clita animal efficiendi. Ea
 						everti impedit quo. At has dicat veritus, an
-						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
+						dicit postea periculis est, eam ea ferri
+						accusamus. Sit mucius civibus menandri at, an
 						viris eloquentiam vix.
 
 					</xe:widgetContainer>
@@ -304,39 +288,50 @@
 						ea errem
 						ullamcorper voluptatibus.
 						Omnes accusamus ea usu, in eum probo ullum laoreet. At
-						cum minimum probatus, te maiorum omittam sententiae mea. Eam
+						cum minimum probatus, te maiorum omittam
+						sententiae mea. Eam
 						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
 						vix, nec ignota vituperata necessitatibus
 						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
 						feugiat dolores, his in
-						diam ponderum, at diceret hendrerit sea.
+						diam ponderum, at
+						diceret hendrerit sea.
 
 						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
 						everti impedit quo. At has dicat veritus, an
 						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
 						viris eloquentiam vix.
-						Omnes accusamus ea usu, in eum probo ullum laoreet. At
+						Omnes accusamus ea usu, in
+						eum probo ullum laoreet. At
 						cum minimum probatus, te maiorum omittam sententiae mea. Eam
-						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
+						id putent mediocritatem. Detracto ullamcorper
+						no est, ferri probatus et
 						vix, nec ignota vituperata necessitatibus
-						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
+						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut
+						probo dolores. Duo et
 						feugiat dolores, his in
 						diam ponderum, at diceret hendrerit sea.
 
-						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
+						In nam utinam detracto persecuti, eos in clita
+						animal efficiendi. Ea
 						everti impedit quo. At has dicat veritus, an
-						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
+						dicit postea periculis est, eam ea ferri accusamus. Sit mucius
+						civibus menandri at, an
 						viris eloquentiam vix.
 						Omnes accusamus ea usu, in eum probo ullum laoreet. At
-						cum minimum probatus, te maiorum omittam sententiae mea. Eam
+						cum minimum probatus, te maiorum
+						omittam sententiae mea. Eam
 						id putent mediocritatem. Detracto ullamcorper no est, ferri probatus et
-						vix, nec ignota vituperata necessitatibus
+						vix, nec ignota vituperata
+						necessitatibus
 						et. Qui te enim ipsum pertinax, in sit alii conclusionemque, vim ut probo dolores. Duo et
 						feugiat dolores, his in
-						diam ponderum, at diceret hendrerit sea.
+						diam
+						ponderum, at diceret hendrerit sea.
 
 						In nam utinam detracto persecuti, eos in clita animal efficiendi. Ea
-						everti impedit quo. At has dicat veritus, an
+						everti impedit quo. At has
+						dicat veritus, an
 						dicit postea periculis est, eam ea ferri accusamus. Sit mucius civibus menandri at, an
 						viris eloquentiam vix.
 
@@ -347,6 +342,5 @@
 
 		</xp:this.facets>
 
-	</xc:ccAppLayoutLeftCol>
-
+	</xc:ccAppLayoutScrollSpy>
 </xp:view>

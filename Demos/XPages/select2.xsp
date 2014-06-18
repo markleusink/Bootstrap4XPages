@@ -2,11 +2,17 @@
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom" pageTitle="Select2">
 
+
+	<!-- this is where the required Select2 js & css files are loaded
+	Note that the path's used assume that the Bootstrap4XPages plugin is installed.
+	If you don't have that: add the Select2 files to the application and update that path's -->
 	<xp:this.resources>
-		<xp:script src="/select2-3.4.0/select2.min.js"
+		<xp:script
+			src="/.ibmxspres/domino/xsp/.ibmxspres/.extlib/bootstrap/select2/select2.min.js"
 			clientSide="true">
 		</xp:script>
-		<xp:styleSheet href="/select2-3.4.0/select2.css"></xp:styleSheet>
+		<xp:styleSheet href="/.ibmxspres/domino/xsp/.ibmxspres/.extlib/bootstrap/select2/select2.css"></xp:styleSheet>
+		<xp:styleSheet href="/.ibmxspres/domino/xsp/.ibmxspres/.extlib/bootstrap/select2/select2-bootstrap.css"></xp:styleSheet>
 	</xp:this.resources>
 
 	<xc:ccAppLayout>

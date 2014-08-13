@@ -18,7 +18,7 @@
 			<p>
 			
 				<xp:button value="Get me a drink!" 
-					id="button1" styleClass="btn btn-warning"
+					id="button1" themeId="Button.Warning"
 					onclick="$(this).button('loading');">
 					<xp:this.attrs>
 						<xp:attr name="data-loading-text" value="Your drink is being served"></xp:attr>
@@ -69,8 +69,8 @@
 						Turn the light:
 					</div>
 					<div class="btn-group span4" data-toggle="buttons-radio">
-					  <xp:button styleClass="btn active">On</xp:button>
-					  <xp:button styleClass="btn ">Off</xp:button>
+					  <xp:button styleClass="active">On</xp:button>
+					  <xp:button>Off</xp:button>
 					</div>
 				</div>
 			</p>
@@ -84,8 +84,8 @@
 					</div>
 					
 					<div id="switch" class="btn-group span4" data-toggle="buttons-radio">
-					  <xp:button styleClass="btn btn-success active">Yes</xp:button>
-					  <xp:button styleClass="btn">No</xp:button>
+					  <xp:button styleClass="btn-success active">Yes</xp:button>
+					  <xp:button>No</xp:button>
 					</div>
 					
 					<xp:scriptBlock id="scriptBlock1">

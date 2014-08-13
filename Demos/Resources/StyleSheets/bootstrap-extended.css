@@ -5,11 +5,6 @@ button > i, a > i {
 	margin-right: 4px;
 }
 
-/* margin between 2 buttons / button links */
-a + a, button + button, a + button, button + a {
-	margin-left: 5px;	
-}
-
 /*for this site only: style images in article*/
 article img {
 	margin: 10px 0;
@@ -37,18 +32,7 @@ div.error .select2-drop {
  border-color: rgb(185, 74, 72) !important;
 }
 
-/* fix for combo boxes in RT editor in Bootstrap 3 */
-.cke_editor * {
-        box-sizing:content-box;
-   -moz-box-sizing:content-box;
-    -ms-box-sizing:content-box;
--webkit-box-sizing:content-box;
-}
-
 /* style the collapsed left column menu button */
 .applayout-main .container-full > .row > .dropdown {
 	margin: 5px 0;
-}
-.dropdown .caret {
-	margin-left: 5px;
 }

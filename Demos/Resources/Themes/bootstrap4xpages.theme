@@ -1,20 +1,12 @@
 <!-- Notice the 'extends=' directive below: in this theme we're extending the bootstrap theme from the Bootstrap4XPages plugin -->
 
-<theme extends="bootstrapv3.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
+<theme extends="bootstrapv3.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
 	
 	<!-- Bootstrap customizations: here I define additional CSS style I need/ want in this application -->
 	<resource>
 		<content-type>text/css</content-type>
 		<href>bootstrap-extended.css</href>
 	</resource>
-	
-	<!-- Bootstrap META tag: required by Bootstrap, but not in the Bootstrap4XPages plugin (yet) -->
-	<resources>
-		<metaData>
-			<name>viewport</name>
-			<content>width=device-width, initial-scale=1</content>
-		</metaData>
-	</resources>
 	
 	<!-- different themes: these are included based on the value of a sessionScope variable -->
 	<resource rendered="#{javascript:sessionScope.theme=='darkly'}">
@@ -29,6 +21,5 @@
 		<content-type>text/css</content-type>
 		<href>journal.min.css</href>
 	</resource>
-	
 	
 </theme>

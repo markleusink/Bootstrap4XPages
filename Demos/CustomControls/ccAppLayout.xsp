@@ -30,7 +30,6 @@
 
 			ga('create', 'UA-31456612-3', 'bootstrap4xpages.com');
 			ga('send', 'pageview');
-
 		</script>
 	
 		<!-- Bootstrap configuration object for the app layout -->
@@ -43,7 +42,9 @@
 				placeBar="false"
 				titleBar="false"
 				navbarInverted="true"
-				productLogoAlt="Bootstrap4XPages">
+				navbarFixed="true"
+				productLogoAlt="Bootstrap4XPages.com"
+				pageWidth="fluid">
 				<bx:this.bannerApplicationLinks>
 					<xe:basicLeafNode label="Demos">
 						<xe:this.href><![CDATA[/.ibmxspres/domino/bs4xp/demos.nsf]]></xe:this.href>

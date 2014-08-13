@@ -110,7 +110,7 @@ facesContext.addMessage(
 					<xp:button
 						value="Add info message and redirect to date picker"
 						id="button3"
-						styleClass="btn btn-info">
+						themeId="Button.Info">
 						<i
 							class="glyphicon glyphicon-info-sign " />
 

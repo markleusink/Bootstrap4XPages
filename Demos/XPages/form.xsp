@@ -5,8 +5,9 @@
 
 	<xp:this.data>
 		<xp:dominoDocument
-			var="docTemp"
-			formName="fTemp"></xp:dominoDocument>
+			var="docContact"
+			formName="Contact">
+		</xp:dominoDocument>
 	</xp:this.data>
 
 	<xc:ccAppLayout>
@@ -31,7 +32,22 @@
 						<div
 							class="col-sm-10">
 							<xp:inputText
-								id="inputName"></xp:inputText>
+								id="inputName"
+								value="#{docContact.LastName}">
+							</xp:inputText>
+
+							<xp:scriptBlock
+								id="scriptBlock1"
+								rendered="#{javascript:!docContact.isEditable()}">
+								<xp:this.value><![CDATA[
+								$(document).ready( function() { 
+								//adds the form-control-static class to form elements (read mode alignment)
+									$(".form-horizontal > .form-group > div").addClass("form-control-static");
+								});
+								]]></xp:this.value>
+							</xp:scriptBlock>
+
+
 						</div>
 					</div>
 
@@ -46,18 +62,23 @@
 						</xp:label>
 						<div
 							class="col-sm-10">
+
 							<xp:inputText
-								id="inputEmail">
+								id="inputEmail"
+								value="#{docContact.email}">
 								<xp:this.attrs>
 									<xp:attr
 										name="placeholder"
-										value="Email"></xp:attr>
+										value="Email">
+									</xp:attr>
 								</xp:this.attrs>
 							</xp:inputText>
-							<span
-								class="help-block">
-								Text field with help text here
-						</span>
+
+							<xp:text
+								styleClass="help-block"
+								value="Text field with help text here"
+								rendered="#{javascript:docContact.isEditable()}" />
+
 						</div>
 					</div>
 
@@ -73,6 +94,7 @@
 						<div
 							class="col-sm-10">
 							<xp:comboBox
+								value="#{docContact.color}"
 								id="comboBox1">
 								<xp:selectItem
 									itemLabel="Red"
@@ -99,7 +121,7 @@
 							class="col-sm-10">
 							<xc:ccBS_DatePicker
 								dateFormat="dd-mm-yyyy"
-								fieldDataSource="#{docTemp}"
+								fieldDataSource="#{docContact}"
 								fieldName="date">
 								<xc:this.options><![CDATA[#{javascript:return {
     daysOfWeekDisabled: "0,6",
@@ -123,11 +145,12 @@
 						<div
 							class="col-sm-10">
 							<xp:inputTextarea
+								value="#{docContact.aboutMe}"
 								id="inputAboutMe"></xp:inputTextarea>
-							
+
 						</div>
 					</div>
-					
+
 					<!-- rich text -->
 					<div
 						class="form-group">
@@ -139,7 +162,9 @@
 						</xp:label>
 						<div
 							class="col-sm-10">
-							<xp:inputRichText id="inputRichText1"></xp:inputRichText>
+							<xp:inputRichText
+								value="#{docContact.bio}"
+								id="inputRichText1"></xp:inputRichText>
 						</div>
 					</div>
 
@@ -160,6 +185,33 @@
 								styleClass="btn"
 								value="Cancel"
 								id="button2"></xp:button>
+
+							<xp:button
+								value="Set to read mode"
+								id="button3"
+								themeId="Button.Warning">
+
+								<xp:eventHandler
+									event="onclick"
+									submit="true"
+									refreshMode="complete">
+									<xp:this.action><![CDATA[#{javascript:context.setDocumentMode("readOnly")}]]></xp:this.action>
+								</xp:eventHandler>
+							</xp:button>
+
+							<xp:button
+								value="Set to edit mode"
+								id="button4"
+								themeId="Button.Warning">
+
+								<xp:eventHandler
+									event="onclick"
+									submit="true"
+									refreshMode="complete">
+									<xp:this.action><![CDATA[#{javascript:context.setDocumentMode("edit")}]]></xp:this.action>
+								</xp:eventHandler>
+							</xp:button>
+
 						</div>
 					</div>
 				</div>

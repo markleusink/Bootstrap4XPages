@@ -38,7 +38,7 @@
 					</xp:label>
 					<div class="col-sm-10">
 						<xc:ccBS_DatePicker
-							dateFormat="dd-mm-yyyy"
+							dateFormat="dd-MM-yyyy"
 							fieldDataSource="#{docTemp}"
 							fieldName="date">
 							<xc:this.options><![CDATA[#{javascript:return {

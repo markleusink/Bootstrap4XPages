@@ -69,7 +69,7 @@
 			options = #{javascript:toJson(compositeData.options)};
 		}
 		
-		options.format = "#{compositeData.dateFormat}";
+		options.format = "#{javascript:compositeData.dateFormat.toLowerCase()}";
 	
 $(function(){
 	//initialize date picker

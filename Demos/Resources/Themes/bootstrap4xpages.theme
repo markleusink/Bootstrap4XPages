@@ -2,6 +2,16 @@
 
 <theme extends="bootstrapv3.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
 	
+	<!-- resources for the date picker are included here only to make the date picker work in a dialog (see dialogPickers.xsp) -->
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>/eternicode-datepicker-1.3/js/bootstrap-datepicker.js</href>
+	</resource>
+	<resource>
+		<content-type>text/css</content-type>
+		<href>/eternicode-datepicker-1.3/css/datepicker3.css</href>
+	</resource>
+	
 	<!-- Bootstrap customizations: here I define additional CSS style I need/ want in this application -->
 	<resource>
 		<content-type>text/css</content-type>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xp:this.resources>
+		<xp:script
+			src="momentjs-2.7.0/moment.min.js"
+			clientSide="true">
+		</xp:script>
+		<xp:script
+			src="eonasdan-datetimepicker/js/bootstrap-datetimepicker.min.js"
+			clientSide="true">
+		</xp:script>
+		<xp:styleSheet
+			href="eonasdan-datetimepicker/css/bootstrap-datetimepicker.min.css"></xp:styleSheet>
+	</xp:this.resources>
+
+	<xc:ccAppLayout>
+		<xp:this.facets>
+
+			<xp:div
+				xp:key="facetMiddle">
+
+				<p>
+					This page uses&#160;
+					<a
+						href="https://github.com/Eonasdan/bootstrap-datetimepicker">Eonasdan's Bootstrap DateTimePicker</a>
+					.
+				</p>
+
+				<div
+					class="col-sm-6">
+					<div
+						class="form-group">
+						<div
+							class='input-group date'
+							id='datetimepicker1'>
+
+							<xp:inputText
+								id="inputText1"
+								styleClass="form-control">
+								<xp:this.converter>
+            <xp:convertDateTime type="both" timeStyle="short" />
+        </xp:this.converter>
+							</xp:inputText>
+							<span
+								class="input-group-addon">
+								<span
+									class="glyphicon glyphicon-calendar"></span>
+							</span>
+						</div>
+					</div>
+				</div>
+
+
+			</xp:div>
+		</xp:this.facets>
+	</xc:ccAppLayout>
+
+	<xp:scriptBlock
+		id="scriptBlock1">
+
+		<xp:this.value><![CDATA[$(function () {
+		$('#datetimepicker1').datetimepicker();
+		});]]></xp:this.value>
+	</xp:scriptBlock>
+
+
+</xp:view>

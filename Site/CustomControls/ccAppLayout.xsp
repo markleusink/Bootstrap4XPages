@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view
 	xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xe="http://www.ibm.com/xsp/coreex"
-	xmlns:bx="http://www.openntf.org/xsp/bootstrap">
+	xmlns:xe="http://www.ibm.com/xsp/coreex">
 
 	<xe:applicationLayout
 		id="applicationLayout1">
@@ -24,16 +23,18 @@
 		</script>
 
 		<xe:this.configuration>
-			<bx:bootstrapApplication
+			<xe:bootstrapResponsiveConfiguration
 				banner="true"
 				collapseLeftColumn="false"
 				footer="false"
 				legal="false"
 				placeBar="false"
 				titleBar="false"
-				navbarInverted="true"
-				productLogoAlt="Bootstrap4XPages">
-				<bx:this.bannerApplicationLinks>
+				invertedNavbar="true"
+				fixedNavbar="fixed-top"
+				pageWidth="fluid"
+				productLogoAlt="Bootstrap4XPages.com">
+				<xe:this.bannerApplicationLinks>
 
 					<xe:basicLeafNode
 						label="Demos">
@@ -55,11 +56,17 @@
 							<xe:basicLeafNode
 								label="Bootswatch - Darkly"
 								submitValue="darkly"></xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Cyborg"
+								submitValue="cyborg"></xe:basicLeafNode>
+							<xe:basicLeafNode
+								label="Bootswatch - Cyborg (through CDN)"
+								submitValue="cyborg-cdn"></xe:basicLeafNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
 
 					<xe:basicContainerNode
-						label="External sites">
+						label="Bootstrap sites">
 						<xe:this.children>
 							<xe:basicLeafNode
 								label="Official Bootstrap site">
@@ -77,21 +84,11 @@
 								label="Wrapbootstrap">
 								<xe:this.href><![CDATA[http://wrapbootstrap.com]]></xe:this.href>
 							</xe:basicLeafNode>
-							<xe:basicLeafNode
-								label="Bootsnipp">
-								<xe:this.href><![CDATA[http://bootsnipp.com]]></xe:this.href>
-							</xe:basicLeafNode>
-							<xe:basicLeafNode
-								label="Mark Leusink's blog">
-								<xe:this.href><![CDATA[http://linqed.eu]]></xe:this.href>
-							</xe:basicLeafNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
-				</bx:this.bannerApplicationLinks>
-				<bx:this.bannerUtilityLinks>
-					<xe:loginTreeNode></xe:loginTreeNode>
-				</bx:this.bannerUtilityLinks>
-			</bx:bootstrapApplication>
+
+				</xe:this.bannerApplicationLinks>
+			</xe:bootstrapResponsiveConfiguration>
 		</xe:this.configuration>
 
 		<xp:eventHandler

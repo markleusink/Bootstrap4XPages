@@ -1,6 +1,6 @@
 <!-- Notice the 'extends=' directive below: in this theme we're extending the bootstrap theme from the Bootstrap4XPages plugin -->
 
-<theme extends="bootstrapv3.2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
+<theme extends="Bootstrap3.2.0_flat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
 	
 	<!-- resources for the date picker are included here only to make the date picker work in a dialog (see dialogPickers.xsp) -->
 	<resource>

@@ -34,18 +34,18 @@
 	
 		<!-- Bootstrap configuration object for the app layout -->
 		<xe:this.configuration>
-			<bx:bootstrapApplication
+			<xe:bootstrapResponsiveConfiguration
 				banner="true"
 				collapseLeftColumn="true"
 				footer="false"
 				legal="false"
 				placeBar="false"
 				titleBar="false"
-				navbarInverted="true"
-				navbarFixed="true"
 				productLogoAlt="Bootstrap4XPages.com"
-				pageWidth="fluid">
-				<bx:this.bannerApplicationLinks>
+				pageWidth="fluid"
+				invertedNavbar="true"
+				fixedNavbar="fixed-top">
+				<xe:this.bannerApplicationLinks>
 					<xe:basicLeafNode label="Demos">
 						<xe:this.href><![CDATA[/.ibmxspres/domino/bs4xp/demos.nsf]]></xe:this.href>
 					</xe:basicLeafNode>
@@ -92,10 +92,11 @@
 							</xe:basicLeafNode>
 						</xe:this.children>
 					</xe:basicContainerNode>
-				</bx:this.bannerApplicationLinks>
-				<bx:this.bannerUtilityLinks>
+				</xe:this.bannerApplicationLinks>
+				<xe:this.bannerUtilityLinks>
 					<xe:loginTreeNode></xe:loginTreeNode>
-				</bx:this.bannerUtilityLinks></bx:bootstrapApplication>
+				</xe:this.bannerUtilityLinks>
+			</xe:bootstrapResponsiveConfiguration>
 		</xe:this.configuration>
 
 		<!-- event handler to store the selected theme in the sessionScope -->

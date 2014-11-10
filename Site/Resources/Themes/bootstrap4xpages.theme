@@ -1,4 +1,4 @@
-<theme extends="bootstrapv3.1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+<theme extends="Bootstrap3.2.0_flat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
 
 	<!-- Bootstrap customizations -->
@@ -6,14 +6,6 @@
 		<content-type>text/css</content-type>
 		<href>bootstrap-extended.css</href>
 	</resource>
-	
-	<!-- Bootstrap META tag -->
-	<resources>
-		<metaData>
-			<name>viewport</name>
-			<content>width=device-width, initial-scale=1</content>
-		</metaData>
-	</resources>
 	
 	<resource rendered="#{javascript:sessionScope.theme=='darkly'}">
 		<content-type>text/css</content-type>
@@ -27,6 +19,13 @@
 		<content-type>text/css</content-type>
 		<href>journal.min.css</href>
 	</resource>
-	
+	<resource rendered="#{javascript:sessionScope.theme=='cyborg-cdn'}">
+		<content-type>text/css</content-type>
+		<href>http://netdna.bootstrapcdn.com/bootswatch/3.1.1/cyborg/bootstrap.min.css</href>
+	</resource>
+	<resource rendered="#{javascript:sessionScope.theme=='cyborg'}">
+		<content-type>text/css</content-type>
+		<href>cyborg.min.css</href>
+	</resource>
 	
 </theme>

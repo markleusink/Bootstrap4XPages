@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<view name='vwSettings' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+<view name='vwSettings' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.4'
  replicaid='C1257B7400240773' hide='web' showinmenu='false' publicaccess='false'
  designerversion='8.5.3' unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator'
  headers='beveled' opencollapsed='false' showresponsehierarchy='true' showmargin='true'
@@ -12,7 +12,7 @@
 <created><datetime dst='true'>20130515T100246,06+02</datetime></created>
 <modified><datetime dst='true'>20140618T094959,01+02</datetime></modified>
 <revised><datetime>20131129T104153,83+01</datetime></revised>
-<lastaccessed><datetime dst='true'>20140618T094958,99+02</datetime></lastaccessed>
+<lastaccessed><datetime>20151122T203039,33+01</datetime></lastaccessed>
 <addedtofile><datetime dst='true'>20130523T083457,34+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='selection'><formula

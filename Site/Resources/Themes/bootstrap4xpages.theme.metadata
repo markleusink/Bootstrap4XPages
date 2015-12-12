@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400241DBD" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="20a" sequence="118" unid="F82EB2DE0B86A2C2C1257B5900555A31">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.2" replicaid="C1257B7400241DBD" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="20a" sequence="136" unid="F82EB2DE0B86A2C2C1257B5900555A31">
 <created><datetime dst="true">20130426T173216,49+02</datetime></created>
-<modified><datetime>20140319T172039,19+01</datetime></modified>
-<revised><datetime>20140319T172038,44+01</datetime></revised>
-<lastaccessed><datetime>20140319T172039,17+01</datetime></lastaccessed>
+<modified><datetime>20141110T131445,07+01</datetime></modified>
+<revised><datetime>20141110T131445,05+01</datetime></revised>
+<lastaccessed><datetime>20141110T131445,05+01</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130523T083510,29+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>bootstrap4xpages.theme</text></item>
-<item name="$CSSFiles"><textlist><text>bootstrap-extended.css</text><text>darkly.min.css</text><text>superhero.min.css</text><text>journal.min.css</text></textlist></item></note>
+<item name="$CSSFiles"><textlist><text>bootstrap-extended.css</text><text>darkly.min.css</text><text>superhero.min.css</text><text>journal.min.css</text><text>http://netdna.bootstrapcdn.com/bootswatch/3.1.1/cyborg/bootstrap.min.css</text><text>cyborg.min.css</text></textlist></item></note>

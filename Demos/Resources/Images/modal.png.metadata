@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" maintenanceversion="1.0" name="modal.png" publicaccess="false" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="4f6" sequence="5" unid="42C2E26FEB12ACE5C1257BCD002B0B26">
+<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" maintenanceversion="1.4" name="modal.png" publicaccess="false" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="52e" sequence="7" unid="42C2E26FEB12ACE5C1257BCD002B0B26">
 <created><datetime dst="true">20130820T095009,02+02</datetime></created>
-<modified><datetime>20131129T101541,46+01</datetime></modified>
-<revised><datetime>20131111T114902,18+01</datetime></revised>
-<lastaccessed><datetime>20131129T101541,46+01</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20131003T160531,87+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Domino Administrator/O=LinQed</name></updatedby>
-<wassignedby><name>CN=Domino Administrator/O=LinQed</name></wassignedby><jpeg>
+<modified><datetime dst="true">20140618T095001,18+02</datetime></modified>
+<revised><datetime>20131129T104152,69+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140618T095001,16+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130820T095009,13+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><jpeg>
 iVBORw0KGgoAAAANSUhEUgAAAkoAAADDCAYAAAB9Az6gAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
 jwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABnXSURBVHhe7Z1bbBzXeYBpoEAem6BFi7Z5Kfrc
 h4J96EtboE0TJE7T2EiM+lIHretaEogQbYqiQGM7bWrJSonade0arpzIiGUXkmkXoAFblixTN4qW

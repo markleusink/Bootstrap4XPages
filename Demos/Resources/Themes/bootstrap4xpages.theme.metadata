@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="20a" sequence="148" unid="F82EB2DE0B86A2C2C1257B5900555A31">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.4" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="20a" sequence="178" unid="F82EB2DE0B86A2C2C1257B5900555A31">
 <created><datetime dst="true">20130426T173216,49+02</datetime></created>
-<modified><datetime dst="true">20140618T093056,92+02</datetime></modified>
-<revised><datetime dst="true">20140618T093056,90+02</datetime></revised>
-<lastaccessed><datetime dst="true">20140618T093056,90+02</datetime></lastaccessed>
+<modified><datetime>20151212T100502,00+01</datetime></modified>
+<revised><datetime>20151212T100501,97+01</datetime></revised>
+<lastaccessed><datetime>20151212T100501,98+01</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130523T083458,07+02</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
@@ -13,4 +13,4 @@
 
 
 <item name="$FileNames" sign="true"><text>bootstrap4xpages.theme</text></item>
-<item name="$CSSFiles"><textlist><text>bootstrap-extended.css</text><text>darkly.min.css</text><text>superhero.min.css</text><text>journal.min.css</text></textlist></item></note>
+<item name="$CSSFiles"><textlist><text>select2-3.5.4/select2.css</text><text>select2-3.5.4/select2-bootstrap.css</text><text>/eternicode-datepicker-1.3/css/datepicker3.css</text><text>bootstrap-extended.css</text><text>darkly.min.css</text><text>superhero.min.css</text><text>journal.min.css</text></textlist></item></note>

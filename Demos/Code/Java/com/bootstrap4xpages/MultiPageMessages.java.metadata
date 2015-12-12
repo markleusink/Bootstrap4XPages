@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="38a" sequence="7" unid="1126D42457D717EBC1257B7C00322807">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.4" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="38a" sequence="14" unid="1126D42457D717EBC1257B7C00322807">
 <created><datetime dst="true">20130531T110750,47+02</datetime></created>
-<modified><datetime dst="true">20130822T131635,90+02</datetime></modified>
-<revised><datetime dst="true">20130822T131635,88+02</datetime></revised>
-<lastaccessed><datetime dst="true">20130822T131635,88+02</datetime></lastaccessed>
+<modified><datetime dst="true">20140618T095001,34+02</datetime></modified>
+<revised><datetime>20131129T104150,45+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140618T095001,32+02</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130531T110843,04+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>com/bootstrap4xpages/MultiPageMessages.java</text></item>

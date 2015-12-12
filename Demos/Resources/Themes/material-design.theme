@@ -1,0 +1,26 @@
+
+<theme extends="Bootstrap3.2.0_flat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
+
+	<resource>
+		<content-type>text/css</content-type>
+		<href>bootstrap-matdesign/css/material-wfont.css</href>
+	</resource>
+	<resource>
+		<content-type>text/css</content-type>
+		<href>bootstrap-matdesign/css/ripples.min.css</href>
+	</resource>
+
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>bootstrap-matdesign/js/material.min.js</href>
+	</resource>
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>bootstrap-matdesign/js/ripples.min.js</href>
+	</resource>
+	<resource>
+		<content-type>application/x-javascript</content-type>
+		<href>mat-design.js</href>
+	</resource>
+	
+</theme>

@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xp:view
 	xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xe="http://www.ibm.com/xsp/coreex"
-	xmlns:bx="http://www.openntf.org/xsp/bootstrap"
-	pageTitle="Select2 examples"
 	xmlns:xc="http://www.ibm.com/xsp/custom">
 
-	<xp:this.data>
-		<xp:dominoDocument
-			var="document1"
-			formName="fSelect2Demo">
-		</xp:dominoDocument>
-	</xp:this.data>
 	<xc:ccAppLayout>
 
 		<xp:this.facets>
@@ -20,351 +11,95 @@
 				styleClass="container"
 				xp:key="facetMiddle">
 
-				<legend>Select2 examples</legend>
+				<xp:div styleClass="well">
+
+					<div class="row">
+
+						<div class="col-sm-6">
+							With a combobox (change event, partial refresh):
+							<xp:comboBox
+								id="comboBox1"
+								value="#{viewScope.country}">
+								<xp:selectItem
+									itemLabel=""
+									itemValue="">
+								</xp:selectItem>
+								<xp:selectItem itemLabel="The Netherlands"></xp:selectItem>
+								<xp:selectItem itemLabel="Belgium"></xp:selectItem>
+								<xp:selectItem itemLabel="Germany"></xp:selectItem>
+							</xp:comboBox>
+							<xp:scriptBlock id="scriptBlock1">
+								<xp:this.value><![CDATA[x$("#{id:comboBox1}").select2({
+							placeholder : 'Pick a country',
+							minimumResultsForSearch : 5
+						})
+						
+			.on('change', function(e) {
+				console.log('option changed to: ' + e.val);
+				XSP.partialRefreshPost("#{id:refreshMe}");
+			});]]></xp:this.value>
+							</xp:scriptBlock>
+
+						</div>
 
 
-				<div
-					class="well well-sm">
-					<h4>Simple picker</h4>
+						<xp:div
+							id="refreshMe"
+							styleClass="col-sm-6">
+							You picked:
+							<br />
+							<xp:text value="#{viewScope.country}" />
 
-					<xp:inputHidden
-						id="inputHidden1"
-						value="#{document1.picker1}">
-					</xp:inputHidden>
-
-					<bx:select2Picker
-						id="select2Picker1"
-						for="inputHidden1"
-						allowClearing="true"
-						placeHolder="Select something"
-						useRemoteData="false">
-						<bx:this.dataProvider>
-							<xe:simpleValuePicker>
-								<xe:this.valueList><![CDATA[blue
-		red
-		green
-		purple
-		yellow]]></xe:this.valueList>
-							</xe:simpleValuePicker>
-						</bx:this.dataProvider>
-					</bx:select2Picker>
-				</div>
-
-				<div
-					class="well well-sm">
-					<h4>Another simple picker</h4>
-
-					<xp:inputHidden
-						id="inputText2"
-						value="#{document1.picker2}">
-					</xp:inputHidden>
-
-
-					<bx:select2Picker
-						id="select2Picker2"
-						for="inputText2">
-						<bx:this.dataProvider>
-							<xe:simpleValuePicker>
-								<xe:this.valueList><![CDATA[monday
-						tuesday
-						wednesday
-						thursday
-						friday
-						saturday
-						sunday]]></xe:this.valueList>
-							</xe:simpleValuePicker>
-						</bx:this.dataProvider>
-					</bx:select2Picker>
-
-				</div>
-
-				<div
-					class="well well-sm">
-					<h4>Multiple select</h4>
-					<div>
-						<xp:inputHidden
-							id="inputHidden3"
-							value="#{document1.picker3}"
-							multipleSeparator=",">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker3"
-							for="inputHidden3"
-							listWidth="250px">
-							<bx:this.dataProvider>
-								<xe:simpleValuePicker>
-									<xe:this.valueList><![CDATA[blue
-							green
-							red
-							yellow
-							purple
-							black
-					]]></xe:this.valueList>
-								</xe:simpleValuePicker>
-							</bx:this.dataProvider>
-						</bx:select2Picker>
+						</xp:div>
 
 					</div>
+				</xp:div>
 
-				</div>
+				<xp:div styleClass="well">
+					With a listbox (multi-select):
+					<xp:br></xp:br>
+					<xp:listBox
+						id="listBox1"
+						multiple="true">
+						<xp:selectItem itemLabel="The Netherlands"></xp:selectItem>
+						<xp:selectItem itemLabel="Belgium"></xp:selectItem>
+						<xp:selectItem itemLabel="Germany"></xp:selectItem>
+					</xp:listBox>
+					<xp:scriptBlock id="scriptBlock2">
+						<xp:this.value><![CDATA[x$("#{id:listBox1}").select2();]]></xp:this.value>
+					</xp:scriptBlock>
+				</xp:div>
 
-				<div
-					class="well well-sm">
-
-					<h4>Values with a label (single choice)</h4>
-					<div>
-						<xp:inputHidden
-							id="inputHidden4"
-							value="#{document1.picker4}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker4"
-							for="inputHidden4">
-							<bx:this.dataProvider>
-								<xe:simpleValuePicker
-									labelSeparator="|">
-									<xe:this.valueList><![CDATA[Monday|mon
-		Tuesday|tue
-		Wednesday|wed
-		Thursday|thu
-		Friday|fri
-		Saturday|sat
-		Sunday|sun]]></xe:this.valueList>
-								</xe:simpleValuePicker>
-							</bx:this.dataProvider>
-						</bx:select2Picker>
-
-					</div>
-
-				</div>
-				<div
-					class="well well-sm">
-
-					<h4>Simple string array returned by a JavaScript formula</h4>
-					<div>
-						<xp:inputHidden
-							id="inputHidden5"
-							value="#{document1.picker5}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker5"
-							for="inputHidden5">
-							<bx:this.dataProvider>
-								<xe:simpleValuePicker
-									labelSeparator="|">
-									<xe:this.valueList><![CDATA[#{javascript:var a = new Array("A|a","B|b","C|c","D|d","E|e","F|f","G|g","H|h")
-	return a}]]></xe:this.valueList>
-								</xe:simpleValuePicker>
-							</bx:this.dataProvider>
-						</bx:select2Picker>
-
-					</div>
-
-				</div>
-
-
-				<div
-					class="well well-sm">
-
-					<h4>Values from a bean</h4>
-					<div>
-						<xp:inputHidden
-							id="inputHidden6"
-							value="#{document1.picker6}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker6"
-							for="inputHidden6"
-							listWidth="250px">
-							<bx:this.dataProvider>
-								<xe:beanValuePicker
-									dataBean="extlib.pickers.SimplePicker"></xe:beanValuePicker>
-							</bx:this.dataProvider>
-						</bx:select2Picker>
-
-					</div>
-
-				</div>
-
-
-
-				<div
-					class="well well-sm">
-
-					<h4>Values from a view</h4>
-					<div>
-						<xp:inputHidden
-							id="inputHidden7"
-							value="#{document1.picker7}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker7"
-							for="inputHidden7"
-							listWidth="250px">
-							<bx:this.dataProvider>
-								<xe:dominoViewValuePicker
-									viewName="AllEMails"
-									labelColumn="Name">
-								</xe:dominoViewValuePicker>
-							</bx:this.dataProvider>
-						</bx:select2Picker>
-
-					</div>
-
-				</div>
-
-				<div
-					class="well well-sm">
-
-					<h4>Multiple values from a view</h4>
-					<div>
-						<xp:inputHidden
-							id="inputHidden8"
-							multipleSeparator=","
-							value="#{viewScope.picker8}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker8"
-							for="inputHidden8"
-							placeHolder="Select multiple">
-							<bx:this.dataProvider>
-								<xe:dominoViewValuePicker
-									viewName="AllEMails"
-									labelColumn="Name">
-								</xe:dominoViewValuePicker>
-							</bx:this.dataProvider>
-						</bx:select2Picker>
-
-					</div>
-
-				</div>
-
-
-				<div
-					class="well well-sm">
-
-					<h4>Values from a view with Fulltext search</h4>
-					<div>
-						<xp:inputHidden
-							id="inputHidden9"
-							value="#{viewScope.picker9}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker9"
-							for="inputHidden9"
-							useRemoteData="true"
-							placeHolder="Find a user"
-							allowClearing="true"
-							listWidth="250px">
-							<bx:this.dataProvider>
-								<xe:dominoViewValuePicker
-									viewName="AllEMails"
-									labelColumn="Name"
-									searchType="ftSearch">
-								</xe:dominoViewValuePicker>
-							</bx:this.dataProvider>
-						</bx:select2Picker>
-
-					</div>
-
-				</div>
-
-				<div
-					class="well well-sm">
-					<h4>Simple pickers with a template</h4>
-					<p>
-						<xp:inputHidden
-							id="inputHidden10"
-							value="#{document1.picker10}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker10"
-							for="inputHidden10"
-							allowClearing="true"
-							placeHolder="Favorite colour"
-							useRemoteData="false"
-							listWidth="200px">
-							<bx:this.dataProvider>
-								<xe:simpleValuePicker
-									labelSeparator="|">
-									<xe:this.valueList><![CDATA[Blue|bl
-Red|r
-Green|gr
-Purple|pu
-Yellow|ye
-Lime|lime]]></xe:this.valueList>
-								</xe:simpleValuePicker>
-							</bx:this.dataProvider>
-							<bx:this.formatResult><![CDATA[<div style="display:inline-block; width: 30px; height: 30px; margin-right: 5px; background-color: {text}"></div><div style="display:inline-block"><b>{text}</b></div>]]></bx:this.formatResult>
-							<bx:this.formatSelection><![CDATA[<b>{text}</b>]]></bx:this.formatSelection>
-						</bx:select2Picker>
-					</p>
-					<p>
-
-						<xp:inputHidden
-							id="inputHidden11"
-							value="#{document1.picker11}">
-						</xp:inputHidden>
-
-						<bx:select2Picker
-							id="select2Picker11"
-							for="inputHidden11"
-							allowClearing="true"
-							placeHolder="Pick a user"
-							useRemoteData="false"
-							listWidth="300px">
-							<bx:this.dataProvider>
-								<xe:dominoViewValuePicker
-									viewName="AllContactsWithPics"
-									labelColumn="Name">
-								</xe:dominoViewValuePicker>
-							</bx:this.dataProvider>
-							<bx:this.formatResult><![CDATA[<img src="AllContactsWithPics/{value}/$file/{value}.jpg" style="width:50px; height:50px" /> <b>{text}</b>]]></bx:this.formatResult>
-							<bx:this.formatSelection><![CDATA[{text}]]></bx:this.formatSelection>
-						</bx:select2Picker>
-
-					</p>
-				</div>
-
-				<div>
-
-					<xp:button
-						value="Set page to readonly"
-						id="button2">
-						<xp:eventHandler
-							event="onclick"
-							submit="true"
-							refreshMode="complete">
-							<xp:this.action><![CDATA[#{javascript:view.setReadonly(true)}]]></xp:this.action>
-						</xp:eventHandler>
-					</xp:button>
-
-					<xp:button
-						value="Set page to editmode"
-						id="button3">
-						<xp:eventHandler
-							event="onclick"
-							submit="true"
-							refreshMode="complete">
-							<xp:this.action><![CDATA[#{javascript:view.setReadonly(false)}]]></xp:this.action>
-						</xp:eventHandler>
-					</xp:button>
-
-				</div>
-
-				<div
-					style="height: 200px" />
+				<xp:div styleClass="well">
+					Hidden input with Ajax call for options:
+					<xp:br></xp:br>
+					<xp:inputHidden id="inputHidden1"></xp:inputHidden>
+					<xp:scriptBlock id="scriptBlock3">
+						<xp:this.value><![CDATA[x$("#{id:inputHidden1}").select2( {
+	placeholder: "Search for a country",
+	width : 300,
+	minimumInputLength: 1,
+	ajax: {
+	    url: "/#{javascript:database.getFilePath()}/getSelect2Data.xsp",
+	    dataType: 'json',
+	    quietMillis: 250,
+	    data: function (term, page) { 
+	        return {
+	            q: term //search term
+	        };
+	    },
+	    results: function (data, page) {
+	        var more = (page * 30) < data.total_count; // whether or not there are more results available
+	
+	        // notice we return the value of more so Select2 knows if more results can be loaded
+	        return { results: data.items, more: false };
+	    }
+	}
+});]]></xp:this.value>
+					</xp:scriptBlock>
+				</xp:div>
 
 			</xp:div>
-
 		</xp:this.facets>
 	</xc:ccAppLayout>
 

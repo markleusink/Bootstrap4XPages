@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.0" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="48a" sequence="11" unid="66260D85494484BEC1257BC7002CDCCC">
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.4" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="48a" sequence="24" unid="66260D85494484BEC1257BC7002CDCCC">
 <created><datetime dst="true">20130814T101001,08+02</datetime></created>
-<modified><datetime dst="true">20130822T131636,88+02</datetime></modified>
-<revised><datetime dst="true">20130822T131636,86+02</datetime></revised>
-<lastaccessed><datetime dst="true">20130822T131636,86+02</datetime></lastaccessed>
+<modified><datetime dst="true">20140618T095001,66+02</datetime></modified>
+<revised><datetime>20131129T104150,67+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140618T095001,64+02</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130814T101001,09+02</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<updatedby><name>CN=Domino Administrator/O=LinQed</name><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
 <item name="$Flags"><text>34567Cg~[</text></item>
 <item name="$TITLE"><text>eu/linqed/debugtoolbar/DebugToolbar.java</text></item>

@@ -11,18 +11,6 @@
 		</li>
 		
 		<li>
-			<xp:link escape="true" text="Select2 for Combo-/ Listbox" id="link13">
-				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2Listbox.xsp"}]]></xp:this.value><i class="glyphicon glyphicon-chevron-right"></i>
-			</xp:link>
-		</li>
-		
-		<li>
-			<xp:link escape="true" text="Select2 Value picker" id="link15">
-				<xp:this.value><![CDATA[#{javascript:"/Bootstrap_Select2.xsp"}]]></xp:this.value><i class="glyphicon glyphicon-chevron-right"></i>
-			</xp:link>
-		</li>
-		
-		<li>
 			<xp:link escape="true" text="Buttons" id="link2"
 				value="/demos.xsp#content=buttons">
 					<i class="glyphicon glyphicon-chevron-right"></i>
@@ -91,13 +79,13 @@
 			</xp:link>
 		</li>
 		
-		<li>
+		<!--<li>
 			<xp:link escape="true" text="Scroll spy" id="link4">
 				<xp:this.value><![CDATA[#{javascript:"/scrollSpy.xsp"}]]></xp:this.value><i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>
 		</li>
 	
-		<li>
+		--><li>
 			<xp:link escape="true" text="Select2" id="link10">
 				<xp:this.value><![CDATA[#{javascript:"/select2.xsp"}]]></xp:this.value><i class="glyphicon glyphicon-chevron-right"></i>
 			</xp:link>

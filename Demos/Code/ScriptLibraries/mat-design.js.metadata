@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="1.4" replicaid="C1257B7400240773" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="251e" sequence="3" unid="21FCF3F2899BF3C3C1257D950050917B">
+<created><datetime>20141119T154001,23+01</datetime></created>
+<modified><datetime>20141119T154126,81+01</datetime></modified>
+<revised><datetime>20141119T154126,79+01</datetime></revised>
+<lastaccessed><datetime>20141119T154126,79+01</datetime></lastaccessed>
+<addedtofile><datetime>20141119T154001,29+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name="$TITLE" sign="true"><text>mat-design.js</text></item>
+<item name="$Flags"><text>h534QP</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+</note>

@@ -32,7 +32,12 @@
 
 			</xp:comboBox>
 
-			<bx:select2PickerCombo id="select2PickerCombo1" for="comboBox5"></bx:select2PickerCombo>
+			<xp:scriptBlock
+								id="scriptBlock1">
+								<xp:this.value><![CDATA[x$("#{id:comboBox5}").select2({
+							minimumResultsForSearch : 5
+						});]]></xp:this.value>
+							</xp:scriptBlock>
 
 			<xp:text
 				escape="true"

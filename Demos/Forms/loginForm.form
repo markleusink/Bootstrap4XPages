@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<form name='loginForm' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+<form name='loginForm' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.4'
  replicaid='C1257B7400240773' nocompose='true' noquery='true' publicaccess='true'
  designerversion='8.5.3'>
 <noteinfo noteid='252' unid='A82C59BF3FBE7F40C1257B74003BEE2F' sequence='31'>

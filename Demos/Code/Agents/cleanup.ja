@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<agent name='cleanup' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+<agent name='cleanup' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.4'
  replicaid='C1257B7400240773' hide='web v3' publicaccess='false' designerversion='8.5.3'
  activatable='false'>
 <noteinfo noteid='4de' unid='FFFB432EE009AB0BC1257BC900503449' sequence='20'>
@@ -42,11 +42,11 @@ public class JavaAgent extends AgentBase {
 }</java></javaproject></code>
 <rundata processeddocs='0' exitcode='0' agentdata='69DC316816DAA8FBC1257C2E0079C388'>
 <agentmodified><datetime dst='true'>20140618T095000,73+02</datetime></agentmodified>
-<agentrun><datetime dst='true'>20140618T102242,15+02</datetime></agentrun>
-<runlog>Started running agent 'cleanup' on 06/18/2014 10:22:42 AM
+<agentrun><datetime>20151122T164914,26+01</datetime></agentrun>
+<runlog>Started running agent 'cleanup' on 11/22/2015 04:49:14 PM
 Found 0 document(s) that match search criteria
 Ran Java Agent Class
-Done running agent 'cleanup' on 06/18/2014 10:22:42 AM
+Done running agent 'cleanup' on 11/22/2015 04:49:14 PM
 </runlog></rundata>
 <item name='$JavaCompilerSource'><text>1.3</text></item>
 <item name='$JavaCompilerTarget'><text>1.2</text></item></agent>

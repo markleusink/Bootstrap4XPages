@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	pageTitle="Bootstrap4XPages">
+
+	<xc:ccAppLayout>
+		<xp:this.facets>
+			<xp:div xp:key="facetMiddle">
+				hi
+			</xp:div>
+
+		</xp:this.facets>
+	</xc:ccAppLayout>
+</xp:view>

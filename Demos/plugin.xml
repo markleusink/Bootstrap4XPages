@@ -19,7 +19,6 @@
     <import optional="true" plugin="com.ibm.notes.java.api"/>
     <import optional="true" plugin="com.ibm.xsp.rcp"/>
     <import optional="true" plugin="com.ibm.xsp.extlib"/>
-    <import optional="true" plugin="org.openntf.xsp.bootstrap"/>
     <!--AUTOGEN-END-BUILDER: End of automatically generated section-->
   </requires>
 </plugin>

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<view name='AllEMails' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+<view name='AllEMails' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.4'
  replicaid='C1257B7400240773' showinmenu='false' publicaccess='false' designerversion='8.5.3'
  unreadmarks='none' onopengoto='lastopened' onrefresh='displayindicator' headers='beveled'
  opencollapsed='false' showresponsehierarchy='true' showmargin='true' shrinkrows='false'
@@ -12,7 +12,7 @@
 <created><datetime>20140204T235912,56+01</datetime></created>
 <modified><datetime dst='true'>20140401T105004,95+02</datetime></modified>
 <revised><datetime dst='true'>20140401T105004,93+02</datetime></revised>
-<lastaccessed><datetime dst='true'>20140401T105004,93+02</datetime></lastaccessed>
+<lastaccessed><datetime>20151122T202906,15+01</datetime></lastaccessed>
 <addedtofile><datetime>20140205T004739,88+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
 <wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby><code event='selection'><formula

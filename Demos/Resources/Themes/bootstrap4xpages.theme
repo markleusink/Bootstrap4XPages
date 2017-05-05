@@ -1,12 +1,15 @@
 
-<theme extends="Bootstrap3.2.0_flat" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd" >
-	
+<theme
+	extends="Bootstrap3.2.0_flat"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="platform:/plugin/com.ibm.designer.domino.stylekits/schema/stylekit.xsd">
+
 	<!-- select2 css & js files -->
 	<resource>
 		<content-type>text/css</content-type>
 		<href>select2-3.5.4/select2.css</href>
 	</resource>
-		<resource>
+	<resource>
 		<content-type>text/css</content-type>
 		<href>select2-3.5.4/select2-bootstrap.css</href>
 	</resource>
@@ -14,7 +17,15 @@
 		<content-type>application/x-javascript</content-type>
 		<href>select2-3.5.4/select2.min.js</href>
 	</resource>
-	
+
+	<!-- needed for float thead demo -->
+	<resources>
+		<metaData>
+			<name>X-UA-Compatible</name>
+			<content>IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE</content>
+		</metaData>
+	</resources>
+
 	<!-- resources for the date picker are included here only to make the date picker work in a dialog (see dialogPickers.xsp) -->
 	<resource>
 		<content-type>application/x-javascript</content-type>
@@ -24,25 +35,28 @@
 		<content-type>text/css</content-type>
 		<href>/eternicode-datepicker-1.3/css/datepicker3.css</href>
 	</resource>
-	
+
 	<!-- Bootstrap customizations: here I define additional CSS style I need/ want in this application -->
 	<resource>
 		<content-type>text/css</content-type>
 		<href>bootstrap-extended.css</href>
 	</resource>
-	
+
 	<!-- different themes: these are included based on the value of a sessionScope variable -->
-	<resource rendered="#{javascript:sessionScope.theme=='darkly'}">
+	<resource
+		rendered="#{javascript:sessionScope.theme=='darkly'}">
 		<content-type>text/css</content-type>
 		<href>darkly.min.css</href>
 	</resource>
-	<resource rendered="#{javascript:sessionScope.theme=='superhero'}">
+	<resource
+		rendered="#{javascript:sessionScope.theme=='superhero'}">
 		<content-type>text/css</content-type>
 		<href>superhero.min.css</href>
 	</resource>
-	<resource rendered="#{javascript:sessionScope.theme=='journal'}">
+	<resource
+		rendered="#{javascript:sessionScope.theme=='journal'}">
 		<content-type>text/css</content-type>
 		<href>journal.min.css</href>
 	</resource>
-	
+
 </theme>

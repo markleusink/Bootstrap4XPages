@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:xe="http://www.ibm.com/xsp/coreex"
+	pageTitle="Bootstrap4XPages | Fixed table headers">
+
+	<xp:this.resources>
+		<xp:script
+			src="float-thead-2.0/jquery.floatThead.min.js"
+			clientSide="true">
+		</xp:script>
+	</xp:this.resources>
+	
+	<style type="text/css">
+	.xspDataTable > thead > tr > th {
+		background: #eee;
+	}
+	</style>
+	
+	
+	<xc:ccAppLayout>
+		<xp:this.facets>
+			<xp:div
+				xp:key="facetMiddle">
+
+				<legend>Fixed headers with jQuery.floatTHead</legend>
+
+				<xp:button
+					rendered="#{javascript:sessionScope.enableFloatThead != true}"
+					value="Enable floatThead"
+					id="button1">
+					<xp:eventHandler
+						event="onclick"
+						submit="true"
+						refreshMode="complete">
+						<xp:this.action><![CDATA[#{javascript:sessionScope.enableFloatThead = true;}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+				<xp:button
+					rendered="#{javascript:sessionScope.enableFloatThead==true}"
+					value="Disable floatThead"
+					id="button2">
+					<xp:eventHandler
+						event="onclick"
+						submit="true"
+						refreshMode="complete">
+						<xp:this.action><![CDATA[#{javascript:sessionScope.enableFloatThead = false;}]]></xp:this.action>
+					</xp:eventHandler>
+				</xp:button>
+
+				<xp:viewPanel
+					rows="100"
+					id="viewPanel1">
+					<xp:this.facets>
+						<xp:pager
+							partialRefresh="false"
+							layout="Previous Group Next"
+							xp:key="headerPager"
+							id="pager1">
+						</xp:pager>
+					</xp:this.facets>
+					<xp:this.data>
+						<xp:dominoView
+							var="view1"
+							databaseName="bs4xp/fakenames.nsf"
+							viewName="#{javascript:'vwAllByFullName'}">
+						</xp:dominoView>
+					</xp:this.data>
+					<xp:viewColumn
+						columnName="FullName"
+						id="viewColumn1">
+						<xp:viewColumnHeader
+							value="FullName"
+							id="viewColumnHeader1">
+						</xp:viewColumnHeader>
+					</xp:viewColumn>
+					<xp:viewColumn
+						columnName="InternetAddress"
+						id="viewColumn2">
+						<xp:viewColumnHeader
+							value="InternetAddress"
+							id="viewColumnHeader2">
+						</xp:viewColumnHeader>
+					</xp:viewColumn>
+				</xp:viewPanel>
+
+			</xp:div>
+		</xp:this.facets>
+	</xc:ccAppLayout>
+
+	<xp:scriptBlock
+		id="scriptBlock1"
+		rendered="#{javascript:sessionScope.enableFloatThead==true}">
+		<xp:this.value><![CDATA[
+		var table = x$("#{id:viewPanel1}");
+		table.floatThead({
+			'top': 51
+		});]]></xp:this.value>
+	</xp:scriptBlock>
+
+</xp:view>
